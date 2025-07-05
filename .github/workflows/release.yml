@@ -51,7 +51,7 @@ jobs:
             ### Build from Source
             ```bash
             tar -xzf LuneX-${{ steps.get_version.outputs.version }}-source.tar.gz
-            cd LuneX-${{ steps.get_version.outputs.version }}
+            cd LuneX-${{ steps.get_version.outputs.version }}/Utilities/development
             cargo build --release
             sudo cp target/release/LuneX /usr/local/bin/lunex
             ```
@@ -69,13 +69,15 @@ jobs:
         uses: dtolnay/rust-toolchain@stable
 
       - name: Build release binary
-        run: cargo build --release
+        run: |
+          cd Utilities/development
+          cargo build --release
 
       - name: Create binary archive
         run: |
-          cd target/release
-          zip ../../LuneX-macos-${{ needs.create-release.outputs.version }}.zip LuneX
-          gzip -c LuneX > ../../LuneX-macos-${{ needs.create-release.outputs.version }}.gz
+          cd Utilities/development/target/release
+          zip ../../../../LuneX-macos-${{ needs.create-release.outputs.version }}.zip LuneX
+          gzip -c LuneX > ../../../../LuneX-macos-${{ needs.create-release.outputs.version }}.gz
 
       - name: Upload macOS ZIP
         uses: actions/upload-release-asset@v1

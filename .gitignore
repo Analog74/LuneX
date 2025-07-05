@@ -1,3 +1,50 @@
+# Rust build artifacts
+Utilities/development/target/
+Utilities/development/LuneX
 /target
 LuneX
+
+# Export directories and files
 exported*
+_MagicMaster/
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and editor files
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary and backup files
+*.tmp
+*.temp
+*.bak
+*.backup
+*~
+.#*
+\#*#
+
+# Log files
+*.log
+
+# Release artifacts
+Utilities/development/releases/*.zip
+Utilities/development/releases/*.tar.gz
+Utilities/development/releases/*.dmg
+Utilities/development/releases/CHECKSUMS.txt
+
+# Cargo lock for applications (keep for reproducible builds)
+# Utilities/development/Cargo.lock
+
+# Local development environment
+.env
+.env.local
