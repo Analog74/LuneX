@@ -1,0 +1,17 @@
+# LuneX Source Build
+
+To build from source:
+
+1. Install Rust (https://rustup.rs/)
+2. Clone this repository
+3. cd rbxdom_rust_exporter
+4. cargo build --release
+5. The binary will be at target/release/LuneX
+
+# Binary Build
+
+A prebuilt binary for macOS ARM64 is provided as LuneX-macos-arm64 in the repo root.
+
+# Usage
+
+See README.md for usage instructions (CLI and interactive modes supported).
