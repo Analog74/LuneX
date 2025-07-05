@@ -36,13 +36,13 @@ LuneX <input.rbxl> <output_dir> [--mode original|flat|rojo] [--projectjson]
 ### Option 1: Download Pre-built Binary (Recommended)
 
 #### macOS (Intel/Apple Silicon)
-1. Download the latest release from [GitHub Releases](https://github.com/your-username/LuneProjects/releases)
+1. Download the latest release from [GitHub Releases](https://github.com/Analog74/LuneX/releases)
    - **Recommended**: `LuneX-macos-v0.1.3.zip` (compressed)
    - **Alternative**: `LuneX-macos-v0.1.3.gz` (smaller)
 2. Extract and install:
 ```bash
 # Download (replace URL with actual GitHub release URL)
-curl -L -o LuneX-macos.zip https://github.com/your-username/LuneProjects/releases/download/v0.1.3/LuneX-macos-v0.1.3.zip
+curl -L -o LuneX-macos.zip https://github.com/Analog74/LuneX/releases/download/v0.1.3/LuneX-macos-v0.1.3.zip
 unzip LuneX-macos.zip
 
 # Install globally
@@ -61,7 +61,7 @@ For Windows users, we recommend:
 1. Build from source (see Option 2) - pre-built Linux binaries coming soon
 2. Or use the source archive for easier building:
 ```bash
-curl -L -o LuneX-source.tar.gz https://github.com/your-username/LuneProjects/releases/download/v0.1.3/LuneX-v0.1.3-source.tar.gz
+curl -L -o LuneX-source.tar.gz https://github.com/Analog74/LuneX/releases/download/v0.1.3/LuneX-v0.1.3-source.tar.gz
 tar -xzf LuneX-source.tar.gz
 cd LuneX-v0.1.3/Utilities/development
 cargo build --release
@@ -93,8 +93,8 @@ source ~/.cargo/env
 #### Build and Install
 1. Clone this repository:
 ```bash
-git clone https://github.com/your-username/LuneProjects.git
-cd LuneProjects/Utilities/development
+git clone https://github.com/Analog74/LuneX.git
+cd LuneX/Utilities/development
 ```
 
 2. Build the release binary:
@@ -136,7 +136,7 @@ If installed correctly, running `lunex` should start the interactive mode.
 - **Checksums**: `CHECKSUMS.txt` for verification
 
 ### Older Releases
-All previous releases remain available on GitHub with their respective binaries and source code archives. See the [Releases page](https://github.com/your-username/LuneProjects/releases) for the complete history.
+All previous releases remain available on GitHub with their respective binaries and source code archives. See the [Releases page](https://github.com/Analog74/LuneX/releases) for the complete history.
 
 ### Verification
 Download integrity can be verified using the provided checksums:
