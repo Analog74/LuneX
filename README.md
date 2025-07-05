@@ -138,5 +138,3 @@ Built with the excellent [rbx-dom](https://github.com/rojo-rbx/rbx-dom) and [rbx
 ⭐ **Star this project if you find it useful!**  
 🐛 **[Report Issues](https://github.com/Analog74/LuneX/issues)**  
 💬 **[Discussions](https://github.com/Analog74/LuneX/discussions)**
-
-For detailed installation instructions, see **[docs/INSTALLATION.md](docs/INSTALLATION.md)**.
