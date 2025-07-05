@@ -1,0 +1,14 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Disabled": false,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "RunContext": "<unsupported: Enum(Enum { value: 0 })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{ED435D3A-03FE-46B2-A589-8740D35A644F}",
+  "Source": "local remote = game.ReplicatedStorage.Remotes\nlocal UIS = game:GetService(\"UserInputService\")\n\n\nlocal Animations = game.ReplicatedStorage.Animatons\n\nremote.leftclick.OnClientEvent:Connect(function(player,c3)\n\tlocal iooooooooo = true\n\n\tUIS.InputBegan:Connect(function(input,istyping)\n\t\tif input.UserInputType == Enum.UserInputType.MouseButton1 and iooooooooo==true then\n\t\t\tiooooooooo = false\n\t\t\t\n\t\n\t\t\tlocal clonea = player.Humanoid:LoadAnimation(Animations.rasenshurikenattack);\n\tclonea:Play()\n\t\tend\n\tend)\n\n\n\n\n\nend)",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 26569, time: 142155861, random: 1232354692393223026 })>"
+}

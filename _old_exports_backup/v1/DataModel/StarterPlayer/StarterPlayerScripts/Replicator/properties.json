@@ -1,0 +1,14 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Disabled": false,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "RunContext": "<unsupported: Enum(Enum { value: 0 })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{BD544018-E017-4ECE-84F4-5ECCFFC9CE5A}",
+  "Source": "local player = game.Players.LocalPlayer\nlocal char = player.Character or player.CharacterAdded:Wait()\n\nlocal RS = game:GetService(\"ReplicatedStorage\")\nlocal Remotes = RS:WaitForChild(\"Remotes\")\nlocal Modules = RS:WaitForChild(\"Modules\")\n\nlocal Skills = RS:WaitForChild(\"Skills\")\n\nlocal ReplicateEvent = Remotes:WaitForChild(\"Replicate\")\n\nReplicateEvent.OnClientEvent:Connect(function(humRP, skillName, mousePos, targetCFrame, RayInstanceY\n)\n\tlocal humanRP = char:FindFirstChild(\"HumanoidRootPart\")\n\tif humanRP then\n\t\tif (humanRP.Position - humRP.Position).Magnitude < 200 then\n\t\t\tif skillName == \"HammerZ\" then\n\t\t\t\tlocal skillMod = require(Skills:FindFirstChild(\"Test\"))\n\t\t\t\tskillMod.ZSkill(humRP, mousePos)\n\t\t\telseif skillName == \"HammerX\" then\n\t\t\t\tlocal skillMod = require(Skills:FindFirstChild(\"Test\"))\n\t\t\t\tskillMod.XSkill(humRP, mousePos)\n\t\t\telseif skillName == \"TestTornadoC\" then\n\t\t\t\tlocal skillMod = require(Skills:FindFirstChild(\"Test\"))\n\t\t\t\tskillMod.CSkill(humRP, targetCFrame, RayInstanceY)\n\t\t\tend\n\t\tend\n\tend\nend)",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 26299, time: 142155861, random: 1232354692393223026 })>"
+}

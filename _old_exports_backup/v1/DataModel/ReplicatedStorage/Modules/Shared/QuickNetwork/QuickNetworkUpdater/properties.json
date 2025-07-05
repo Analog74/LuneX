@@ -1,0 +1,14 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Disabled": false,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "RunContext": "<unsupported: Enum(Enum { value: 0 })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{EF319118-151B-4B9A-AEBC-488FD87A36A8}",
+  "Source": "local InsertService = game:GetService(\"InsertService\")\nlocal ServerStorage = game:GetService(\"ServerStorage\")\n\nlocal MODEL_ID = 6474226265\nlocal CHECK_UPDATE_INTERVAL = 5\n\nlocal currentModel = ServerStorage:FindFirstChild(\"QuickNetwork\")\n\nlocal function CheckForUpdate(model)\n\tlocal version = model:FindFirstChild(\"Version\")\n\n\tif not version then\n\t\treturn\n\tend\n\n\tif model.Version.Value ~= currentModel.Version.Value then\n\t\tmodel:Clone().Parent = ServerStorage\n\t\tcurrentModel:Destroy()\n\t\tcurrentModel = model\n\tend\nend\n\nwhile true do\n\tlocal success, response = pcall(InsertService.LoadAsset, InsertService, MODEL_ID)\n\n\tif success then\n\t\tCheckForUpdate(response.QuickNetwork)\n\telse\n\t\twarn(response)\n\tend\n\n\twait(CHECK_UPDATE_INTERVAL)\nend",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 25840, time: 142155861, random: 1232354692393223026 })>"
+}

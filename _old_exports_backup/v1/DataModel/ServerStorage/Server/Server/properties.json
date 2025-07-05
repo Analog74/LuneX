@@ -1,0 +1,14 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Disabled": false,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "RunContext": "<unsupported: Enum(Enum { value: 0 })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{4ba7edf0-6564-4631-8b2d-6395e0f40f25}",
+  "Source": "-- Services\nlocal Replicated = game:GetService('ReplicatedStorage')\n\ngame:GetService('Players').PlayerAdded:Connect(function(Player)\n\tPlayer.CharacterAdded:Connect(function(Character)\n\t\tlocal Handle = Replicated.Assets.Meshes.Handle:Clone()\n\t\tHandle.Parent = Character\n\t\t\n\t\tlocal Motor6D = Instance.new('Motor6D')\n\t\tMotor6D.Part0 = Character:WaitForChild('RightHand')\n\t\tMotor6D.Part1 = Handle\n\t\tMotor6D.C0 = CFrame.new(0, -0.85, -2) * CFrame.Angles(0, 0, math.rad(90))\n\t\tMotor6D.Parent = Character:WaitForChild('RightHand')\n\tend)\nend)",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 11934480, time: 32320501, random: 7308681896716043950 })>"
+}

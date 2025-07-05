@@ -1,0 +1,91 @@
+{
+  "AirDensity": 0.0012000000569969416,
+  "AllowThirdPartySales": false,
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "AuthorityMode": "<unsupported: Enum(Enum { value: 1 })>",
+  "AvatarUnificationMode": "<unsupported: Enum(Enum { value: 0 })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "ClientAnimatorThrottling": "<unsupported: Enum(Enum { value: 0 })>",
+  "CollisionGroupData": "<unsupported: BinaryString(BinaryString { buffer: [1, 1, 0, 4, 255, 255, 255, 255, 7, 68, 101, 102, 97, 117, 108, 116] })>",
+  "CurrentCamera": "b0b916e98e279b9a47013a04b4a53bfc",
+  "DistributedGameTime": 0.0,
+  "ExplicitAutoJoints": true,
+  "FallHeightEnabled": true,
+  "FallenPartsDestroyHeight": -500.0,
+  "FluidForces": "<unsupported: Enum(Enum { value: 0 })>",
+  "GlobalWind": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "Gravity": 196.1999969482422,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "IKControlConstraintSupport": "<unsupported: Enum(Enum { value: 0 })>",
+  "LevelOfDetail": "<unsupported: Enum(Enum { value: 0 })>",
+  "LuauTypeCheckMode": "<unsupported: Enum(Enum { value: 0 })>",
+  "MeshPartHeadsAndAccessories": "<unsupported: Enum(Enum { value: 0 })>",
+  "ModelMeshCFrame": {
+    "matrix": {
+      "orientation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "ModelMeshData": "<unsupported: SharedString(SharedString { data: Some([]), hash: Hash(\"af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262\") })>",
+  "ModelMeshSize": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ModelStreamingBehavior": "<unsupported: Enum(Enum { value: 0 })>",
+  "ModelStreamingMode": "<unsupported: Enum(Enum { value: 0 })>",
+  "MoverConstraintRootBehavior": "<unsupported: Enum(Enum { value: 0 })>",
+  "NeedsPivotMigration": false,
+  "PathfindingUseImprovedSearch": "<unsupported: Enum(Enum { value: 0 })>",
+  "PhysicsImprovedSleep": "<unsupported: Enum(Enum { value: 0 })>",
+  "PhysicsSteppingMethod": "<unsupported: Enum(Enum { value: 0 })>",
+  "PlayerCharacterDestroyBehavior": "<unsupported: Enum(Enum { value: 0 })>",
+  "PrimalPhysicsSolver": "<unsupported: Enum(Enum { value: 0 })>",
+  "PrimaryPart": "00000000000000000000000000000000",
+  "RejectCharacterDeletions": "<unsupported: Enum(Enum { value: 0 })>",
+  "RenderingCacheOptimizations": "<unsupported: Enum(Enum { value: 0 })>",
+  "ReplicateInstanceDestroySetting": "<unsupported: Enum(Enum { value: 0 })>",
+  "Retargeting": "<unsupported: Enum(Enum { value: 0 })>",
+  "Sandboxed": false,
+  "SandboxedInstanceMode": "<unsupported: Enum(Enum { value: 0 })>",
+  "Scale": 1.0,
+  "SignalBehavior": "<unsupported: Enum(Enum { value: 0 })>",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "StreamOutBehavior": "<unsupported: Enum(Enum { value: 0 })>",
+  "StreamingEnabled": false,
+  "StreamingIntegrityMode": "<unsupported: Enum(Enum { value: 0 })>",
+  "StreamingMinRadius": 64,
+  "StreamingTargetRadius": 1024,
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "TerrainWeldsFixed": true,
+  "TouchEventsUseCollisionGroups": "<unsupported: Enum(Enum { value: 0 })>",
+  "TouchesUseCollisionGroups": false,
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 98982, time: 32318743, random: 7712671185636030641 })>",
+  "UseImprovedModelLod": "<unsupported: Enum(Enum { value: 0 })>",
+  "UseNewLuauTypeSolver": "<unsupported: Enum(Enum { value: 0 })>",
+  "WorldPivotData": "<unsupported: OptionalCFrame(Some(CFrame { position: Vector3 { x: 0.0, y: 0.0, z: 0.0 }, orientation: Matrix3 { x: Vector3 { x: 1.0, y: 0.0, z: 0.0 }, y: Vector3 { x: 0.0, y: 1.0, z: 0.0 }, z: Vector3 { x: 0.0, y: 0.0, z: 1.0 } } }))>"
+}

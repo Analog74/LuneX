@@ -1,0 +1,18 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "AutoRuns": true,
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Description": "",
+  "ExecuteWithStudioRun": false,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "IsPhysicsEnvironmentalThrottled": true,
+  "IsSleepAllowed": true,
+  "NumberOfPlayers": 0,
+  "Sandboxed": false,
+  "SimulateSecondsLag": 0.0,
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "ThrottlePhysicsToRealtime": true,
+  "Timeout": 10.0,
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 104890, time: 32318743, random: 7712671185636030641 })>"
+}

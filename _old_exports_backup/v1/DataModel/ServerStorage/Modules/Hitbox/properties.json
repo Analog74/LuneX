@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{79905883-b6bd-4793-8c2a-4dd0dce25aaa}",
+  "Source": "-- Localization\nlocal workspace = workspace\n\nlocal Hitbox = {}\n\nfunction Hitbox:Start(Origin, Direction, Blacklist, Visualizer)\n\tlocal RayParams = RaycastParams.new()\n\tRayParams.FilterType = Enum.RaycastFilterType.Blacklist\n\tRayParams.FilterDescendantsInstances = Blacklist\n\t\n\tif Visualizer then\n\t\tlocal Part = Instance.new('Part')\n\t\tPart.Position = Origin + Direction\n\t\tPart.Anchored = true\n\t\tPart.CanCollide = false\n\t\tPart.Transparency = 0.5\n\t\tPart.Size = Vector3.new(1, 1, 1)\n\t\tPart.Parent = workspace.Effects\n\t\tgame:GetService('Debris'):AddItem(Part, 0.35)\n\tend\n\t\n\treturn workspace:Raycast(Origin, Direction, RayParams)\nend\n\nreturn Hitbox\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 24901, time: 142155861, random: 1232354692393223026 })>"
+}

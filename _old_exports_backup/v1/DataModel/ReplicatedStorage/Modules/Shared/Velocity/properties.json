@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{b2f73d51-f8d5-4210-b5f0-d5b8ecbc9a79}",
+  "Source": "-- This module creates BodyVelocities for certain actions such as pushing and knockback.\n\nreturn \n\tfunction(Strength, Duration, Parent)\n\t\n\tlocal Velocity = Instance.new('BodyVelocity')\n\tVelocity.Name = 'Velocity'\n\tVelocity.MaxForce = Vector3.new(1, 1, 1) * math.huge\n\tVelocity.Velocity = Strength\n\tVelocity.Parent = Parent\n\tgame:GetService('Debris'):AddItem(Velocity, Duration)\nend\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 11934954, time: 32320501, random: 7308681896716043950 })>"
+}

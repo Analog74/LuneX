@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{52aaaacb-1edf-421f-b951-977230750638}",
+  "Source": "local MockP = {}\n\nMockP.new = function(CF)\n\t-- Create a new Mock Part to be used for projectile optimization.\n\t\n\tlocal P = Instance.new('Part')\n\tP.Name = 'MockPart'\n\tP.CFrame = CF\n\tP.Size = Vector3.new(1, 1, 1)\n\tP.Transparency = 1\n\tP.Anchored = true\n\tP.CanCollide = false\n\tP.CanTouch = false\n\tP.CastShadow = false\n\tP.Parent = workspace.Effects\n\treturn P\nend\n\nreturn MockP\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 11934955, time: 32320501, random: 7308681896716043950 })>"
+}

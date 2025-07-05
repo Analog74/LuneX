@@ -1,0 +1,134 @@
+{
+  "AcquisitionMethod": "<unsupported: Enum(Enum { value: 0 })>",
+  "Anchored": true,
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "AudioCanCollide": true,
+  "BackParamA": -0.5,
+  "BackParamB": 0.5,
+  "BackSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "BackSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "BottomParamA": -0.5,
+  "BottomParamB": 0.5,
+  "BottomSurface": "<unsupported: Enum(Enum { value: 4 })>",
+  "BottomSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "CFrame": {
+    "matrix": {
+      "orientation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "CanCollide": true,
+  "CanQuery": true,
+  "CanTouch": true,
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "CastShadow": true,
+  "CollisionGroup": "Default",
+  "CollisionGroupId": 0,
+  "Color": "<unsupported: Color3uint8(Color3uint8 { r: 163, g: 162, b: 165 })>",
+  "CustomPhysicalProperties": "<unsupported: PhysicalProperties(Default)>",
+  "Decoration": true,
+  "EnableFluidForces": true,
+  "FrontParamA": -0.5,
+  "FrontParamB": 0.5,
+  "FrontSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "FrontSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "GrassLength": 0.699999988079071,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LeftParamA": -0.5,
+  "LeftParamB": 0.5,
+  "LeftSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "LeftSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "Locked": true,
+  "Massless": false,
+  "Material": "<unsupported: Enum(Enum { value: 256 })>",
+  "MaterialColors": "<unsupported: MaterialColors(MaterialColors { inner: {Grass: Color3uint8 { r: 106, g: 127, b: 63 }, Slate: Color3uint8 { r: 63, g: 127, b: 107 }, Concrete: Color3uint8 { r: 127, g: 102, b: 63 }, Brick: Color3uint8 { r: 138, g: 86, b: 62 }, Sand: Color3uint8 { r: 143, g: 126, b: 95 }, WoodPlanks: Color3uint8 { r: 139, g: 109, b: 79 }, Rock: Color3uint8 { r: 102, g: 108, b: 111 }, Glacier: Color3uint8 { r: 101, g: 176, b: 234 }, Snow: Color3uint8 { r: 195, g: 199, b: 218 }, Sandstone: Color3uint8 { r: 137, g: 90, b: 71 }, Mud: Color3uint8 { r: 58, g: 46, b: 36 }, Basalt: Color3uint8 { r: 30, g: 30, b: 37 }, Ground: Color3uint8 { r: 102, g: 92, b: 59 }, CrackedLava: Color3uint8 { r: 232, g: 156, b: 74 }, Asphalt: Color3uint8 { r: 115, g: 123, b: 107 }, Cobblestone: Color3uint8 { r: 132, g: 123, b: 90 }, Ice: Color3uint8 { r: 129, g: 194, b: 224 }, LeafyGrass: Color3uint8 { r: 115, g: 132, b: 74 }, Salt: Color3uint8 { r: 198, g: 189, b: 181 }, Limestone: Color3uint8 { r: 206, g: 173, b: 148 }, Pavement: Color3uint8 { r: 148, g: 148, b: 140 }} })>",
+  "MaterialVariant": "",
+  "PhysicsGrid": "<unsupported: BinaryString(BinaryString { buffer: [2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] })>",
+  "PivotOffset": {
+    "matrix": {
+      "orientation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "Reflectance": 0.0,
+  "RightParamA": -0.5,
+  "RightParamB": 0.5,
+  "RightSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "RightSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "RootPriority": 0,
+  "RotVelocity": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "Sandboxed": false,
+  "Size": {
+    "x": 2044.0,
+    "y": 252.0,
+    "z": 2044.0
+  },
+  "SmoothGrid": "<unsupported: BinaryString(BinaryString { buffer: [1, 5] })>",
+  "SmoothVoxelsUpgraded": false,
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "TopParamA": -0.5,
+  "TopParamB": 0.5,
+  "TopSurface": "<unsupported: Enum(Enum { value: 3 })>",
+  "TopSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "Transparency": 0.0,
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 104889, time: 32318743, random: 7712671185636030641 })>",
+  "Velocity": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "WaterColor": {
+    "b": 0.3607843220233917,
+    "g": 0.3294117748737335,
+    "r": 0.0470588281750679
+  },
+  "WaterReflectance": 1.0,
+  "WaterTransparency": 0.30000001192092896,
+  "WaterWaveSize": 0.15000000596046448,
+  "WaterWaveSpeed": 10.0
+}

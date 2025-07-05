@@ -1,0 +1,156 @@
+{
+  "AeroMeshData": "<unsupported: SharedString(SharedString { data: Some([]), hash: Hash(\"af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262\") })>",
+  "Anchored": true,
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "AudioCanCollide": true,
+  "BackParamA": -0.5,
+  "BackParamB": 0.5,
+  "BackSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "BackSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "BottomParamA": -0.5,
+  "BottomParamB": 0.5,
+  "BottomSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "BottomSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "CFrame": {
+    "matrix": {
+      "orientation": [
+        [
+          0.9659258127212524,
+          -0.258819043636322,
+          0.0
+        ],
+        [
+          0.258819043636322,
+          0.9659258127212524,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -1167.4482421875,
+        147.61349487304688,
+        -123.3652114868164
+      ]
+    }
+  },
+  "CanCollide": false,
+  "CanQuery": true,
+  "CanTouch": true,
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "CastShadow": true,
+  "CollisionGroup": "Default",
+  "CollisionGroupId": 0,
+  "Color": "<unsupported: Color3uint8(Color3uint8 { r: 0, g: 255, b: 255 })>",
+  "CustomPhysicalProperties": "<unsupported: PhysicalProperties(Default)>",
+  "DoubleSided": false,
+  "EnableFluidForces": true,
+  "FluidFidelityInternal": "<unsupported: Enum(Enum { value: 0 })>",
+  "FrontParamA": -0.5,
+  "FrontParamB": 0.5,
+  "FrontSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "FrontSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "HasJointOffset": false,
+  "HasSkinnedMesh": false,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "InertiaMigrated": false,
+  "InitialSize": {
+    "x": 257.3787536621094,
+    "y": 28.55110740661621,
+    "z": 257.3787536621094
+  },
+  "JointOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "LeftParamA": -0.5,
+  "LeftParamB": 0.5,
+  "LeftSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "LeftSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "Locked": false,
+  "Massless": true,
+  "Material": "<unsupported: Enum(Enum { value: 288 })>",
+  "MaterialVariant": "",
+  "MeshContent": "<unsupported: Content(Content(Uri(\"rbxassetid://643098245\")))>",
+  "PhysicalConfigData": "<unsupported: SharedString(SharedString { data: Some([]), hash: Hash(\"af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262\") })>",
+  "PhysicsData": "<unsupported: BinaryString(BinaryString { buffer: [] })>",
+  "PivotOffset": {
+    "matrix": {
+      "orientation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "Reflectance": 0.0,
+  "RenderFidelity": "<unsupported: Enum(Enum { value: 1 })>",
+  "RightParamA": -0.5,
+  "RightParamB": 0.5,
+  "RightSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "RightSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "RootPriority": 0,
+  "RotVelocity": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "Sandboxed": false,
+  "Size": {
+    "x": 30.0,
+    "y": 5.0,
+    "z": 30.0
+  },
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "TextureContent": "<unsupported: Content(Content(None))>",
+  "TopParamA": -0.5,
+  "TopParamB": 0.5,
+  "TopSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "TopSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "Transparency": 0.010000021196901798,
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 26397, time: 142155861, random: 1232354692393223026 })>",
+  "UnscaledCofm": {
+    "x": null,
+    "y": null,
+    "z": null
+  },
+  "UnscaledVolInertiaDiags": {
+    "x": null,
+    "y": null,
+    "z": null
+  },
+  "UnscaledVolInertiaOffDiags": {
+    "x": null,
+    "y": null,
+    "z": null
+  },
+  "UnscaledVolume": null,
+  "Velocity": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "VertexCount": 0
+}

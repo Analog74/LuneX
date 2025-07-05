@@ -1,0 +1,14 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Disabled": false,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "RunContext": "<unsupported: Enum(Enum { value: 0 })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{9B48E043-8646-4C06-B4BA-BD73B005D317}",
+  "Source": "local tool = script.Parent\nlocal handle = script.Parent.Handle\n\nif tool.Parent == workspace then\n\tlocal proxprompt = Instance.new(\"ProximityPrompt\")\n\tproxprompt.Parent = handle\n\tproxprompt.ActionText = \"Pick up\"\n\tproxprompt.HoldDuration = .5\n\n\tproxprompt.Triggered:Connect(function(Plr)\n\t\tlocal backpack = Plr:WaitForChild(\"Backpack\")\n\t\tgame.ServerStorage.ToolPickup:Clone().Parent = backpack\n\t\tproxprompt:Destroy()\n\tend)\nend",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 2254100, time: 32320501, random: 7308681896716043950 })>"
+}

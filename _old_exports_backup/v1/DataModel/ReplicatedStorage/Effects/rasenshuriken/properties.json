@@ -1,0 +1,156 @@
+{
+  "AeroMeshData": "<unsupported: SharedString(SharedString { data: Some([]), hash: Hash(\"af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262\") })>",
+  "Anchored": false,
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "AudioCanCollide": true,
+  "BackParamA": -0.5,
+  "BackParamB": 0.5,
+  "BackSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "BackSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "BottomParamA": -0.5,
+  "BottomParamB": 0.5,
+  "BottomSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "BottomSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "CFrame": {
+    "matrix": {
+      "orientation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        59.88999938964844,
+        0.5000039935112,
+        66.19999694824219
+      ]
+    }
+  },
+  "CanCollide": false,
+  "CanQuery": true,
+  "CanTouch": true,
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "CastShadow": true,
+  "CollisionGroup": "Default",
+  "CollisionGroupId": 0,
+  "Color": "<unsupported: Color3uint8(Color3uint8 { r: 248, g: 248, b: 248 })>",
+  "CustomPhysicalProperties": "<unsupported: PhysicalProperties(Default)>",
+  "DoubleSided": false,
+  "EnableFluidForces": true,
+  "FluidFidelityInternal": "<unsupported: Enum(Enum { value: 0 })>",
+  "FrontParamA": -0.5,
+  "FrontParamB": 0.5,
+  "FrontSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "FrontSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "HasJointOffset": false,
+  "HasSkinnedMesh": false,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "InertiaMigrated": false,
+  "InitialSize": {
+    "x": 0.5000244975090027,
+    "y": 0.01198634970933199,
+    "z": 0.5000240206718445
+  },
+  "JointOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "LeftParamA": -0.5,
+  "LeftParamB": 0.5,
+  "LeftSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "LeftSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "Locked": false,
+  "Massless": false,
+  "Material": "<unsupported: Enum(Enum { value: 288 })>",
+  "MaterialVariant": "",
+  "MeshContent": "<unsupported: Content(Content(Uri(\"rbxassetid://11376946\")))>",
+  "PhysicalConfigData": "<unsupported: SharedString(SharedString { data: Some([67, 83, 71, 80, 72, 83, 7, 0, 0, 0, 2, 139, 231, 11, 59, 134, 40, 74, 56, 205, 42, 122, 57, 119, 56, 57, 56, 72, 230, 12, 56, 185, 217, 152, 178, 131, 1, 252, 48, 247, 208, 140, 56, 122, 182, 132, 46, 105, 231, 12, 56, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 63, 72, 0, 0, 0, 4, 0, 0, 0, 77, 235, 127, 190, 128, 190, 224, 56, 6, 251, 127, 190, 157, 20, 49, 190, 61, 135, 188, 187, 177, 10, 49, 190, 34, 248, 127, 190, 152, 72, 222, 56, 163, 5, 128, 62, 157, 20, 49, 190, 119, 42, 198, 59, 177, 10, 49, 190, 197, 42, 49, 62, 180, 51, 204, 59, 177, 10, 49, 190, 37, 7, 128, 62, 218, 151, 194, 57, 6, 251, 127, 190, 157, 20, 49, 190, 20, 145, 188, 187, 197, 39, 49, 62, 197, 42, 49, 62, 215, 135, 182, 187, 177, 10, 49, 190, 178, 4, 119, 189, 32, 155, 186, 187, 54, 198, 224, 189, 157, 20, 49, 190, 119, 42, 198, 59, 197, 39, 49, 62, 37, 7, 128, 62, 96, 250, 193, 57, 163, 5, 128, 62, 197, 42, 49, 62, 221, 41, 204, 59, 197, 39, 49, 62, 109, 22, 198, 189, 242, 130, 199, 59, 118, 209, 99, 189, 129, 160, 122, 189, 108, 32, 200, 59, 189, 2, 240, 189, 255, 41, 119, 61, 192, 61, 202, 59, 182, 230, 224, 61, 8, 111, 158, 188, 109, 219, 200, 59, 58, 107, 197, 188, 109, 22, 198, 189, 242, 130, 199, 59, 201, 69, 100, 61, 162, 185, 158, 60, 205, 56, 185, 187, 58, 107, 197, 188, 20, 41, 198, 61, 82, 224, 183, 187, 118, 209, 99, 189, 20, 41, 198, 61, 82, 224, 183, 187, 201, 69, 100, 61, 207, 197, 122, 61, 204, 125, 184, 187, 61, 35, 240, 61, 197, 42, 49, 62, 215, 135, 182, 187, 197, 39, 49, 62, 207, 197, 122, 61, 204, 125, 184, 187, 189, 2, 240, 189, 129, 160, 122, 189, 108, 32, 200, 59, 61, 35, 240, 61, 132, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 6, 0, 0, 0, 2, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0, 7, 0, 0, 0, 1, 0, 0, 0, 7, 0, 0, 0, 8, 0, 0, 0, 1, 0, 0, 0, 8, 0, 0, 0, 6, 0, 0, 0, 2, 0, 0, 0, 9, 0, 0, 0, 3, 0, 0, 0, 2, 0, 0, 0, 6, 0, 0, 0, 10, 0, 0, 0, 2, 0, 0, 0, 10, 0, 0, 0, 11, 0, 0, 0, 2, 0, 0, 0, 11, 0, 0, 0, 9, 0, 0, 0, 3, 0, 0, 0, 9, 0, 0, 0, 16, 0, 0, 0, 3, 0, 0, 0, 16, 0, 0, 0, 12, 0, 0, 0, 3, 0, 0, 0, 12, 0, 0, 0, 13, 0, 0, 0, 3, 0, 0, 0, 13, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0, 14, 0, 0, 0, 11, 0, 0, 0, 4, 0, 0, 0, 11, 0, 0, 0, 10, 0, 0, 0, 4, 0, 0, 0, 10, 0, 0, 0, 5, 0, 0, 0, 4, 0, 0, 0, 13, 0, 0, 0, 12, 0, 0, 0, 4, 0, 0, 0, 12, 0, 0, 0, 15, 0, 0, 0, 4, 0, 0, 0, 15, 0, 0, 0, 16, 0, 0, 0, 4, 0, 0, 0, 16, 0, 0, 0, 14, 0, 0, 0, 5, 0, 0, 0, 10, 0, 0, 0, 7, 0, 0, 0, 6, 0, 0, 0, 8, 0, 0, 0, 17, 0, 0, 0, 6, 0, 0, 0, 17, 0, 0, 0, 18, 0, 0, 0, 6, 0, 0, 0, 18, 0, 0, 0, 19, 0, 0, 0, 6, 0, 0, 0, 19, 0, 0, 0, 20, 0, 0, 0, 6, 0, 0, 0, 20, 0, 0, 0, 21, 0, 0, 0, 6, 0, 0, 0, 21, 0, 0, 0, 10, 0, 0, 0, 7, 0, 0, 0, 10, 0, 0, 0, 21, 0, 0, 0, 7, 0, 0, 0, 21, 0, 0, 0, 19, 0, 0, 0, 7, 0, 0, 0, 19, 0, 0, 0, 18, 0, 0, 0, 7, 0, 0, 0, 18, 0, 0, 0, 22, 0, 0, 0, 7, 0, 0, 0, 22, 0, 0, 0, 8, 0, 0, 0, 8, 0, 0, 0, 22, 0, 0, 0, 18, 0, 0, 0, 8, 0, 0, 0, 18, 0, 0, 0, 17, 0, 0, 0, 9, 0, 0, 0, 11, 0, 0, 0, 14, 0, 0, 0, 9, 0, 0, 0, 14, 0, 0, 0, 23, 0, 0, 0, 9, 0, 0, 0, 23, 0, 0, 0, 16, 0, 0, 0, 12, 0, 0, 0, 16, 0, 0, 0, 15, 0, 0, 0, 14, 0, 0, 0, 16, 0, 0, 0, 23, 0, 0, 0, 19, 0, 0, 0, 21, 0, 0, 0, 20, 0, 0, 0]), hash: Hash(\"505ab9dda3fefdb749761f62332118e5f510a299fdf142e94615f64fc341c23a\") })>",
+  "PhysicsData": "<unsupported: BinaryString(BinaryString { buffer: [] })>",
+  "PivotOffset": {
+    "matrix": {
+      "orientation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "Reflectance": 0.0,
+  "RenderFidelity": "<unsupported: Enum(Enum { value: 1 })>",
+  "RightParamA": -0.5,
+  "RightParamB": 0.5,
+  "RightSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "RightSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "RootPriority": 0,
+  "RotVelocity": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "Sandboxed": false,
+  "Size": {
+    "x": 6.0,
+    "y": 0.05000000074505806,
+    "z": 6.0
+  },
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "TextureContent": "<unsupported: Content(Content(None))>",
+  "TopParamA": -0.5,
+  "TopParamB": 0.5,
+  "TopSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "TopSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "Transparency": 0.0,
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 26460, time: 142155861, random: 1232354692393223026 })>",
+  "UnscaledCofm": {
+    "x": null,
+    "y": null,
+    "z": null
+  },
+  "UnscaledVolInertiaDiags": {
+    "x": null,
+    "y": null,
+    "z": null
+  },
+  "UnscaledVolInertiaOffDiags": {
+    "x": null,
+    "y": null,
+    "z": null
+  },
+  "UnscaledVolume": null,
+  "Velocity": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "VertexCount": 0
+}

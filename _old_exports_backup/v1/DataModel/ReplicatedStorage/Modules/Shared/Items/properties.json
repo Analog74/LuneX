@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{25E31221-7541-4531-A3CA-28882954F753}",
+  "Source": "local Items = {}\n\nItems.Info = {\n\t[\"Katana\"] = {\n\t\tDamage = 15,\n\t\tPrice = 10000,\n\t\tRarity = \"Uncommon\",\n\t\tSellable = true,\n\t\tEquipCF = CFrame.new(0.000339508057, 0.295974255, -0.0298342705, 1, 0, 0, 0, 0, -1, 0, 1, 0),\n\t\tSheathedCF = CFrame.new( 0.026550293, 1.78260803, 0.106880188, -0.999904335, -5.23826493e-08, 0.0138342781, 0.0137816379, -0.0871569887, 0.996099234, 0.00120570196, 0.996194601, 0.087148644),\n\t\tIcon = 7220670131,\n\t},\n\t\n\t[\"Iron Sword\"] = {\n\t\tDamage = 5,\n\t\tPrice = 100,\n\t\tRarity = \"Uncommon\",\n\t\tSellable = true,\n\t\tIcon = 7220669983,\n\t\tStrength = 0,\n\t\tDefense = 0,\n\t\tAgility = 0,\n\t\tMagic = 0,\n\t\tHealth = 10,\n\t},\n}\n\nreturn Items\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 25787, time: 142155861, random: 1232354692393223026 })>"
+}

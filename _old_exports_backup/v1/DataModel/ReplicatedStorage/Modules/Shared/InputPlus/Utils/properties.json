@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{1B45B24E-887E-4660-9C63-8CA2962AEECD}",
+  "Source": "local utils = {}\nlocal Cache = {}\nCache.Names = {}\nCache.Middle = {}\n\nutils.GetKeyFromEnum = function(Input)\n\tif not Cache.Names[Input] then\n\t\tlocal Name = Input and tostring(Input):split('.')[3]\n\t\tCache.Names[Input] = Name\n\t\treturn Name\n\telse\n\t\treturn Cache.Names[Input]\n\tend\nend\n\nutils.GetMiddleFromEnum = function(Input)\n\tif not Cache.Middle[Input] then\n\t\tlocal Middle = Input and tostring(Input):split('.')[2]\n\t\tCache.Middle[Input] = Middle\n\t\treturn Middle\n\telse\n\t\treturn Cache.Middle[Input]\n\tend\nend\n\nutils.CheckDuplicate = function(List,Delay,GP,Name)\n\tfor _ , v in ipairs(List) do\n\t\tif v.Name == Name then\n\t\t\tif v.Delay == Delay and v.GP == GP then\n\t\t\t\treturn true\n\t\t\tend\n\t\tend\n\tend\nend\n\nreturn utils\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 25785, time: 142155861, random: 1232354692393223026 })>"
+}

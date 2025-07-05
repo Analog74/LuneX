@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{143200CB-4EAD-4041-8FE7-B4319E178D83}",
+  "Source": "local Cast = {}\nlocal Debugger = require(script.Parent.Debug.Debugger)\n\nfunction Cast:solve(Point, bool)\n\tif bool then\n\t\tDebugger(Point.Attachment.WorldPosition - Point.Attachment0.WorldPosition, CFrame.new(Point.Attachment.WorldPosition, Point.Attachment0.WorldPosition))\n\tend\n\n\treturn Point.Attachment.WorldPosition, Point.Attachment0.WorldPosition - Point.Attachment.WorldPosition\nend\n\nfunction Cast:lastPosition(Point)\n\tPoint.LastPosition = Point.Attachment.WorldPosition\nend\n\nreturn Cast\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 25846, time: 142155861, random: 1232354692393223026 })>"
+}

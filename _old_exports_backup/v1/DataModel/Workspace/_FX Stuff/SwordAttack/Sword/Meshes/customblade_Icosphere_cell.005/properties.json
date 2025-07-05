@@ -1,0 +1,156 @@
+{
+  "AeroMeshData": "<unsupported: SharedString(SharedString { data: Some([]), hash: Hash(\"af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262\") })>",
+  "Anchored": true,
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "AudioCanCollide": true,
+  "BackParamA": -0.5,
+  "BackParamB": 0.5,
+  "BackSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "BackSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "BottomParamA": -0.5,
+  "BottomParamB": 0.5,
+  "BottomSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "BottomSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "CFrame": {
+    "matrix": {
+      "orientation": [
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "position": [
+        149.0169219970703,
+        47.08694839477539,
+        207.2315673828125
+      ]
+    }
+  },
+  "CanCollide": false,
+  "CanQuery": true,
+  "CanTouch": false,
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "CastShadow": false,
+  "CollisionGroup": "Default",
+  "CollisionGroupId": 0,
+  "Color": "<unsupported: Color3uint8(Color3uint8 { r: 98, g: 37, b: 209 })>",
+  "CustomPhysicalProperties": "<unsupported: PhysicalProperties(Default)>",
+  "DoubleSided": true,
+  "EnableFluidForces": true,
+  "FluidFidelityInternal": "<unsupported: Enum(Enum { value: 0 })>",
+  "FrontParamA": -0.5,
+  "FrontParamB": 0.5,
+  "FrontSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "FrontSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "HasJointOffset": false,
+  "HasSkinnedMesh": false,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "InertiaMigrated": false,
+  "InitialSize": {
+    "x": 0.7328122854232788,
+    "y": 0.6315746307373047,
+    "z": 0.9058685302734375
+  },
+  "JointOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "LeftParamA": -0.5,
+  "LeftParamB": 0.5,
+  "LeftSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "LeftSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "Locked": false,
+  "Massless": false,
+  "Material": "<unsupported: Enum(Enum { value: 288 })>",
+  "MaterialVariant": "",
+  "MeshContent": "<unsupported: Content(Content(Uri(\"rbxassetid://7004985895\")))>",
+  "PhysicalConfigData": "<unsupported: SharedString(SharedString { data: Some([67, 83, 71, 80, 72, 83, 0, 0, 0, 0, 66, 76, 79, 67, 75]), hash: Hash(\"8cc3bedee8c6f1665b095f856c22c4e527c622836340557c50ffaa83159a87b7\") })>",
+  "PhysicsData": "<unsupported: BinaryString(BinaryString { buffer: [] })>",
+  "PivotOffset": {
+    "matrix": {
+      "orientation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "Reflectance": 0.0,
+  "RenderFidelity": "<unsupported: Enum(Enum { value: 1 })>",
+  "RightParamA": -0.5,
+  "RightParamB": 0.5,
+  "RightSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "RightSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "RootPriority": 0,
+  "RotVelocity": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "Sandboxed": false,
+  "Size": {
+    "x": 0.9571406841278076,
+    "y": 0.8249122500419617,
+    "z": 1.1831729412078857
+  },
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "TextureContent": "<unsupported: Content(Content(None))>",
+  "TopParamA": -0.5,
+  "TopParamB": 0.5,
+  "TopSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "TopSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "Transparency": 0.0,
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 19812248, time: 32320501, random: 7308681896716043950 })>",
+  "UnscaledCofm": {
+    "x": null,
+    "y": null,
+    "z": null
+  },
+  "UnscaledVolInertiaDiags": {
+    "x": null,
+    "y": null,
+    "z": null
+  },
+  "UnscaledVolInertiaOffDiags": {
+    "x": null,
+    "y": null,
+    "z": null
+  },
+  "UnscaledVolume": null,
+  "Velocity": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "VertexCount": 0
+}

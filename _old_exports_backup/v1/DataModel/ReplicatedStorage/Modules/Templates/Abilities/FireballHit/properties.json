@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{BA201BAC-37CE-4C96-8DCE-ED55C6F2D4DE}",
+  "Source": "-- Decompiled with the Synapse X Luau decompiler.\r\n\r\nlocal l__TweenService__1 = game:GetService(\"TweenService\");\nlocal l__Assets__2 = game:GetService(\"ReplicatedStorage\").Assets;\nlocal l__Meshes__3 = l__Assets__2.Meshes;\nlocal l__Parent__4 = script.Parent.Parent.Parent;\nlocal v5 = require(l__Parent__4.Auxiliary.CameraShaker);\nlocal v6 = require(l__Parent__4.Auxiliary.LightningBolt);\nlocal v7 = require(l__Parent__4.Auxiliary.LightningBolt.LightningSparks);\nlocal v8 = require(l__Parent__4.Auxiliary.RockModule);\nlocal l__CurrentCamera__1 = workspace.CurrentCamera;\nlocal v9 = v5.new(Enum.RenderPriority.Camera.Value, function(p1)\n\tl__CurrentCamera__1.CFrame = l__CurrentCamera__1.CFrame * p1;\nend);\nlocal l__Debris__2 = game:GetService(\"Debris\");\nv9:Start();\nlocal l__Particles__3 = l__Assets__2.Particles;\nreturn function(...)\n\tlocal v10 = l__Particles__3.Fireball.FireHit:Clone();\n\tv10.CFrame = ({ ... })[1].CFrame;\n\tv10.Parent = workspace.Effects;\n\tv9:Shake(v5.Presets.Fireball);\n\tv10.Attachment.Spark:Emit(1);\n\tv10.Attachment.Gradient:Emit(1);\n\tv10.Attachment.Shards:Emit(12);\n\tv10.Attachment.Specs:Emit(20);\n\tv10.Attachment.Rocks:Emit(20);\n\tv10.Attachment.Smoke:Emit(85);\n\tl__TweenService__1:Create(v10.Attachment.PointLight, TweenInfo.new(1.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {\n\t\tBrightness = 0\n\t}):Play();\n\tl__Debris__2:AddItem(v10, 1.25);\nend;\r\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 19249574, time: 32320501, random: 7308681896716043950 })>"
+}
