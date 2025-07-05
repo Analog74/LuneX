@@ -72,18 +72,24 @@ LuneX/
 │   └── _MagicMaster/      # Sample export output
 ├── docs/                  # 📚 Documentation
 │   ├── CONTRIBUTING.md    # Development guide
-│   └── INSTALLATION.md    # Detailed install instructions
+│   ├── INSTALLATION.md    # Detailed install instructions
+│   └── EXPORT_DIRECTORIES.md # Export management guide
 ├── scripts/               # 🔧 Build scripts
 │   └── create_release.sh  # Release automation
 ├── assets/                # ⚙️ Configuration files
 │   └── default.project.json
 ├── tests/                 # 🧪 Test files
+├── temp/                  # 🗂️ Temporary exports & dev files
+│   ├── test-exports/      # Development testing (not tracked)
+│   └── development-outputs/ # Quick experiments (not tracked)
 ├── README.md              # 📖 This file
 ├── CHANGELOG.md           # 📝 Version history
 ├── LICENSE                # ⚖️ MIT License
 ├── Cargo.toml             # 📦 Rust project config
 └── Cargo.lock             # 🔒 Dependency lock
 ```
+
+**Export Locations**: See [docs/EXPORT_DIRECTORIES.md](docs/EXPORT_DIRECTORIES.md) for details on where to place exported .rbxl directories.
 
 ## 🛠️ Development
 
@@ -119,6 +125,7 @@ See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) for development guidelines.
 
 - **[Installation Guide](docs/INSTALLATION.md)** - Detailed setup instructions
 - **[Contributing Guide](docs/CONTRIBUTING.md)** - Development setup
+- **[Export Directories](docs/EXPORT_DIRECTORIES.md)** - Where to place exports
 - **[Changelog](CHANGELOG.md)** - Version history
 
 ## 🤝 Contributing

@@ -1,0 +1,128 @@
+{
+  "AeroMeshData": "<FAILED: Unsupported variant type: Discriminant(23) (property: AeroMeshData, class: MeshPart, instance: PearMesh)>",
+  "Anchored": true,
+  "Attributes": {},
+  "AudioCanCollide": true,
+  "BackParamA": -0.5,
+  "BackParamB": 0.5,
+  "BackSurface": "Enum { value: 0 }",
+  "BackSurfaceInput": "Enum { value: 0 }",
+  "BottomParamA": -0.5,
+  "BottomParamB": 0.5,
+  "BottomSurface": "Enum { value: 0 }",
+  "BottomSurfaceInput": "Enum { value: 0 }",
+  "CFrame": {
+    "matrix": "CFrame { position: Vector3 { x: -29.711176, y: 0.55846673, z: -14.092006 }, orientation: Matrix3 { x: Vector3 { x: 1.0, y: 0.0, z: 0.0 }, y: Vector3 { x: 0.0, y: 1.0, z: 0.0 }, z: Vector3 { x: 0.0, y: 0.0, z: 1.0 } } }",
+    "position": {
+      "x": -29.7111759185791,
+      "y": 0.5584667325019836,
+      "z": -14.092005729675293
+    }
+  },
+  "CanCollide": true,
+  "CanQuery": true,
+  "CanTouch": true,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: MeshPart, instance: PearMesh)>",
+  "CastShadow": true,
+  "CollisionGroup": "Default",
+  "CollisionGroupId": 0,
+  "Color": {
+    "b": 165,
+    "g": 162,
+    "r": 163
+  },
+  "CustomPhysicalProperties": "<FAILED: Unsupported variant type: Discriminant(17) (property: CustomPhysicalProperties, class: MeshPart, instance: PearMesh)>",
+  "DoubleSided": false,
+  "EnableFluidForces": true,
+  "FluidFidelityInternal": "Enum { value: 0 }",
+  "FrontParamA": -0.5,
+  "FrontParamB": 0.5,
+  "FrontSurface": "Enum { value: 0 }",
+  "FrontSurfaceInput": "Enum { value: 0 }",
+  "HasJointOffset": false,
+  "HasSkinnedMesh": false,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: MeshPart, instance: PearMesh)>",
+  "InertiaMigrated": false,
+  "InitialSize": {
+    "x": 32.892494201660156,
+    "y": 57.18693161010742,
+    "z": 32.61113739013672
+  },
+  "JointOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "LeftParamA": -0.5,
+  "LeftParamB": 0.5,
+  "LeftSurface": "Enum { value: 0 }",
+  "LeftSurfaceInput": "Enum { value: 0 }",
+  "Locked": false,
+  "Massless": false,
+  "Material": "Enum { value: 256 }",
+  "MaterialVariant": "",
+  "MeshContent": "Content(Uri(\"rbxassetid://567559616\"))",
+  "PhysicalConfigData": "<FAILED: Unsupported variant type: Discriminant(23) (property: PhysicalConfigData, class: MeshPart, instance: PearMesh)>",
+  "PhysicsData": {
+    "data": "BinaryString { buffer: [] }",
+    "length": 27,
+    "type": "BinaryString"
+  },
+  "PivotOffset": {
+    "matrix": "CFrame { position: Vector3 { x: 0.0, y: 0.0, z: 0.0 }, orientation: Matrix3 { x: Vector3 { x: 1.0, y: 0.0, z: 0.0 }, y: Vector3 { x: 0.0, y: 1.0, z: 0.0 }, z: Vector3 { x: 0.0, y: 0.0, z: 1.0 } } }",
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    }
+  },
+  "Reflectance": 0.0,
+  "RenderFidelity": "Enum { value: 1 }",
+  "RightParamA": -0.5,
+  "RightParamB": 0.5,
+  "RightSurface": "Enum { value: 0 }",
+  "RightSurfaceInput": "Enum { value: 0 }",
+  "RootPriority": 0,
+  "RotVelocity": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "Sandboxed": false,
+  "Size": {
+    "x": 0.6924949884414673,
+    "y": 1.1169334650039673,
+    "z": 0.6911375522613525
+  },
+  "SourceAssetId": 567564341,
+  "Tags": [],
+  "TextureContent": "Content(Uri(\"rbxassetid://567561861\"))",
+  "TopParamA": -0.5,
+  "TopParamB": 0.5,
+  "TopSurface": "Enum { value: 0 }",
+  "TopSurfaceInput": "Enum { value: 0 }",
+  "Transparency": 0.0,
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: MeshPart, instance: PearMesh)>",
+  "UnscaledCofm": {
+    "x": null,
+    "y": null,
+    "z": null
+  },
+  "UnscaledVolInertiaDiags": {
+    "x": null,
+    "y": null,
+    "z": null
+  },
+  "UnscaledVolInertiaOffDiags": {
+    "x": null,
+    "y": null,
+    "z": null
+  },
+  "UnscaledVolume": null,
+  "Velocity": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "VertexCount": 0
+}

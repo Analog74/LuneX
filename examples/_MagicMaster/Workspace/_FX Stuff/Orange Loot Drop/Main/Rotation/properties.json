@@ -1,0 +1,14 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Script, instance: Rotation)>",
+  "Disabled": false,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Script, instance: Rotation)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: Script, instance: Rotation)>",
+  "RunContext": "Enum { value: 0 }",
+  "Sandboxed": false,
+  "ScriptGuid": "{C0EDBF29-9E6F-4FB9-A5CA-F7534081B5A7}",
+  "Source": "-- Script failed to decompile or ignored",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Script, instance: Rotation)>"
+}

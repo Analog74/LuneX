@@ -1,0 +1,60 @@
+{
+  "Attachment0": "2b69ef17476844e2a67b7c1cb6ecaef0",
+  "Attachment1": "c6c8e365dea45998a1406ce698b850d1",
+  "Attributes": {},
+  "Brightness": 5.0,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Beam, instance: Beam)>",
+  "Color": {
+    "keypoints": [
+      {
+        "color": {
+          "b": 0.9989010095596313,
+          "g": 0.6094300150871277,
+          "r": 0.5652700066566467
+        },
+        "time": 0.0
+      },
+      {
+        "color": {
+          "b": 0.9989010095596313,
+          "g": 0.6094300150871277,
+          "r": 0.5652700066566467
+        },
+        "time": 1.0
+      }
+    ]
+  },
+  "CurveSize0": -15.0,
+  "CurveSize1": 15.0,
+  "Enabled": true,
+  "FaceCamera": true,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Beam, instance: Beam)>",
+  "LightEmission": 0.0,
+  "LightInfluence": 0.0,
+  "Sandboxed": false,
+  "Segments": 100,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "Texture": "<FAILED: Unsupported variant type: Discriminant(8) (property: Texture, class: Beam, instance: Beam)>",
+  "TextureLength": 0.75,
+  "TextureMode": "Enum { value: 0 }",
+  "TextureSpeed": 1.350000023841858,
+  "Transparency": {
+    "keypoints": [
+      {
+        "envelope": 0.0,
+        "time": 0.0,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.0,
+        "time": 1.0,
+        "value": 0.0
+      }
+    ]
+  },
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Beam, instance: Beam)>",
+  "Width0": 4.25,
+  "Width1": 4.25,
+  "ZOffset": 1.0
+}

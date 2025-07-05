@@ -1,0 +1,128 @@
+{
+  "AeroMeshData": "<FAILED: Unsupported variant type: Discriminant(23) (property: AeroMeshData, class: MeshPart, instance: AppleMesh)>",
+  "Anchored": true,
+  "Attributes": {},
+  "AudioCanCollide": true,
+  "BackParamA": -0.5,
+  "BackParamB": 0.5,
+  "BackSurface": "Enum { value: 0 }",
+  "BackSurfaceInput": "Enum { value: 0 }",
+  "BottomParamA": -0.5,
+  "BottomParamB": 0.5,
+  "BottomSurface": "Enum { value: 0 }",
+  "BottomSurfaceInput": "Enum { value: 0 }",
+  "CFrame": {
+    "matrix": "CFrame { position: Vector3 { x: -30.481928, y: 0.47164536, z: -6.9920044 }, orientation: Matrix3 { x: Vector3 { x: 1.0, y: 0.0, z: 0.0 }, y: Vector3 { x: 0.0, y: 1.0, z: 0.0 }, z: Vector3 { x: 0.0, y: 0.0, z: 1.0 } } }",
+    "position": {
+      "x": -30.4819278717041,
+      "y": 0.4716453552246094,
+      "z": -6.99200439453125
+    }
+  },
+  "CanCollide": true,
+  "CanQuery": true,
+  "CanTouch": true,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: MeshPart, instance: AppleMesh)>",
+  "CastShadow": true,
+  "CollisionGroup": "Default",
+  "CollisionGroupId": 0,
+  "Color": {
+    "b": 165,
+    "g": 162,
+    "r": 163
+  },
+  "CustomPhysicalProperties": "<FAILED: Unsupported variant type: Discriminant(17) (property: CustomPhysicalProperties, class: MeshPart, instance: AppleMesh)>",
+  "DoubleSided": false,
+  "EnableFluidForces": true,
+  "FluidFidelityInternal": "Enum { value: 0 }",
+  "FrontParamA": -0.5,
+  "FrontParamB": 0.5,
+  "FrontSurface": "Enum { value: 0 }",
+  "FrontSurfaceInput": "Enum { value: 0 }",
+  "HasJointOffset": false,
+  "HasSkinnedMesh": false,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: MeshPart, instance: AppleMesh)>",
+  "InertiaMigrated": false,
+  "InitialSize": {
+    "x": 0.45107901096343994,
+    "y": 0.4434970021247864,
+    "z": 0.45107901096343994
+  },
+  "JointOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "LeftParamA": -0.5,
+  "LeftParamB": 0.5,
+  "LeftSurface": "Enum { value: 0 }",
+  "LeftSurfaceInput": "Enum { value: 0 }",
+  "Locked": false,
+  "Massless": false,
+  "Material": "Enum { value: 256 }",
+  "MaterialVariant": "",
+  "MeshContent": "Content(Uri(\"http://www.roblox.com/asset/?id=16190555\"))",
+  "PhysicalConfigData": "<FAILED: Unsupported variant type: Discriminant(23) (property: PhysicalConfigData, class: MeshPart, instance: AppleMesh)>",
+  "PhysicsData": {
+    "data": "BinaryString { buffer: [] }",
+    "length": 27,
+    "type": "BinaryString"
+  },
+  "PivotOffset": {
+    "matrix": "CFrame { position: Vector3 { x: 0.0, y: 0.0, z: 0.0 }, orientation: Matrix3 { x: Vector3 { x: 1.0, y: 0.0, z: 0.0 }, y: Vector3 { x: 0.0, y: 1.0, z: 0.0 }, z: Vector3 { x: 0.0, y: 0.0, z: 1.0 } } }",
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    }
+  },
+  "Reflectance": 0.0,
+  "RenderFidelity": "Enum { value: 1 }",
+  "RightParamA": -0.5,
+  "RightParamB": 0.5,
+  "RightSurface": "Enum { value: 0 }",
+  "RightSurfaceInput": "Enum { value: 0 }",
+  "RootPriority": 0,
+  "RotVelocity": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "Sandboxed": false,
+  "Size": {
+    "x": 0.9594171643257141,
+    "y": 0.9432907104492188,
+    "z": 0.9594171643257141
+  },
+  "SourceAssetId": -1,
+  "Tags": [],
+  "TextureContent": "Content(Uri(\"http://www.roblox.com/asset/?id=16190577\"))",
+  "TopParamA": -0.5,
+  "TopParamB": 0.5,
+  "TopSurface": "Enum { value: 0 }",
+  "TopSurfaceInput": "Enum { value: 0 }",
+  "Transparency": 0.0,
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: MeshPart, instance: AppleMesh)>",
+  "UnscaledCofm": {
+    "x": null,
+    "y": null,
+    "z": null
+  },
+  "UnscaledVolInertiaDiags": {
+    "x": null,
+    "y": null,
+    "z": null
+  },
+  "UnscaledVolInertiaOffDiags": {
+    "x": null,
+    "y": null,
+    "z": null
+  },
+  "UnscaledVolume": null,
+  "Velocity": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "VertexCount": 0
+}

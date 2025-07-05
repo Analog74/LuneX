@@ -1,0 +1,127 @@
+{
+  "Acceleration": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "Attributes": {},
+  "Brightness": 4.0,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ParticleEmitter, instance: Wind)>",
+  "Color": {
+    "keypoints": [
+      {
+        "color": {
+          "b": 0.8141300082206726,
+          "g": 1.0,
+          "r": 1.0
+        },
+        "time": 0.0
+      },
+      {
+        "color": {
+          "b": 0.8141300082206726,
+          "g": 1.0,
+          "r": 1.0
+        },
+        "time": 1.0
+      }
+    ]
+  },
+  "Drag": 0.0,
+  "EmissionDirection": "Enum { value: 1 }",
+  "Enabled": true,
+  "FlipbookFramerate": {
+    "max": 1.0,
+    "min": 1.0
+  },
+  "FlipbookIncompatible": "Particle texture must be 1024 by 1024 to use flipbooks.",
+  "FlipbookLayout": "Enum { value: 0 }",
+  "FlipbookMode": "Enum { value: 0 }",
+  "FlipbookStartRandom": false,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ParticleEmitter, instance: Wind)>",
+  "Lifetime": {
+    "max": 0.6499999761581421,
+    "min": 0.44999998807907104
+  },
+  "LightEmission": 0.0,
+  "LightInfluence": 0.0,
+  "LockedToPart": false,
+  "Orientation": "Enum { value: 3 }",
+  "Rate": 0.0,
+  "RotSpeed": {
+    "max": 800.0,
+    "min": 500.0
+  },
+  "Rotation": {
+    "max": 360.0,
+    "min": -360.0
+  },
+  "Sandboxed": false,
+  "Shape": "Enum { value: 0 }",
+  "ShapeInOut": "Enum { value: 0 }",
+  "ShapePartial": 1.0,
+  "ShapeStyle": "Enum { value: 0 }",
+  "Size": {
+    "keypoints": [
+      {
+        "envelope": 0.0,
+        "time": 0.0,
+        "value": 0.0
+      },
+      {
+        "envelope": 1.0861300230026245,
+        "time": 0.2613239884376526,
+        "value": 3.46875
+      },
+      {
+        "envelope": 3.5625,
+        "time": 1.0,
+        "value": 8.90625
+      }
+    ]
+  },
+  "SourceAssetId": -1,
+  "Speed": {
+    "max": 2.0,
+    "min": 2.0
+  },
+  "SpreadAngle": {
+    "x": -50.0,
+    "y": 50.0
+  },
+  "Squash": {
+    "keypoints": [
+      {
+        "envelope": 0.0,
+        "time": 0.0,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.0,
+        "time": 1.0,
+        "value": 0.0
+      }
+    ]
+  },
+  "Tags": [],
+  "Texture": "<FAILED: Unsupported variant type: Discriminant(8) (property: Texture, class: ParticleEmitter, instance: Wind)>",
+  "TimeScale": 1.0,
+  "Transparency": {
+    "keypoints": [
+      {
+        "envelope": 0.0,
+        "time": 0.0,
+        "value": 0.6812499761581421
+      },
+      {
+        "envelope": 0.0,
+        "time": 1.0,
+        "value": 1.0
+      }
+    ]
+  },
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ParticleEmitter, instance: Wind)>",
+  "VelocityInheritance": 0.0,
+  "WindAffectsDrag": false,
+  "ZOffset": 2.0
+}

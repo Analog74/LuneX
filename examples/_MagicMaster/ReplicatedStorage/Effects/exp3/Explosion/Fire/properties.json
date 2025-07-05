@@ -1,0 +1,23 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Fire, instance: Fire)>",
+  "Color": {
+    "b": 0.0,
+    "g": 0.5137255191802979,
+    "r": 1.0
+  },
+  "Enabled": true,
+  "Heat": 0.0,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Fire, instance: Fire)>",
+  "Sandboxed": false,
+  "SecondaryColor": {
+    "b": 0.0,
+    "g": 0.0,
+    "r": 1.0
+  },
+  "Size": 13.0,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "TimeScale": 1.0,
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Fire, instance: Fire)>"
+}

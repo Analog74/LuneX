@@ -1,0 +1,9 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: LocalizationService, instance: LocalizationService)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: LocalizationService, instance: LocalizationService)>",
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: LocalizationService, instance: LocalizationService)>"
+}

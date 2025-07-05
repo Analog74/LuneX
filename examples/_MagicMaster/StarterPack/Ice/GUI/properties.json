@@ -1,0 +1,14 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Script, instance: GUI)>",
+  "Disabled": false,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Script, instance: GUI)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: Script, instance: GUI)>",
+  "RunContext": "Enum { value: 0 }",
+  "Sandboxed": false,
+  "ScriptGuid": "{D061421E-84F8-467C-BADC-8A39C7D1C461}",
+  "Source": "Tool = script.Parent\nfunction onEquippedLocal()\n\tlocal Character = Tool.Parent\n\tlocal Player = game.Players:GetPlayerFromCharacter(Character)\n\tGui = script.Parent.Skill_list:clone()\n\tGui.Parent = Player.PlayerGui\nend\n\nfunction onUnequippedLocal()\n\tGui:Remove()\nend\n\nTool.Equipped:connect(onEquippedLocal)\nTool.Unequipped:connect(onUnequippedLocal)\n",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Script, instance: GUI)>"
+}

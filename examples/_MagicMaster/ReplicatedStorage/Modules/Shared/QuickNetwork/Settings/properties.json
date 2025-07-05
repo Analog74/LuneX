@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: Settings)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: Settings)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: Settings)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{38507E0C-367C-4BBA-9D8A-2FAFA5194693}",
+  "Source": "return {\n\tAssumeDeadSessionLock = 75, \n\tAutoSaveInterval = 30,\n\tSaveBackups = true, \n\tSaveInStudio = true,\n\tSaveOnShutDownInStudio = false,\n\tAutoSave = true,\n\tLogging = true, \n\tThrottlingProtection = true, \n\tUseMockDataStoreOffline = true,\t\n}",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: Settings)>"
+}

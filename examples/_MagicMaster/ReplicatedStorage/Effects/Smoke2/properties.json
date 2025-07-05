@@ -1,0 +1,29 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Model, instance: Smoke2)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Model, instance: Smoke2)>",
+  "LevelOfDetail": "Enum { value: 0 }",
+  "ModelMeshCFrame": {
+    "matrix": "CFrame { position: Vector3 { x: 0.0, y: 0.0, z: 0.0 }, orientation: Matrix3 { x: Vector3 { x: 1.0, y: 0.0, z: 0.0 }, y: Vector3 { x: 0.0, y: 1.0, z: 0.0 }, z: Vector3 { x: 0.0, y: 0.0, z: 1.0 } } }",
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    }
+  },
+  "ModelMeshData": "<FAILED: Unsupported variant type: Discriminant(23) (property: ModelMeshData, class: Model, instance: Smoke2)>",
+  "ModelMeshSize": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ModelStreamingMode": "Enum { value: 0 }",
+  "NeedsPivotMigration": false,
+  "PrimaryPart": "a7f40a8ed7b045b073d9c44bdccf266c",
+  "Sandboxed": false,
+  "Scale": 1.0,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Model, instance: Smoke2)>",
+  "WorldPivotData": "<FAILED: Unsupported variant type: Discriminant(31) (property: WorldPivotData, class: Model, instance: Smoke2)>"
+}

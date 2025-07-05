@@ -1,0 +1,14 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: LocalScript, instance: Wind)>",
+  "Disabled": false,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: LocalScript, instance: Wind)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: LocalScript, instance: Wind)>",
+  "RunContext": "Enum { value: 0 }",
+  "Sandboxed": false,
+  "ScriptGuid": "{F07F4AAD-938B-45A6-A866-DEE90959DD33}",
+  "Source": "local remote = game.ReplicatedStorage.Remotes\n\n\nremote.Wind.OnClientEvent:Connect(function(player,cop,dira,Parent)\n\n\t\n\tlocal l__Twirl__1 = Parent:WaitForChild(\"Twirl\");\nspawn(function()\n\t\tfor v2 = 1, 50 do\n\t\t\tif not workspace:FindFirstChild(\"TimeStop\") then\n\t\tl__Twirl__1.CFrame = l__Twirl__1.CFrame * CFrame.Angles(0, 0, 0.5);\n\t\tl__Twirl__1.Size = l__Twirl__1.Size + Vector3.new(1, 1, 2);\n\t\tl__Twirl__1.Transparency = l__Twirl__1.Transparency + 0.02;\n\t\t\t\twait();\n\t\t\t\tend\n\tend;\nend);\nfor v3 = 1, 4 do\n\tlocal u2 = Parent[\"WindBeamEffect\" .. v3];\n\tspawn(function()\n\t\tfor v4 = 1, 20 do\n\t\t\tu2.Attachment1.Position = Vector3.new(0, 0, v4 / 1.5);\n\t\t\tu2.Attachment2.Position = Vector3.new(0, 0, -v4 / 1.5);\n\t\t\tu2.Beams.Beam1.CurveSize0 = v4;\n\t\t\tu2.Beams.Beam1.CurveSize1 = -v4;\n\t\t\tu2.Beams.Beam2.CurveSize0 = -v4;\n\t\t\tu2.Beams.Beam2.CurveSize1 = v4;\n\t\t\tu2.Beams.Beam1.Transparency = NumberSequence.new(v4 / 20);\n\t\t\tu2.Beams.Beam2.Transparency = NumberSequence.new(v4 / 20);\n\t\t\twait();\n\t\tend;\n\tend);\n\twait(0.1);\nend;\nwait(1);\nParent:Destroy();\nend)",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: LocalScript, instance: Wind)>"
+}

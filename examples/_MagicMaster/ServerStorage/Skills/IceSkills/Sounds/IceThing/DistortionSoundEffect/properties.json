@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: DistortionSoundEffect, instance: DistortionSoundEffect)>",
+  "Enabled": true,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: DistortionSoundEffect, instance: DistortionSoundEffect)>",
+  "Level": 0.800000011920929,
+  "Priority": 0,
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: DistortionSoundEffect, instance: DistortionSoundEffect)>"
+}

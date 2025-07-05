@@ -1,0 +1,23 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Atmosphere, instance: Atmosphere)>",
+  "Color": {
+    "b": 0.4235000014305115,
+    "g": 0.666700005531311,
+    "r": 0.7843000292778015
+  },
+  "Decay": {
+    "b": 0.05490000173449516,
+    "g": 0.2353000044822693,
+    "r": 0.36079999804496765
+  },
+  "Density": 0.3499999940395355,
+  "Glare": 0.0,
+  "Haze": 0.0,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Atmosphere, instance: Atmosphere)>",
+  "Offset": 0.0,
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Atmosphere, instance: Atmosphere)>"
+}

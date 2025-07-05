@@ -1,0 +1,86 @@
+{
+  "Attachment0": "00000000000000000000000000000000",
+  "Attachment1": "00000000000000000000000000000000",
+  "Attributes": {},
+  "Brightness": 5.0,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Trail, instance: Trail)>",
+  "Color": {
+    "keypoints": [
+      {
+        "color": {
+          "b": 0.3621728718280792,
+          "g": 0.6463111042976379,
+          "r": 0.9927366971969604
+        },
+        "time": 0.0
+      },
+      {
+        "color": {
+          "b": 0.13478294014930725,
+          "g": 0.39148545265197754,
+          "r": 0.853040337562561
+        },
+        "time": 0.0533333346247673
+      },
+      {
+        "color": {
+          "b": 0.0,
+          "g": 0.0,
+          "r": 0.0
+        },
+        "time": 0.10833333432674408
+      },
+      {
+        "color": {
+          "b": 0.032364387065172195,
+          "g": 0.04240482300519943,
+          "r": 0.05279621481895447
+        },
+        "time": 1.0
+      }
+    ]
+  },
+  "Enabled": false,
+  "FaceCamera": true,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Trail, instance: Trail)>",
+  "Lifetime": 4.5,
+  "LightEmission": 0.0,
+  "LightInfluence": 0.0,
+  "MaxLength": 0.0,
+  "MinLength": 0.0,
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "Texture": "<FAILED: Unsupported variant type: Discriminant(8) (property: Texture, class: Trail, instance: Trail)>",
+  "TextureLength": 1.0,
+  "TextureMode": "Enum { value: 0 }",
+  "Transparency": {
+    "keypoints": [
+      {
+        "envelope": 0.0,
+        "time": 0.0,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.0,
+        "time": 1.0,
+        "value": 0.0
+      }
+    ]
+  },
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Trail, instance: Trail)>",
+  "WidthScale": {
+    "keypoints": [
+      {
+        "envelope": 0.0,
+        "time": 0.0,
+        "value": 1.0
+      },
+      {
+        "envelope": 0.0,
+        "time": 1.0,
+        "value": 0.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: RemoteEvent, instance: RemoteEvent)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: RemoteEvent, instance: RemoteEvent)>",
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: RemoteEvent, instance: RemoteEvent)>"
+}

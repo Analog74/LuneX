@@ -1,0 +1,25 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: UIPadding, instance: UIPadding)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: UIPadding, instance: UIPadding)>",
+  "PaddingBottom": {
+    "offset": 0,
+    "scale": 0.019999999552965164
+  },
+  "PaddingLeft": {
+    "offset": 0,
+    "scale": 0.019999999552965164
+  },
+  "PaddingRight": {
+    "offset": 0,
+    "scale": 0.019999999552965164
+  },
+  "PaddingTop": {
+    "offset": 0,
+    "scale": 0.019999999552965164
+  },
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: UIPadding, instance: UIPadding)>"
+}

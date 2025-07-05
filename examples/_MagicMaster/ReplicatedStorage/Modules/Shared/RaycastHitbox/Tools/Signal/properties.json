@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: Signal)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: Signal)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: Signal)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{CBE652F1-03A1-4BE3-B355-3E8C7432AE9B}",
+  "Source": "--- @Swordphin123, wao such minimalism\n\nlocal connection = {}\nconnection.__index = connection\n\nfunction connection:Create()\n\treturn setmetatable({}, connection)\nend\n\nfunction connection:Connect(Listener)\n\tself[1] = Listener\nend\n\nfunction connection:Fire(...)\n\tif not self[1] then return end \n\t\n\tlocal newThread = coroutine.create(self[1])\n\tcoroutine.resume(newThread, ...)\nend\n\nfunction connection:Delete()\n\tself[1] = nil\nend\n\nreturn connection",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: Signal)>"
+}

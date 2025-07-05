@@ -1,0 +1,23 @@
+{
+  "Attributes": {},
+  "AutoLocalize": true,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ScreenGui, instance: Inventory)>",
+  "ClipToDeviceSafeArea": true,
+  "DisplayOrder": 0,
+  "Enabled": true,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ScreenGui, instance: Inventory)>",
+  "ResetOnSpawn": true,
+  "RootLocalizationTable": "00000000000000000000000000000000",
+  "SafeAreaCompatibility": "Enum { value: 1 }",
+  "Sandboxed": false,
+  "ScreenInsets": "Enum { value: 2 }",
+  "SelectionBehaviorDown": "Enum { value: 0 }",
+  "SelectionBehaviorLeft": "Enum { value: 0 }",
+  "SelectionBehaviorRight": "Enum { value: 0 }",
+  "SelectionBehaviorUp": "Enum { value: 0 }",
+  "SelectionGroup": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ScreenGui, instance: Inventory)>",
+  "ZIndexBehavior": "Enum { value: 1 }"
+}

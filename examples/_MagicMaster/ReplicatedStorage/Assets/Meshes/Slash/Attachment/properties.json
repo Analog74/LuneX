@@ -1,0 +1,18 @@
+{
+  "Attributes": {},
+  "CFrame": {
+    "matrix": "CFrame { position: Vector3 { x: -3.525879, y: 0.012727349, z: -5.8986053 }, orientation: Matrix3 { x: Vector3 { x: -9.629919e-14, y: -2.7453256e-14, z: 1.0 }, y: Vector3 { x: 1.3726606e-14, y: 1.0, z: 2.7453256e-14 }, z: Vector3 { x: -1.0, y: 1.3726606e-14, z: -9.629919e-14 } } }",
+    "position": {
+      "x": -3.52587890625,
+      "y": 0.012727349065244198,
+      "z": -5.8986053466796875
+    }
+  },
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Attachment, instance: Attachment)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Attachment, instance: Attachment)>",
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Attachment, instance: Attachment)>",
+  "Visible": false
+}

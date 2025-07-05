@@ -1,0 +1,14 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: LocalScript, instance: Pointlight)>",
+  "Disabled": false,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: LocalScript, instance: Pointlight)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: LocalScript, instance: Pointlight)>",
+  "RunContext": "Enum { value: 0 }",
+  "Sandboxed": false,
+  "ScriptGuid": "{8a0c1231-3986-4e3a-9daf-db63381795bb}",
+  "Source": "local Character = script.Parent\n\nlocal PointLight = Instance.new('PointLight')\nPointLight.Brightness = 1.85\nPointLight.Range = 15\nPointLight.Parent = Character.HumanoidRootPart",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: LocalScript, instance: Pointlight)>"
+}

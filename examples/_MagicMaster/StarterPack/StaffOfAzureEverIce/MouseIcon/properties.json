@@ -1,0 +1,14 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: LocalScript, instance: MouseIcon)>",
+  "Disabled": false,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: LocalScript, instance: MouseIcon)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: LocalScript, instance: MouseIcon)>",
+  "RunContext": "Enum { value: 0 }",
+  "Sandboxed": false,
+  "ScriptGuid": "{44E30EDA-49C8-4090-A9F7-2B781DF0E81F}",
+  "Source": "--Made by Luckymaxer\n\nMouse_Icon = \"rbxasset://textures/GunCursor.png\"\nReloading_Icon = \"rbxasset://textures/GunWaitCursor.png\"\n\nTool = script.Parent\n\nMouse = nil\n\nfunction UpdateIcon()\n\tif Mouse then\n\t\tMouse.Icon = Tool.Enabled and Mouse_Icon or Reloading_Icon\n\tend\nend\n\nfunction OnEquipped(ToolMouse)\n\tMouse = ToolMouse\n\tUpdateIcon()\nend\n\nfunction OnChanged(Property)\n\tif Property == \"Enabled\" then\n\t\tUpdateIcon()\n\tend\nend\n\nTool.Equipped:Connect(OnEquipped)\nTool.Changed:Connect(OnChanged)\n",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: LocalScript, instance: MouseIcon)>"
+}

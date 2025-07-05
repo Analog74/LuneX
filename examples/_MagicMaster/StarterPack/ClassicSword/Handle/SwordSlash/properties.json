@@ -1,0 +1,30 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Sound, instance: SwordSlash)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Sound, instance: SwordSlash)>",
+  "IsMutedForCapture": false,
+  "LoopRegion": {
+    "max": 60000.0,
+    "min": 0.0
+  },
+  "Looped": false,
+  "PlayOnRemove": false,
+  "PlaybackRegion": {
+    "max": 60000.0,
+    "min": 0.0
+  },
+  "PlaybackRegionsEnabled": false,
+  "PlaybackSpeed": 1.0,
+  "Playing": false,
+  "RollOffMaxDistance": 10000.0,
+  "RollOffMinDistance": 10.0,
+  "RollOffMode": "Enum { value: 0 }",
+  "Sandboxed": false,
+  "SoundGroup": "00000000000000000000000000000000",
+  "SoundId": "<FAILED: Unsupported variant type: Discriminant(8) (property: SoundId, class: Sound, instance: SwordSlash)>",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "TimePosition": 0.0,
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Sound, instance: SwordSlash)>",
+  "Volume": 0.699999988079071
+}

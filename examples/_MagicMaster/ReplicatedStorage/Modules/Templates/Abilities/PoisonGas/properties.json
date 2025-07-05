@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: PoisonGas)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: PoisonGas)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: PoisonGas)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{0CEF1D81-FEC0-4E81-8944-AECC34F6570D}",
+  "Source": "-- Services\nlocal Camera = workspace.CurrentCamera\nlocal Replicated = game:GetService('ReplicatedStorage')\nlocal TweenService = game:GetService('TweenService')\nlocal Debris = game:GetService('Debris')\n\n-- Assets\nlocal Assets = Replicated.Assets\nlocal Particles = Assets.Particles\nlocal Meshes = Assets.Meshes\n\nlocal Modules = script.Parent.Parent.Parent\nlocal CameraShaker = require(Modules.Auxiliary.CameraShaker)\nlocal BoltModule = require(Modules.Auxiliary.LightningBolt)\nlocal SparksModule = require(Modules.Auxiliary.LightningBolt.LightningSparks)\nlocal RockModule = require(Modules.Auxiliary.RockModule)\n\n\nrequire(Modules.Auxiliary.CameraShaker).new(Enum.RenderPriority.Camera.Value, function(p1)\n\tCamera.CFrame = Camera.CFrame * p1\nend):Start()\n\nreturn function(...)\n\tlocal v8 = Particles.Potion.GravityBall:Clone()\n\tv8.Size = Vector3.new(5, 5, 5)\n\tv8.Position = ({ ... })[1]\n\tv8.Parent = workspace.Effects\n\tTweenService:Create(v8, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {\n\t\tSize = Vector3.new(30, 30, 30)\n\t}):Play()\n\tv8.Attachment.Shockwave:Emit(5)\n\ttask.wait(2.5)\n\tfor v9, v10 in ipairs(v8:GetDescendants()) do\n\t\tif v10:IsA(\"ParticleEmitter\") then\n\t\t\tv10.Enabled = false\n\t\tend\n\tend\n\tTweenService:Create(v8, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {\n\t\tSize = Vector3.new(0, 0, 0)\n\t}):Play()\n\tTweenService:Create(v8.PointLight, TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {\n\t\tBrightness = 0\n\t}):Play()\n\tDebris:AddItem(v8, 1.5)\nend\n",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: PoisonGas)>"
+}

@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: Signal)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: Signal)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: Signal)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{1F7816BD-98E7-4703-96E8-E07BF18B78E9}",
+  "Source": "local Signal = {}\nSignal.__index = Signal\n\nfunction Signal.new()\n\tlocal signal ; signal = setmetatable({\n\t\t_Bindable = Instance.new(\"BindableFunction\"), \n\t\t_Invoked = Instance.new(\"BindableEvent\"),\n\t\t_CallBacks = {},\n\t\tCachedReturnValues = {},\n\t\tSignal = true, \n\t\tFired = false\n                    \n\t}, Signal)\n\n\tfunction signal._Bindable.OnInvoke(...)\n\t\tlocal capturedReturnValue \n\t\t\n\t\tfor _, callBack in ipairs(signal._CallBacks) do\n\t\t\tlocal returnVal = callBack(...)\n\t\t\t\n\t\t\tif capturedReturnValue == nil then\n\t\t\t\tcapturedReturnValue = returnVal\n\t\t\t\ttable.insert(signal.CachedReturnValues, capturedReturnValue)\n\t\t\tend\n\t\tend\n\t\t\n\t\tsignal.Fired = false\n\t\treturn capturedReturnValue\n\tend\n\n\treturn signal\nend\n\nfunction Signal:Fire(...)\n\tself.Fired = true\n\tself._Invoked:Fire()\n\n\treturn #self._CallBacks > 0 and self._Bindable:Invoke(...) or nil\nend\n\nfunction Signal:Connect(callBack)\n\tassert(typeof(callBack) == \"function\", \"Callback must be a function\")\n\n\ttable.insert(self._CallBacks, callBack)\n\n\treturn {\n\t\tDisconnect = self.Disconnect\n\t}\nend\n\nfunction Signal:Disconnect()\n\tself._CallBacks = {}\n\tself._Bindable.OnInvoke = nil\nend\n\nfunction Signal:Wait()\t\n\tlocal timeBeforeYield = os.clock()\n\tself._Invoked.Event:Wait()\n\t\n\treturn self.CachedReturnValues[1], os.clock() - timeBeforeYield\nend\n\nreturn Signal\n",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: Signal)>"
+}

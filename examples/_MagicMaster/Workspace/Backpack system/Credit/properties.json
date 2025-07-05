@@ -1,0 +1,14 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Script, instance: Credit)>",
+  "Disabled": true,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Script, instance: Credit)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: Script, instance: Credit)>",
+  "RunContext": "Enum { value: 0 }",
+  "Sandboxed": false,
+  "ScriptGuid": "{EB8D41BA-7DB2-4910-BF06-520F0BCA2382}",
+  "Source": "-- credit to mathew for making some of the scripts\n-- credit to zenxo for making the unlocker\n-- enjoy ;)",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Script, instance: Credit)>"
+}

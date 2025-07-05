@@ -1,0 +1,11 @@
+{
+  "AllowClientInsertModels": false,
+  "AllowInsertFreeModels": false,
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: InsertService, instance: InsertService)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: InsertService, instance: InsertService)>",
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: InsertService, instance: InsertService)>"
+}

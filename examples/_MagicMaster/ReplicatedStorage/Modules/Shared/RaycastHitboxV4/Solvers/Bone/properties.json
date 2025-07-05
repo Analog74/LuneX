@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: Bone)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: Bone)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: Bone)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{6EECFBFA-7699-4F8C-897D-6F47FC915826}",
+  "Source": "--!strict\r\n--- Calculates ray origin and directions for vector-based raycast points\r\n-- @author Swordphin123\r\n\r\nlocal solver = {}\r\n\r\nlocal EMPTY_VECTOR: Vector3 = Vector3.new()\r\n\r\n--- Solve direction and length of the ray by comparing current and last frame's positions\r\n-- @param point type\r\nfunction solver:Solve(point: {[string]: any}): (Vector3, Vector3)\r\n\t--- Translate localized bone positions to world space values\r\n\tlocal originBone: Bone = point.Instances[1]\r\n\tlocal vector: Vector3 = point.Instances[2]\r\n\tlocal worldCFrame: CFrame = originBone.TransformedWorldCFrame\r\n\tlocal pointToWorldSpace: Vector3 = worldCFrame.Position + worldCFrame:VectorToWorldSpace(vector)\r\n\r\n\t--- If LastPosition is nil (caused by if the hitbox was stopped previously), rewrite its value to the current point position\r\n\tif not point.LastPosition then\r\n\t\tpoint.LastPosition = pointToWorldSpace\r\n\tend\r\n\r\n\tlocal origin: Vector3 = point.LastPosition\r\n\tlocal direction: Vector3 = pointToWorldSpace - (point.LastPosition or EMPTY_VECTOR)\r\n\r\n\tpoint.WorldSpace = pointToWorldSpace\r\n\r\n\treturn origin, direction\r\nend\r\n\r\nfunction solver:UpdateToNextPosition(point: {[string]: any}): Vector3\r\n\treturn point.WorldSpace\r\nend\r\n\r\nfunction solver:Visualize(point: {[string]: any}): CFrame\r\n\treturn CFrame.lookAt(point.WorldSpace, point.LastPosition)\r\nend\r\n\r\nreturn solver",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: Bone)>"
+}

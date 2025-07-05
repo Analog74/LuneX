@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: FindGroundPos)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: FindGroundPos)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: FindGroundPos)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{128d53d1-9776-40fc-a5b7-fa2c1b3eabdd}",
+  "Source": "return function(Part, IgnoreList)\n\t-- We use this for handling raycast parameters and ignore lists.\n\tlocal RaycastParameters = RaycastParams.new()\n\tRaycastParameters.FilterDescendantsInstances = IgnoreList or { Part, workspace.Effects }\n\tRaycastParameters.FilterType = Enum.RaycastFilterType.Blacklist\n\tlocal Hit = workspace:Raycast(Part.Position, Part.CFrame.UpVector * -10, RaycastParameters)\n\treturn Hit.Position\nend",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: FindGroundPos)>"
+}

@@ -1,0 +1,20 @@
+{
+  "Attributes": {},
+  "CFrame0": {
+    "matrix": "CFrame { position: Vector3 { x: 0.060269356, y: -0.006049037, z: -0.028087616 }, orientation: Matrix3 { x: Vector3 { x: 1.0, y: 0.0, z: 0.0 }, y: Vector3 { x: 0.0, y: 1.0, z: 0.0 }, z: Vector3 { x: 0.0, y: 0.0, z: 1.0 } } }",
+    "position": {
+      "x": 0.06026935577392578,
+      "y": -0.006049036979675293,
+      "z": -0.028087615966796875
+    }
+  },
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: WeldConstraint, instance: WeldConstraint)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: WeldConstraint, instance: WeldConstraint)>",
+  "Part0": "00000000000000000000000000000000",
+  "Part1": "7e2f43cadbbf295c31235efd69c1ac37",
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "State": 3,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: WeldConstraint, instance: WeldConstraint)>"
+}

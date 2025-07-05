@@ -1,0 +1,15 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Pants, instance: Clothing)>",
+  "Color3": {
+    "b": 1.0,
+    "g": 1.0,
+    "r": 1.0
+  },
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Pants, instance: Clothing)>",
+  "PantsTemplate": "<FAILED: Unsupported variant type: Discriminant(8) (property: PantsTemplate, class: Pants, instance: Clothing)>",
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Pants, instance: Clothing)>"
+}

@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: LinkAttachments)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: LinkAttachments)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: LinkAttachments)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{7A6EA1AC-94B2-4D6F-B589-FAAE555B9F81}",
+  "Source": "--!strict\r\n--- Calculates ray origin and directions for attachment-based raycast points\r\n-- @author Swordphin123\r\n\r\nlocal solver = {}\r\n\r\n--- Solve direction and length of the ray by comparing both attachment1 and attachment2's positions\r\n-- @param point type\r\nfunction solver:Solve(point: {[string]: any}): (Vector3, Vector3)\r\n\tlocal origin: Vector3 = point.Instances[1].WorldPosition\r\n\tlocal direction: Vector3 = point.Instances[2].WorldPosition - point.Instances[1].WorldPosition\r\n\r\n\treturn origin, direction\r\nend\r\n\r\nfunction solver:UpdateToNextPosition(point: {[string]: any}): Vector3\r\n\treturn point.Instances[1].WorldPosition\r\nend\r\n\r\nfunction solver:Visualize(point: {[string]: any}): CFrame\r\n\treturn CFrame.lookAt(point.Instances[1].WorldPosition, point.Instances[2].WorldPosition)\r\nend\r\n\r\nreturn solver",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: LinkAttachments)>"
+}

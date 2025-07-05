@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: ZonePlusReference)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: ZonePlusReference)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: ZonePlusReference)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{CDFF62CB-FA5A-4C9D-A8DA-59E3B495D7B3}",
+  "Source": "-- This module enables you to place Zone wherever you like within the data model while\n-- still enabling third-party applications (such as HDAdmin/Nanoblox) to locate it\n-- This is necessary to prevent two ZonePlus applications initiating at runtime which would\n-- diminish it's overall efficiency\n\nlocal replicatedStorage = game:GetService(\"ReplicatedStorage\")\nlocal ZonePlusReference = {}\n\nfunction ZonePlusReference.addToReplicatedStorage()\n    local existingItem = replicatedStorage:FindFirstChild(script.Name)\n    if existingItem then\n        return false\n    end\n    local objectValue = Instance.new(\"ObjectValue\")\n    objectValue.Name = script.Name\n    objectValue.Value = script.Parent\n    objectValue.Parent = replicatedStorage\n    local locationValue = Instance.new(\"BoolValue\")\n    locationValue.Name = (game:GetService(\"RunService\"):IsClient() and \"Client\") or \"Server\"\n    locationValue.Value = true\n    locationValue.Parent = objectValue\n    return objectValue\nend\n\nfunction ZonePlusReference.getObject()\n    local objectValue = replicatedStorage:FindFirstChild(script.Name)\n    if objectValue then\n        return objectValue\n    end\n    return false\nend\n\nreturn ZonePlusReference",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: ZonePlusReference)>"
+}

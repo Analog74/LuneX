@@ -1,0 +1,64 @@
+{
+  "Active": true,
+  "Adornee": "00000000000000000000000000000000",
+  "AlwaysOnTop": false,
+  "Attributes": {},
+  "AutoLocalize": true,
+  "Brightness": 1.0,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: BillboardGui, instance: ImmobileUI)>",
+  "ClipsDescendants": true,
+  "DistanceLowerLimit": 0.0,
+  "DistanceStep": 0.0,
+  "DistanceUpperLimit": -1.0,
+  "Enabled": false,
+  "ExtentsOffset": {
+    "x": 0.0,
+    "y": 5.0,
+    "z": 0.0
+  },
+  "ExtentsOffsetWorldSpace": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: BillboardGui, instance: ImmobileUI)>",
+  "LightInfluence": 0.0,
+  "MaxDistance": null,
+  "PlayerToHideFrom": "00000000000000000000000000000000",
+  "ResetOnSpawn": true,
+  "RootLocalizationTable": "00000000000000000000000000000000",
+  "Sandboxed": false,
+  "SelectionBehaviorDown": "Enum { value: 0 }",
+  "SelectionBehaviorLeft": "Enum { value: 0 }",
+  "SelectionBehaviorRight": "Enum { value: 0 }",
+  "SelectionBehaviorUp": "Enum { value: 0 }",
+  "SelectionGroup": false,
+  "Size": {
+    "x": {
+      "offset": 0,
+      "scale": 5.0
+    },
+    "y": {
+      "offset": 0,
+      "scale": 2.5
+    }
+  },
+  "SizeOffset": {
+    "x": 0.0,
+    "y": 0.0
+  },
+  "SourceAssetId": -1,
+  "StudsOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "StudsOffsetWorldSpace": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: BillboardGui, instance: ImmobileUI)>",
+  "ZIndexBehavior": "Enum { value: 1 }"
+}

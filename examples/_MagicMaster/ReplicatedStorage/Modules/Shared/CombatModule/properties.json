@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: CombatModule)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: CombatModule)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: CombatModule)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{82D2AB86-4B44-4853-A0D6-8E9DBE48E0AF}",
+  "Source": "local cs = game:GetService(\"CollectionService\")\n\nlocal Combat = {}\n\nCombat.StrongKnockback = function(target, strength1, strength2, duration, Origin)\n\tlocal EffectVelocity = Instance.new(\"BodyVelocity\", target)\n\tEffectVelocity.MaxForce = Vector3.new(1, 1, 1) * 1000000;\n\tEffectVelocity.Velocity = Vector3.new(1, 1, 1) * Origin.CFrame.LookVector * math.random(strength1, strength2)\n\n\tgame.Debris:AddItem(EffectVelocity, duration)\nend\n\nCombat.InsertDisabled = function(Target, Duration)\n\tlocal disabled = Instance.new(\"BoolValue\")\n\tdisabled.Name = \"Disabled\"\n\t\n\tdisabled.Parent = Target\n\t\n\tgame.Debris:AddItem(disabled, Duration)\nend\n\nCombat.UpKnockback = function(target, strength1, strength2, duration, Origin)\n\tlocal EffectVelocity = Instance.new(\"BodyVelocity\", target)\n\tEffectVelocity.MaxForce = Vector3.new(1, 1, 1) * 1000000;\n\tEffectVelocity.Velocity = Vector3.new(1, 1, 1) * Origin.CFrame.UpVector * math.random(strength1, strength2)\n\n\tgame.Debris:AddItem(EffectVelocity, duration)\nend\n\nCombat.Ragdoll = function(target, duration)\n\tcs:AddTag(target, \"Ragdoll\")\n\tCombat.InsertDisabled(target, duration)\n\tdelay(duration, function()\n\t\tif cs:HasTag(target, \"Ragdoll\") then\n\t\t\tcs:RemoveTag(target, \"Ragdoll\")\n\t\tend\n\tend)\nend\n\nCombat.Knockback = function(PlayerHRP, Target, ZDistance, YDistance)\n\tlocal Pos = PlayerHRP.CFrame * CFrame.new(0, 1, ZDistance)\n\tlocal BP = Instance.new(\"BodyPosition\",Target)\n\t\n\tBP.MaxForce = Vector3.new(math.huge,math.huge,math.huge)\n\tBP.D = 100\n\tBP.P = 900\n\tBP.Position = Pos.p\n\tgame.Debris:AddItem(BP,0.4)\nend\n\nreturn Combat\n",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: CombatModule)>"
+}

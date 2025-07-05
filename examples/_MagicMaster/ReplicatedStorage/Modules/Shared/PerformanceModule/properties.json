@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: PerformanceModule)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: PerformanceModule)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: PerformanceModule)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{66B5A7F3-B560-405B-B105-6CEC4CAD01BC}",
+  "Source": "local performanceModule = {}\n\nfunction performanceModule:DisableMaterials()\n\n\tfor _, v in pairs(workspace:GetDescendants()) do\n\n\t\tif v:IsA(\"Part\") or v:IsA(\"UnionOperation\") then\n\n\t\t\tv.Material = Enum.Material.SmoothPlastic\n\n\t\tend\n\n\tend\n\t\nend\n\nfunction performanceModule:EnableShadows()\n\t\n\tgame.Lighting.GlobalShadows = true\n\t\nend\n\nfunction performanceModule:DisableShadows()\n\n\tgame.Lighting.GlobalShadows = false\n\nend\n\nfunction performanceModule:EnableFog()\n\t\n\tgame.Lighting.FogStart = 150\n\tgame.Lighting.FogEnd = 500\n\t\nend\n\nfunction performanceModule:DisableFog()\n\n\tgame.Lighting.FogStart = 0\n\tgame.Lighting.FogEnd = 100000\n\nend\n\nfunction performanceModule:DisableItemsFromList(list)\n\t\n\tfor i,v in pairs(list) do\n\t\t\n\t\tif v:IsA(\"Part\") or v:IsA(\"UnionOperation\") then\n\t\t\t\n\t\t\tv.Transparency = 1\n\t\t\t\n\t\tend\n\t\t\n\tend\n\t\nend\n\nfunction performanceModule:EnableItemsFromList(list)\n\n\tfor i,v in pairs(list) do\n\n\t\tif v:IsA(\"Part\") or v:IsA(\"UnionOperation\") then\n\n\t\t\tv.Transparency = 0\n\n\t\tend\n\n\tend\n\nend\n\nfunction performanceModule:GetCurrentFPS()\n\t\n\treturn math.floor(1 / game[\"Run Service\"].Heartbeat:Wait())\n\t\nend\n\nreturn performanceModule",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: PerformanceModule)>"
+}

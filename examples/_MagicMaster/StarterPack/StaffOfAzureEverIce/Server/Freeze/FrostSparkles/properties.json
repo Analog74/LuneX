@@ -1,0 +1,212 @@
+{
+  "Acceleration": {
+    "x": 0.0,
+    "y": -10.0,
+    "z": 0.0
+  },
+  "Attributes": {},
+  "Brightness": 1.0,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ParticleEmitter, instance: FrostSparkles)>",
+  "Color": {
+    "keypoints": [
+      {
+        "color": {
+          "b": 1.0,
+          "g": 1.0,
+          "r": 0.6666669845581055
+        },
+        "time": 0.0
+      },
+      {
+        "color": {
+          "b": 1.0,
+          "g": 1.0,
+          "r": 0.6666669845581055
+        },
+        "time": 1.0
+      }
+    ]
+  },
+  "Drag": 2.0,
+  "EmissionDirection": "Enum { value: 1 }",
+  "Enabled": false,
+  "FlipbookFramerate": {
+    "max": 1.0,
+    "min": 1.0
+  },
+  "FlipbookIncompatible": "Particle texture must be 1024 by 1024 to use flipbooks.",
+  "FlipbookLayout": "Enum { value: 0 }",
+  "FlipbookMode": "Enum { value: 0 }",
+  "FlipbookStartRandom": false,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ParticleEmitter, instance: FrostSparkles)>",
+  "Lifetime": {
+    "max": 2.0,
+    "min": 1.0
+  },
+  "LightEmission": 1.0,
+  "LightInfluence": 0.0,
+  "LockedToPart": false,
+  "Orientation": "Enum { value: 0 }",
+  "Rate": 300.0,
+  "RotSpeed": {
+    "max": 200.0,
+    "min": -200.0
+  },
+  "Rotation": {
+    "max": 180.0,
+    "min": -180.0
+  },
+  "Sandboxed": false,
+  "Shape": "Enum { value: 0 }",
+  "ShapeInOut": "Enum { value: 0 }",
+  "ShapePartial": 1.0,
+  "ShapeStyle": "Enum { value: 0 }",
+  "Size": {
+    "keypoints": [
+      {
+        "envelope": 0.5625,
+        "time": 0.0,
+        "value": 0.5625
+      },
+      {
+        "envelope": 0.0,
+        "time": 0.05000000074505806,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.625,
+        "time": 0.10429400205612183,
+        "value": 0.625
+      },
+      {
+        "envelope": 0.0,
+        "time": 0.15000000596046448,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.625,
+        "time": 0.19938600063323975,
+        "value": 0.6875
+      },
+      {
+        "envelope": 0.0,
+        "time": 0.25,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.5625,
+        "time": 0.3006129860877991,
+        "value": 0.6875
+      },
+      {
+        "envelope": 0.0,
+        "time": 0.3499999940395355,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.5625,
+        "time": 0.4049080014228821,
+        "value": 0.6875
+      },
+      {
+        "envelope": 0.0,
+        "time": 0.44999998807907104,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.625,
+        "time": 0.5015339851379395,
+        "value": 0.75
+      },
+      {
+        "envelope": 0.0,
+        "time": 0.550000011920929,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.6875,
+        "time": 0.5996930003166199,
+        "value": 0.8125
+      },
+      {
+        "envelope": 0.0,
+        "time": 0.6499999761581421,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.5625,
+        "time": 0.7009199857711792,
+        "value": 0.6875
+      },
+      {
+        "envelope": 0.0,
+        "time": 0.75,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.625,
+        "time": 0.8006129860877991,
+        "value": 0.75
+      },
+      {
+        "envelope": 0.0,
+        "time": 0.8500000238418579,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.5,
+        "time": 0.9263799786567688,
+        "value": 0.6875
+      },
+      {
+        "envelope": 0.0,
+        "time": 1.0,
+        "value": 0.0
+      }
+    ]
+  },
+  "SourceAssetId": -1,
+  "Speed": {
+    "max": 40.0,
+    "min": 20.0
+  },
+  "SpreadAngle": {
+    "x": -180.0,
+    "y": 180.0
+  },
+  "Squash": {
+    "keypoints": [
+      {
+        "envelope": 0.0,
+        "time": 0.0,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.0,
+        "time": 1.0,
+        "value": 0.0
+      }
+    ]
+  },
+  "Tags": [],
+  "Texture": "<FAILED: Unsupported variant type: Discriminant(8) (property: Texture, class: ParticleEmitter, instance: FrostSparkles)>",
+  "TimeScale": 1.0,
+  "Transparency": {
+    "keypoints": [
+      {
+        "envelope": 0.0,
+        "time": 0.0,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.0,
+        "time": 1.0,
+        "value": 1.0
+      }
+    ]
+  },
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ParticleEmitter, instance: FrostSparkles)>",
+  "VelocityInheritance": 0.0,
+  "WindAffectsDrag": false,
+  "ZOffset": 0.0
+}

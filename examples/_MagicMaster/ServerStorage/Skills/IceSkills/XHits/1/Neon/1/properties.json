@@ -1,0 +1,30 @@
+{
+  "Attributes": {},
+  "C0": {
+    "matrix": "CFrame { position: Vector3 { x: 0.0, y: 0.0, z: 0.0 }, orientation: Matrix3 { x: Vector3 { x: 1.0, y: 0.0, z: -8.742278e-8 }, y: Vector3 { x: -8.742278e-8, y: -4.371139e-8, z: -1.0 }, z: Vector3 { x: -3.821371e-15, y: 1.0, z: -4.371139e-8 } } }",
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    }
+  },
+  "C1": {
+    "matrix": "CFrame { position: Vector3 { x: 0.0, y: 0.0, z: 0.0 }, orientation: Matrix3 { x: Vector3 { x: 1.0, y: 0.0, z: 0.0 }, y: Vector3 { x: 0.0, y: 1.0, z: 0.0 }, z: Vector3 { x: 0.0, y: 0.0, z: 1.0 } } }",
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    }
+  },
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Motor6D, instance: 1)>",
+  "DesiredAngle": 0.0,
+  "Enabled": true,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Motor6D, instance: 1)>",
+  "MaxVelocity": 0.0,
+  "Part0": "8e833882d4598635ef3bd1f76e75dcf5",
+  "Part1": "a71d866a46bec853c9ec902a4d599207",
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Motor6D, instance: 1)>"
+}

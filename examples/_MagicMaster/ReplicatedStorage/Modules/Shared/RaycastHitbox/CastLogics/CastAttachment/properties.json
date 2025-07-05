@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: CastAttachment)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: CastAttachment)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: CastAttachment)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{ED47A228-8898-47F8-AABB-350FB2C6192F}",
+  "Source": "local Cast = {}\nlocal Debugger = require(script.Parent.Debug.Debugger)\n\nfunction Cast:solve(Point, bool)\n\tif not Point.LastPosition then\n\t\tPoint.LastPosition = Point.Attachment.WorldPosition\n\tend\n\t\n\tif bool then\n\t\tDebugger(Point.Attachment.WorldPosition - Point.LastPosition, CFrame.new(Point.Attachment.WorldPosition, Point.LastPosition))\n\tend\n\treturn Point.LastPosition, Point.Attachment.WorldPosition - Point.LastPosition\nend\n\nfunction Cast:lastPosition(Point)\n\tPoint.LastPosition = Point.Attachment.WorldPosition\t\nend\n\nreturn Cast\n",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: CastAttachment)>"
+}

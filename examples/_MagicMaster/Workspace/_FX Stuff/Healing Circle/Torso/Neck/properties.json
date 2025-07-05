@@ -1,0 +1,30 @@
+{
+  "Attributes": {},
+  "C0": {
+    "matrix": "CFrame { position: Vector3 { x: 0.0, y: 1.0, z: 0.0 }, orientation: Matrix3 { x: Vector3 { x: -1.0, y: 0.0, z: 0.0 }, y: Vector3 { x: 0.0, y: 0.0, z: 1.0 }, z: Vector3 { x: 0.0, y: 1.0, z: 0.0 } } }",
+    "position": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "C1": {
+    "matrix": "CFrame { position: Vector3 { x: 0.0, y: -0.5, z: 0.0 }, orientation: Matrix3 { x: Vector3 { x: -1.0, y: 0.0, z: 0.0 }, y: Vector3 { x: 0.0, y: 0.0, z: 1.0 }, z: Vector3 { x: 0.0, y: 1.0, z: 0.0 } } }",
+    "position": {
+      "x": 0.0,
+      "y": -0.5,
+      "z": 0.0
+    }
+  },
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Motor6D, instance: Neck)>",
+  "DesiredAngle": 0.0,
+  "Enabled": true,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Motor6D, instance: Neck)>",
+  "MaxVelocity": 0.10000000149011612,
+  "Part0": "c5510ad956c845ce99e70a3892b270a4",
+  "Part1": "7994e129ea170a4c38c5f03cc1b6bc23",
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Motor6D, instance: Neck)>"
+}

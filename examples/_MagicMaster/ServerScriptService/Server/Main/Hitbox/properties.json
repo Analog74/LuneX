@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: Hitbox)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: Hitbox)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: Hitbox)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{6E032AD8-D3A8-47B7-BD4F-EB3A96DDC1B6}",
+  "Source": "local Hitbox = {}\n\nfunction Hitbox:Start(Origin, Direction, Blacklist, Visualizer)\n\tlocal RayParams = RaycastParams.new()\n\tRayParams.FilterType = Enum.RaycastFilterType.Blacklist\n\tRayParams.FilterDescendantsInstances = Blacklist\n\t\n\treturn workspace:Raycast(Origin, Direction, RayParams)\nend\n\nreturn Hitbox\n",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: Hitbox)>"
+}

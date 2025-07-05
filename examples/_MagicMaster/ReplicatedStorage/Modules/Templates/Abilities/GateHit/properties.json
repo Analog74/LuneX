@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: GateHit)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: GateHit)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: GateHit)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{80749E4D-08AE-433B-90FC-7B5BE6086F5B}",
+  "Source": "-- Decompiled with the Synapse X Luau decompiler.\r\n\r\nlocal l__TweenService__1 = game:GetService(\"TweenService\");\nlocal l__Debris__2 = game:GetService(\"Debris\");\nlocal l__RunService__3 = game:GetService(\"RunService\");\nlocal l__Assets__4 = game:GetService(\"ReplicatedStorage\").Assets;\nlocal l__Meshes__5 = l__Assets__4.Meshes;\nlocal v6 = require(script.Parent.Parent.Parent.Auxiliary.LightningBolt);\nlocal v7 = require(script.Parent.Parent.Parent.Auxiliary.LightningBolt.LightningSparks);\nlocal l__CurrentCamera__1 = workspace.CurrentCamera;\nrequire(script.Parent.Parent.Parent.Auxiliary.CameraShaker).new(Enum.RenderPriority.Camera.Value, function(p1)\n\tl__CurrentCamera__1.CFrame = l__CurrentCamera__1.CFrame * p1;\nend):Start();\nlocal l__Particles__2 = l__Assets__4.Particles;\nreturn function(...)\n\tlocal v8 = l__Particles__2.Gates.SwordHit:Clone();\n\tv8.CFrame = CFrame.new(({ ... })[1]) * CFrame.Angles(0, math.rad(90), 0);\n\tv8.Parent = workspace;\n\tv8.Attachment.Main:Emit(1);\n\tv8.Attachment.Gradient:Emit(1);\n\tv8.Attachment.Spark:Emit(1);\n\tv8.Attachment.Outline:Emit(1);\n\tv8.Attachment.Specs:Emit(25);\n\tv8.Attachment.Shards:Emit(25);\n\tv8.Attachment.Shards:Emit(35);\n\tv8.Attachment.Smoke:Emit(30);\n\tl__TweenService__1:Create(v8.Attachment.PointLight, TweenInfo.new(1.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {\n\t\tBrightness = 0\n\t}):Play();\n\tl__Debris__2:AddItem(v8, 1.35);\nend;\r\n",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: GateHit)>"
+}

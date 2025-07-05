@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: Constants)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: Constants)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: Constants)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{067E760B-D034-4477-9027-16F4F5A3ABD9}",
+  "Source": "return {\n    WRITE_COOLDOWN_INTERVAL = 7,\n    MAX_TRIES = 5,\n    MAX_DATA_CHARACTERS = 4_000_000,\n    MAX_KEY_CHARACTERS = 50,\n    MAX_DATASTORE_NAME_CHARACTERS = 50,\n    INVALID_ARGUMENT_TYPE = \"Bad argument to #%s: expected %s, got %s\",\n\tBACKUP_DATASTORE_NAME = \"%s/Backup\",\n\t\n\tDATA_ERRORSIGNAL_RETURN_VALUES = {\n\t\tloadbackup = true,\n\t\ttable = true,\n\t\tcancel = true\n\t},\n\t\n\tDATA_CORRUPTIONSIGNAL_RETURN_VALUES = {\n\t\tloadbackup = true,\n\t\ttable = true,\n\t\tcancel = true\n\t},\n}",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: Constants)>"
+}

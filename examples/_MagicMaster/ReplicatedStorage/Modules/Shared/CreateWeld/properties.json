@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: CreateWeld)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: CreateWeld)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: CreateWeld)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{807bc6e8-1b83-41bb-bf3d-9df363944872}",
+  "Source": "return function(Part0, Part1, C0)\n\tlocal Weld = Instance.new('Weld')\n\tWeld.Part0 = Part0\n\tWeld.Part1 = Part1\n\tWeld.Parent = Part0\n\tWeld.C0 = C0 or CFrame.new(0, 0, 0)\n\treturn Weld\nend",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: CreateWeld)>"
+}

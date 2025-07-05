@@ -1,0 +1,18 @@
+{
+  "Attributes": {},
+  "Brightness": 1.0,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: PointLight, instance: PointLight)>",
+  "Color": {
+    "b": 0.32549020648002625,
+    "g": 0.6431372761726379,
+    "r": 0.9921568632125854
+  },
+  "Enabled": true,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: PointLight, instance: PointLight)>",
+  "Range": 15.0,
+  "Sandboxed": false,
+  "Shadows": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: PointLight, instance: PointLight)>"
+}

@@ -1,0 +1,14 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: LocalScript, instance: Shake)>",
+  "Disabled": false,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: LocalScript, instance: Shake)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: LocalScript, instance: Shake)>",
+  "RunContext": "Enum { value: 0 }",
+  "Sandboxed": false,
+  "ScriptGuid": "{4699E5CA-ED5A-4C02-A930-B79112FADC80}",
+  "Source": "wait(1)\nlocal ReplicatedStorage = game:GetService(\"ReplicatedStorage\")\n--local CameraUtil = require(ReplicatedStorage.CameraUtil)\n--local functions = CameraUtil.Functions\n--local shakePresets = CameraUtil.ShakePresets\n\n--local cameraInstance = workspace.CurrentCamera\n--local camera = CameraUtil.Init(cameraInstance)\n\n\n\n--local shake = camera:CreateShake()\n--shake:Start()\n\n--shakeRemote.OnClientEvent:Connect(function(player, Action)\n--\tif Action == \"IceZ\" then\n--\t\tshake:Shake(shakePresets.Explosion)\n--\tend\n--end)\n\nlocal cameraShaker = require(ReplicatedStorage.CameraShaker)\nlocal camera = game.Workspace.CurrentCamera\n\nlocal camShake = cameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCFrame)\n\tcamera.CFrame = camera.CFrame * shakeCFrame\nend)\n\ncamShake:Start()\n\nlocal remotes = ReplicatedStorage:WaitForChild(\"Remotes\")\nlocal shakeRemote = remotes:WaitForChild(\"Shake\")\n\nshakeRemote.OnClientEvent:Connect(function(Action)\n\tif Action == \"IceZ\" then\n\t\tcamShake:Shake(cameraShaker.Presets.IceZ)\n\telseif Action == \"Dash\" then\n\t\tcamShake:Shake(cameraShaker.Presets.Dash)\n\telseif Action == \"Hit\" then\n\t\tcamShake:Shake(cameraShaker.Presets.Hit)\n\telseif Action == \"Twerk\" then\n\t\tprint(\"Deactivated\")--camShake:Shake(cameraShaker.Presets.Twerk)\n\tend\t\nend)",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: LocalScript, instance: Shake)>"
+}

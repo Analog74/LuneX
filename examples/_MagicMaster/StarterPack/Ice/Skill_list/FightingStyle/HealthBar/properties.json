@@ -1,0 +1,71 @@
+{
+  "Active": false,
+  "AnchorPoint": {
+    "x": 0.0,
+    "y": 0.0
+  },
+  "Attributes": {},
+  "AutoLocalize": true,
+  "AutomaticSize": "Enum { value: 0 }",
+  "BackgroundColor3": {
+    "b": 1.0,
+    "g": 1.0,
+    "r": 1.0
+  },
+  "BackgroundTransparency": 0.0,
+  "BorderColor3": {
+    "b": 0.20784315466880798,
+    "g": 0.16470588743686676,
+    "r": 0.10588236153125763
+  },
+  "BorderMode": "Enum { value: 0 }",
+  "BorderSizePixel": 0,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Frame, instance: HealthBar)>",
+  "ClipsDescendants": false,
+  "Draggable": false,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Frame, instance: HealthBar)>",
+  "Interactable": true,
+  "LayoutOrder": 0,
+  "NextSelectionDown": "00000000000000000000000000000000",
+  "NextSelectionLeft": "00000000000000000000000000000000",
+  "NextSelectionRight": "00000000000000000000000000000000",
+  "NextSelectionUp": "00000000000000000000000000000000",
+  "Position": {
+    "x": {
+      "offset": 0,
+      "scale": -0.0019528844859451056
+    },
+    "y": {
+      "offset": 0,
+      "scale": -0.0007943917880766094
+    }
+  },
+  "RootLocalizationTable": "00000000000000000000000000000000",
+  "Rotation": 0.0,
+  "Sandboxed": false,
+  "Selectable": false,
+  "SelectionBehaviorDown": "Enum { value: 0 }",
+  "SelectionBehaviorLeft": "Enum { value: 0 }",
+  "SelectionBehaviorRight": "Enum { value: 0 }",
+  "SelectionBehaviorUp": "Enum { value: 0 }",
+  "SelectionGroup": false,
+  "SelectionImageObject": "00000000000000000000000000000000",
+  "SelectionOrder": 0,
+  "Size": {
+    "x": {
+      "offset": 213,
+      "scale": 0.0
+    },
+    "y": {
+      "offset": 3,
+      "scale": 0.0
+    }
+  },
+  "SizeConstraint": "Enum { value: 0 }",
+  "SourceAssetId": -1,
+  "Style": "Enum { value: 0 }",
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Frame, instance: HealthBar)>",
+  "Visible": true,
+  "ZIndex": 1
+}

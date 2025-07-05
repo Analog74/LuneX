@@ -1,0 +1,18 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Decal, instance: Decal)>",
+  "Color3": {
+    "b": 1.9607843160629272,
+    "g": 1.372549057006836,
+    "r": 0.9803921580314636
+  },
+  "Face": "Enum { value: 1 }",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Decal, instance: Decal)>",
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "TextureContent": "Content(Uri(\"rbxassetid://7164329080\"))",
+  "Transparency": 0.0,
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Decal, instance: Decal)>",
+  "ZIndex": 1
+}

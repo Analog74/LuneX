@@ -1,0 +1,18 @@
+{
+  "Attributes": {},
+  "Brightness": 0.0,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ColorCorrectionEffect, instance: ColorCorrection)>",
+  "Contrast": 0.0,
+  "Enabled": true,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ColorCorrectionEffect, instance: ColorCorrection)>",
+  "Sandboxed": false,
+  "Saturation": 0.0,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "TintColor": {
+    "b": 1.0,
+    "g": 0.9529412388801575,
+    "r": 0.9647059440612793
+  },
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ColorCorrectionEffect, instance: ColorCorrection)>"
+}

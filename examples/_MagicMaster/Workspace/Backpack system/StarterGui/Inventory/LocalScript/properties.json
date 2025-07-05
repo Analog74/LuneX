@@ -1,0 +1,14 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: LocalScript, instance: LocalScript)>",
+  "Disabled": false,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: LocalScript, instance: LocalScript)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: LocalScript, instance: LocalScript)>",
+  "RunContext": "Enum { value: 0 }",
+  "Sandboxed": false,
+  "ScriptGuid": "{292DDE7E-6DE7-4507-8F1B-E5913D0ED1F0}",
+  "Source": "local uis = game:GetService(\"UserInputService\")\nlocal Backpack = script.Parent:WaitForChild(\"Backpack\")\n\nif uis.TouchEnabled then\n\tBackpack.Visible = true\nend",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: LocalScript, instance: LocalScript)>"
+}

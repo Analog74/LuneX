@@ -1,0 +1,28 @@
+{
+  "Attributes": {},
+  "C0": {
+    "matrix": "CFrame { position: Vector3 { x: -1.5258789e-5, y: -30.683521, z: 0.0 }, orientation: Matrix3 { x: Vector3 { x: 1.0, y: 0.0, z: 0.0 }, y: Vector3 { x: 0.0, y: 0.0, z: -1.0 }, z: Vector3 { x: 0.0, y: 1.0, z: 0.0 } } }",
+    "position": {
+      "x": -0.0000152587890625,
+      "y": -30.683521270751953,
+      "z": 0.0
+    }
+  },
+  "C1": {
+    "matrix": "CFrame { position: Vector3 { x: -63.4386, y: 10.000004, z: 54.402237 }, orientation: Matrix3 { x: Vector3 { x: 1.0, y: 0.0, z: 0.0 }, y: Vector3 { x: 0.0, y: 0.0, z: -1.0 }, z: Vector3 { x: 0.0, y: 1.0, z: 0.0 } } }",
+    "position": {
+      "x": -63.4385986328125,
+      "y": 10.000003814697266,
+      "z": 54.40223693847656
+    }
+  },
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Weld, instance: Weld)>",
+  "Enabled": true,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Weld, instance: Weld)>",
+  "Part0": "03a2e3aac5eda76fe339765232b807e1",
+  "Part1": "00000000000000000000000000000000",
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Weld, instance: Weld)>"
+}

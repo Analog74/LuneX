@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: MockPart)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: MockPart)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: MockPart)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{889cc489-6a3a-4c1b-b89d-a0b9e44fce01}",
+  "Source": "-- Localization\nlocal workspace = workspace\n\nreturn function(CF)\n\tlocal P = Instance.new('Part')\n\tP.Name = 'MockPart'\n\tP.CFrame = CF\n\tP.Size = Vector3.new(1, 1, 1)\n\tP.Transparency = 1\n\tP.Anchored = true\n\tP.CanCollide = false\n\tP.CanTouch = false\n\tP.CastShadow = false\n\tP.Parent = workspace.Effects\n\treturn P\nend\n",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: MockPart)>"
+}

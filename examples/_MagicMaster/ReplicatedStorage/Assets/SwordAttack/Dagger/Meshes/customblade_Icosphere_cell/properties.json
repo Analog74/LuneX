@@ -1,0 +1,128 @@
+{
+  "AeroMeshData": "<FAILED: Unsupported variant type: Discriminant(23) (property: AeroMeshData, class: MeshPart, instance: Meshes/customblade_Icosphere_cell)>",
+  "Anchored": true,
+  "Attributes": {},
+  "AudioCanCollide": true,
+  "BackParamA": -0.5,
+  "BackParamB": 0.5,
+  "BackSurface": "Enum { value: 0 }",
+  "BackSurfaceInput": "Enum { value: 0 }",
+  "BottomParamA": -0.5,
+  "BottomParamB": 0.5,
+  "BottomSurface": "Enum { value: 0 }",
+  "BottomSurfaceInput": "Enum { value: 0 }",
+  "CFrame": {
+    "matrix": "CFrame { position: Vector3 { x: 124.792786, y: 25.11246, z: 242.86682 }, orientation: Matrix3 { x: Vector3 { x: -1.0, y: 0.0, z: 0.0 }, y: Vector3 { x: 0.0, y: 0.0, z: 1.0 }, z: Vector3 { x: 0.0, y: 1.0, z: 0.0 } } }",
+    "position": {
+      "x": 124.79278564453125,
+      "y": 25.112459182739258,
+      "z": 242.8668212890625
+    }
+  },
+  "CanCollide": false,
+  "CanQuery": true,
+  "CanTouch": false,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: MeshPart, instance: Meshes/customblade_Icosphere_cell)>",
+  "CastShadow": false,
+  "CollisionGroup": "Default",
+  "CollisionGroupId": 0,
+  "Color": {
+    "b": 255,
+    "g": 128,
+    "r": 180
+  },
+  "CustomPhysicalProperties": "<FAILED: Unsupported variant type: Discriminant(17) (property: CustomPhysicalProperties, class: MeshPart, instance: Meshes/customblade_Icosphere_cell)>",
+  "DoubleSided": true,
+  "EnableFluidForces": true,
+  "FluidFidelityInternal": "Enum { value: 0 }",
+  "FrontParamA": -0.5,
+  "FrontParamB": 0.5,
+  "FrontSurface": "Enum { value: 0 }",
+  "FrontSurfaceInput": "Enum { value: 0 }",
+  "HasJointOffset": false,
+  "HasSkinnedMesh": false,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: MeshPart, instance: Meshes/customblade_Icosphere_cell)>",
+  "InertiaMigrated": false,
+  "InitialSize": {
+    "x": 0.7630589604377747,
+    "y": 0.6359602212905884,
+    "z": 0.7217855453491211
+  },
+  "JointOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "LeftParamA": -0.5,
+  "LeftParamB": 0.5,
+  "LeftSurface": "Enum { value: 0 }",
+  "LeftSurfaceInput": "Enum { value: 0 }",
+  "Locked": false,
+  "Massless": false,
+  "Material": "Enum { value: 288 }",
+  "MaterialVariant": "",
+  "MeshContent": "Content(Uri(\"rbxassetid://7004985415\"))",
+  "PhysicalConfigData": "<FAILED: Unsupported variant type: Discriminant(23) (property: PhysicalConfigData, class: MeshPart, instance: Meshes/customblade_Icosphere_cell)>",
+  "PhysicsData": {
+    "data": "BinaryString { buffer: [] }",
+    "length": 27,
+    "type": "BinaryString"
+  },
+  "PivotOffset": {
+    "matrix": "CFrame { position: Vector3 { x: 0.0, y: 0.0, z: 0.0 }, orientation: Matrix3 { x: Vector3 { x: 1.0, y: 0.0, z: 0.0 }, y: Vector3 { x: 0.0, y: 1.0, z: 0.0 }, z: Vector3 { x: 0.0, y: 0.0, z: 1.0 } } }",
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    }
+  },
+  "Reflectance": 0.0,
+  "RenderFidelity": "Enum { value: 1 }",
+  "RightParamA": -0.5,
+  "RightParamB": 0.5,
+  "RightSurface": "Enum { value: 0 }",
+  "RightSurfaceInput": "Enum { value: 0 }",
+  "RootPriority": 0,
+  "RotVelocity": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "Sandboxed": false,
+  "Size": {
+    "x": 0.36036548018455505,
+    "y": 0.30034127831459045,
+    "z": 0.34087350964546204
+  },
+  "SourceAssetId": -1,
+  "Tags": [],
+  "TextureContent": "Content(None)",
+  "TopParamA": -0.5,
+  "TopParamB": 0.5,
+  "TopSurface": "Enum { value: 0 }",
+  "TopSurfaceInput": "Enum { value: 0 }",
+  "Transparency": 0.0,
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: MeshPart, instance: Meshes/customblade_Icosphere_cell)>",
+  "UnscaledCofm": {
+    "x": null,
+    "y": null,
+    "z": null
+  },
+  "UnscaledVolInertiaDiags": {
+    "x": null,
+    "y": null,
+    "z": null
+  },
+  "UnscaledVolInertiaOffDiags": {
+    "x": null,
+    "y": null,
+    "z": null
+  },
+  "UnscaledVolume": null,
+  "Velocity": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "VertexCount": 0
+}

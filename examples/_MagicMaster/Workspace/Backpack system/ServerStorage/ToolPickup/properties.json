@@ -1,0 +1,43 @@
+{
+  "Attributes": {},
+  "CanBeDropped": true,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Tool, instance: ToolPickup)>",
+  "Enabled": true,
+  "Grip": {
+    "matrix": "CFrame { position: Vector3 { x: 0.0, y: 0.0, z: 0.0 }, orientation: Matrix3 { x: Vector3 { x: 1.0, y: 0.0, z: 0.0 }, y: Vector3 { x: 0.0, y: 1.0, z: 0.0 }, z: Vector3 { x: 0.0, y: 0.0, z: 1.0 } } }",
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    }
+  },
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Tool, instance: ToolPickup)>",
+  "LevelOfDetail": "Enum { value: 0 }",
+  "ManualActivationOnly": false,
+  "ModelMeshCFrame": {
+    "matrix": "CFrame { position: Vector3 { x: 0.0, y: 0.0, z: 0.0 }, orientation: Matrix3 { x: Vector3 { x: 1.0, y: 0.0, z: 0.0 }, y: Vector3 { x: 0.0, y: 1.0, z: 0.0 }, z: Vector3 { x: 0.0, y: 0.0, z: 1.0 } } }",
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    }
+  },
+  "ModelMeshData": "<FAILED: Unsupported variant type: Discriminant(23) (property: ModelMeshData, class: Tool, instance: ToolPickup)>",
+  "ModelMeshSize": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ModelStreamingMode": "Enum { value: 0 }",
+  "NeedsPivotMigration": false,
+  "PrimaryPart": "00000000000000000000000000000000",
+  "RequiresHandle": true,
+  "Sandboxed": false,
+  "Scale": 1.0,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "TextureId": "<FAILED: Unsupported variant type: Discriminant(8) (property: TextureId, class: Tool, instance: ToolPickup)>",
+  "ToolTip": "",
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Tool, instance: ToolPickup)>",
+  "WorldPivotData": "<FAILED: Unsupported variant type: Discriminant(31) (property: WorldPivotData, class: Tool, instance: ToolPickup)>"
+}

@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: Bezier)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: Bezier)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: Bezier)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{4b63d520-0ad7-4053-b3de-596458fa13d9}",
+  "Source": "-- Functions\nlocal function lerp(a, b, c)\n\treturn a + (b - a) * c\nend\n\nreturn {\n\tQuadBezier = function(t, p0, p1, p2)\n\t\tlocal l1    = lerp(p0, p1, t)\n\t\tlocal l2    = lerp(p1, p2, t)\n\t\tlocal Quad  = lerp(l1, l2, t)\n\t\treturn Quad\n\tend,\n}",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: Bezier)>"
+}

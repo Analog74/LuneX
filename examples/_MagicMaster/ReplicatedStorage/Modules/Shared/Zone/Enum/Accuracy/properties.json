@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: Accuracy)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: Accuracy)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: Accuracy)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{FE526E91-AAD8-4EC0-A31E-E8B3BFFE0091}",
+  "Source": "-- enumName, enumValue, additionalProperty\n-- in this case, additionalProperty is the delay between each check\nreturn {\n\t{\"Low\", \t1,\t1.0},\n\t{\"Medium\",\t2,\t0.5},\n\t{\"High\",\t3,\t0.1},\n\t{\"Precise\",\t4,\t0.0},\n}",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: Accuracy)>"
+}

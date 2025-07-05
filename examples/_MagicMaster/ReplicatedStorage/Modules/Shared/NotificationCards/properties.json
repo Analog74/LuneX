@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: NotificationCards)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: NotificationCards)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: NotificationCards)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{887EFF0E-BADE-41A5-95A3-81E5A2BFD7C3}",
+  "Source": "local module = {}\n\n--[[\n\nThis module has nothing in it, it's just been set as a modulescript so i can upload it.\n\nPlease see the readme file\n\n--]]\n\nreturn module\n",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: NotificationCards)>"
+}

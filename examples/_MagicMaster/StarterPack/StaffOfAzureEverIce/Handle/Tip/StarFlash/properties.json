@@ -1,0 +1,159 @@
+{
+  "Acceleration": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "Attributes": {},
+  "Brightness": 1.0,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ParticleEmitter, instance: StarFlash)>",
+  "Color": {
+    "keypoints": [
+      {
+        "color": {
+          "b": 0.0,
+          "g": 0.0,
+          "r": 1.0
+        },
+        "time": 0.0
+      },
+      {
+        "color": {
+          "b": 0.0,
+          "g": 0.6666666865348816,
+          "r": 1.0
+        },
+        "time": 0.14143094420433044
+      },
+      {
+        "color": {
+          "b": 0.0,
+          "g": 1.0,
+          "r": 0.0
+        },
+        "time": 0.3327786922454834
+      },
+      {
+        "color": {
+          "b": 1.0,
+          "g": 0.3333333432674408,
+          "r": 0.0
+        },
+        "time": 0.582362711429596
+      },
+      {
+        "color": {
+          "b": 1.0,
+          "g": 0.0,
+          "r": 0.0
+        },
+        "time": 0.783693790435791
+      },
+      {
+        "color": {
+          "b": 1.0,
+          "g": 0.0,
+          "r": 0.6666666865348816
+        },
+        "time": 1.0
+      }
+    ]
+  },
+  "Drag": 0.0,
+  "EmissionDirection": "Enum { value: 1 }",
+  "Enabled": false,
+  "FlipbookFramerate": {
+    "max": 1.0,
+    "min": 1.0
+  },
+  "FlipbookIncompatible": "Particle texture must be 1024 by 1024 to use flipbooks.",
+  "FlipbookLayout": "Enum { value: 0 }",
+  "FlipbookMode": "Enum { value: 0 }",
+  "FlipbookStartRandom": false,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ParticleEmitter, instance: StarFlash)>",
+  "Lifetime": {
+    "max": 0.4000000059604645,
+    "min": 0.4000000059604645
+  },
+  "LightEmission": 1.0,
+  "LightInfluence": 0.0,
+  "LockedToPart": true,
+  "Orientation": "Enum { value: 0 }",
+  "Rate": 1.0,
+  "RotSpeed": {
+    "max": 360.0,
+    "min": 360.0
+  },
+  "Rotation": {
+    "max": 180.0,
+    "min": -180.0
+  },
+  "Sandboxed": false,
+  "Shape": "Enum { value: 0 }",
+  "ShapeInOut": "Enum { value: 0 }",
+  "ShapePartial": 1.0,
+  "ShapeStyle": "Enum { value: 0 }",
+  "Size": {
+    "keypoints": [
+      {
+        "envelope": 0.0,
+        "time": 0.0,
+        "value": 3.5
+      },
+      {
+        "envelope": 0.0,
+        "time": 0.5,
+        "value": 10.0
+      },
+      {
+        "envelope": 0.0,
+        "time": 1.0,
+        "value": 3.0
+      }
+    ]
+  },
+  "SourceAssetId": -1,
+  "Speed": {
+    "max": 0.0,
+    "min": 0.0
+  },
+  "SpreadAngle": {
+    "x": 0.0,
+    "y": 360.0
+  },
+  "Squash": {
+    "keypoints": [
+      {
+        "envelope": 0.0,
+        "time": 0.0,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.0,
+        "time": 1.0,
+        "value": 0.0
+      }
+    ]
+  },
+  "Tags": [],
+  "Texture": "<FAILED: Unsupported variant type: Discriminant(8) (property: Texture, class: ParticleEmitter, instance: StarFlash)>",
+  "TimeScale": 1.0,
+  "Transparency": {
+    "keypoints": [
+      {
+        "envelope": 0.0,
+        "time": 0.0,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.0,
+        "time": 1.0,
+        "value": 1.0
+      }
+    ]
+  },
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ParticleEmitter, instance: StarFlash)>",
+  "VelocityInheritance": 1.0,
+  "WindAffectsDrag": false,
+  "ZOffset": 1.0
+}

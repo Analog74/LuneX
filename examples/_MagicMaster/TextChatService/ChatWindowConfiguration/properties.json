@@ -1,0 +1,37 @@
+{
+  "Attributes": {},
+  "BackgroundColor3": {
+    "b": 0.11372549086809158,
+    "g": 0.10588235408067703,
+    "r": 0.09803921729326248
+  },
+  "BackgroundTransparency": 0.3,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ChatWindowConfiguration, instance: ChatWindowConfiguration)>",
+  "Enabled": true,
+  "FontFace": {
+    "family": "rbxasset://fonts/families/GothamSSm.json",
+    "style": "Normal",
+    "weight": "Medium"
+  },
+  "HeightScale": 1.0,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ChatWindowConfiguration, instance: ChatWindowConfiguration)>",
+  "HorizontalAlignment": "Enum { value: 1 }",
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "TextColor3": {
+    "b": 1.0,
+    "g": 1.0,
+    "r": 1.0
+  },
+  "TextSize": 14,
+  "TextStrokeColor3": {
+    "b": 0.0,
+    "g": 0.0,
+    "r": 0.0
+  },
+  "TextStrokeTransparency": 0.5,
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ChatWindowConfiguration, instance: ChatWindowConfiguration)>",
+  "VerticalAlignment": "Enum { value: 1 }",
+  "WidthScale": 1.0
+}

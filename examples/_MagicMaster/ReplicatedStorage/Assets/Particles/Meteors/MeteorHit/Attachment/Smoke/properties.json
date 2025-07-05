@@ -1,0 +1,160 @@
+{
+  "Acceleration": {
+    "x": 0.0,
+    "y": -4.488749980926514,
+    "z": 0.0
+  },
+  "Attributes": {
+    "EmitCount": 55.0
+  },
+  "Brightness": 6.0,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ParticleEmitter, instance: Smoke)>",
+  "Color": {
+    "keypoints": [
+      {
+        "color": {
+          "b": 0.22447547316551208,
+          "g": 0.575905978679657,
+          "r": 0.9915770292282104
+        },
+        "time": 0.0
+      },
+      {
+        "color": {
+          "b": 0.11261626332998276,
+          "g": 0.30953919887542725,
+          "r": 0.9203640818595886
+        },
+        "time": 0.21666666865348816
+      },
+      {
+        "color": {
+          "b": 0.039982542395591736,
+          "g": 0.08269152045249939,
+          "r": 0.2006630301475525
+        },
+        "time": 0.445000022649765
+      },
+      {
+        "color": {
+          "b": 0.03695734962821007,
+          "g": 0.07324330508708954,
+          "r": 0.17068742215633392
+        },
+        "time": 1.0
+      }
+    ]
+  },
+  "Drag": 7.0,
+  "EmissionDirection": "Enum { value: 1 }",
+  "Enabled": true,
+  "FlipbookFramerate": {
+    "max": 1.0,
+    "min": 1.0
+  },
+  "FlipbookIncompatible": "Particle texture must be 1024 by 1024 to use flipbooks.",
+  "FlipbookLayout": "Enum { value: 0 }",
+  "FlipbookMode": "Enum { value: 0 }",
+  "FlipbookStartRandom": false,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ParticleEmitter, instance: Smoke)>",
+  "Lifetime": {
+    "max": 1.149999976158142,
+    "min": 0.699999988079071
+  },
+  "LightEmission": 0.0,
+  "LightInfluence": 0.0,
+  "LockedToPart": false,
+  "Orientation": "Enum { value: 0 }",
+  "Rate": 0.0,
+  "RotSpeed": {
+    "max": 30.0,
+    "min": -30.0
+  },
+  "Rotation": {
+    "max": 360.0,
+    "min": -360.0
+  },
+  "Sandboxed": false,
+  "Shape": "Enum { value: 0 }",
+  "ShapeInOut": "Enum { value: 0 }",
+  "ShapePartial": 1.0,
+  "ShapeStyle": "Enum { value: 0 }",
+  "Size": {
+    "keypoints": [
+      {
+        "envelope": 0.0,
+        "time": 0.0,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.1469999998807907,
+        "time": 0.15000000596046448,
+        "value": 1.8899999856948853
+      },
+      {
+        "envelope": 0.734503448009491,
+        "time": 1.0,
+        "value": 2.7421445846557617
+      }
+    ]
+  },
+  "SourceAssetId": -1,
+  "Speed": {
+    "max": 23.504100799560547,
+    "min": 0.0
+  },
+  "SpreadAngle": {
+    "x": -90.0,
+    "y": 90.0
+  },
+  "Squash": {
+    "keypoints": [
+      {
+        "envelope": 0.0,
+        "time": 0.0,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.0,
+        "time": 1.0,
+        "value": 0.0
+      }
+    ]
+  },
+  "Tags": [],
+  "Texture": "<FAILED: Unsupported variant type: Discriminant(8) (property: Texture, class: ParticleEmitter, instance: Smoke)>",
+  "TimeScale": 1.0,
+  "Transparency": {
+    "keypoints": [
+      {
+        "envelope": 0.0,
+        "time": 0.0,
+        "value": 1.0
+      },
+      {
+        "envelope": 0.0,
+        "time": 0.09903714060783386,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.0,
+        "time": 0.20495185256004333,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.0,
+        "time": 0.354883074760437,
+        "value": 0.5860215425491333
+      },
+      {
+        "envelope": 0.0,
+        "time": 1.0,
+        "value": 1.0
+      }
+    ]
+  },
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ParticleEmitter, instance: Smoke)>",
+  "VelocityInheritance": 0.0,
+  "WindAffectsDrag": false,
+  "ZOffset": 2.1687750816345215
+}

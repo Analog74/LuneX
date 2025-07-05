@@ -1,0 +1,27 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: SpecialMesh, instance: Mesh)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: SpecialMesh, instance: Mesh)>",
+  "MeshId": "<FAILED: Unsupported variant type: Discriminant(8) (property: MeshId, class: SpecialMesh, instance: Mesh)>",
+  "MeshType": "Enum { value: 5 }",
+  "Offset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "Sandboxed": false,
+  "Scale": {
+    "x": 50.0,
+    "y": 55.0,
+    "z": 50.0
+  },
+  "SourceAssetId": -1,
+  "Tags": [],
+  "TextureId": "<FAILED: Unsupported variant type: Discriminant(8) (property: TextureId, class: SpecialMesh, instance: Mesh)>",
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: SpecialMesh, instance: Mesh)>",
+  "VertexColor": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+  }
+}

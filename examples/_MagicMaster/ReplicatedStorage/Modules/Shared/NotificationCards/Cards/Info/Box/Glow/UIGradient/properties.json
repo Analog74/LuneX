@@ -1,0 +1,54 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: UIGradient, instance: UIGradient)>",
+  "Color": {
+    "keypoints": [
+      {
+        "color": {
+          "b": 0.0,
+          "g": 0.0,
+          "r": 0.0
+        },
+        "time": 0.0
+      },
+      {
+        "color": {
+          "b": 0.0,
+          "g": 0.0,
+          "r": 0.0
+        },
+        "time": 1.0
+      }
+    ]
+  },
+  "Enabled": true,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: UIGradient, instance: UIGradient)>",
+  "Offset": {
+    "x": 0.0,
+    "y": 0.0
+  },
+  "Rotation": -90.0,
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "Transparency": {
+    "keypoints": [
+      {
+        "envelope": 0.0,
+        "time": 0.0,
+        "value": 0.8009708523750305
+      },
+      {
+        "envelope": 0.0,
+        "time": 0.961656391620636,
+        "value": 1.0
+      },
+      {
+        "envelope": 0.0,
+        "time": 1.0,
+        "value": 1.0
+      }
+    ]
+  },
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: UIGradient, instance: UIGradient)>"
+}

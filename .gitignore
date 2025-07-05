@@ -1,12 +1,16 @@
 # Rust build artifacts
-Utilities/development/target/
-Utilities/development/LuneX
-/target
+/target/
 LuneX
 
 # Export directories and files
-exported*
-_MagicMaster/
+exported*/
+_*/                     # All underscore-prefixed export directories
+temp/test-exports/      # Development test exports
+temp/development-outputs/
+*.rbxl.backup          # Backup files
+
+# Keep example exports for demonstration
+!examples/_MagicMaster/ # Keep the sample export
 
 # System files
 .DS_Store
@@ -37,13 +41,10 @@ Thumbs.db
 *.log
 
 # Release artifacts
-Utilities/development/releases/*.zip
-Utilities/development/releases/*.tar.gz
-Utilities/development/releases/*.dmg
-Utilities/development/releases/CHECKSUMS.txt
-
-# Cargo lock for applications (keep for reproducible builds)
-# Utilities/development/Cargo.lock
+scripts/releases/*.zip
+scripts/releases/*.tar.gz
+scripts/releases/*.dmg
+scripts/releases/CHECKSUMS.txt
 
 # Local development environment
 .env

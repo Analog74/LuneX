@@ -1,0 +1,19 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ServiceVisibilityService, instance: ServiceVisibilityService)>",
+  "HiddenServices": {
+    "data": "BinaryString { buffer: [0, 0, 0, 0] }",
+    "length": 37,
+    "type": "BinaryString"
+  },
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ServiceVisibilityService, instance: ServiceVisibilityService)>",
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ServiceVisibilityService, instance: ServiceVisibilityService)>",
+  "VisibleServices": {
+    "data": "BinaryString { buffer: [0, 0, 0, 0] }",
+    "length": 37,
+    "type": "BinaryString"
+  }
+}

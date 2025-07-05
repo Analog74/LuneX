@@ -1,0 +1,41 @@
+{
+  "AdorneeName": "HumanoidRootPart",
+  "Attributes": {},
+  "BackgroundColor3": {
+    "b": 0.9803921580314636,
+    "g": 0.9803921580314636,
+    "r": 0.9803921580314636
+  },
+  "BackgroundTransparency": 0.1,
+  "BubbleDuration": 15.0,
+  "BubblesSpacing": 6.0,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: BubbleChatConfiguration, instance: BubbleChatConfiguration)>",
+  "Enabled": true,
+  "Font": "Enum { value: 18 }",
+  "FontFace": {
+    "family": "rbxasset://fonts/families/GothamSSm.json",
+    "style": "Normal",
+    "weight": "Medium"
+  },
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: BubbleChatConfiguration, instance: BubbleChatConfiguration)>",
+  "LocalPlayerStudsOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "MaxBubbles": 3.0,
+  "MaxDistance": 100.0,
+  "MinimizeDistance": 40.0,
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "TailVisible": true,
+  "TextColor3": {
+    "b": 0.239215686917305,
+    "g": 0.23137255012989044,
+    "r": 0.2235294133424759
+  },
+  "TextSize": 16,
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: BubbleChatConfiguration, instance: BubbleChatConfiguration)>",
+  "VerticalStudsOffset": 0.0
+}

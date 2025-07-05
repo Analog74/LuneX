@@ -1,0 +1,49 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: UIGradient, instance: Gradient)>",
+  "Color": {
+    "keypoints": [
+      {
+        "color": {
+          "b": 0.9882352948188782,
+          "g": 1.0,
+          "r": 0.5607843399047852
+        },
+        "time": 0.0
+      },
+      {
+        "color": {
+          "b": 1.0,
+          "g": 0.4901960790157318,
+          "r": 0.5254902243614197
+        },
+        "time": 1.0
+      }
+    ]
+  },
+  "Enabled": true,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: UIGradient, instance: Gradient)>",
+  "Offset": {
+    "x": 0.0,
+    "y": 0.0
+  },
+  "Rotation": 0.0,
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "Transparency": {
+    "keypoints": [
+      {
+        "envelope": 0.0,
+        "time": 0.0,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.0,
+        "time": 1.0,
+        "value": 0.0
+      }
+    ]
+  },
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: UIGradient, instance: Gradient)>"
+}

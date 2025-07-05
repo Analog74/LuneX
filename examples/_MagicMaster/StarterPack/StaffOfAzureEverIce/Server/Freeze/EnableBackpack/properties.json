@@ -1,0 +1,14 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: LocalScript, instance: EnableBackpack)>",
+  "Disabled": true,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: LocalScript, instance: EnableBackpack)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: LocalScript, instance: EnableBackpack)>",
+  "RunContext": "Enum { value: 0 }",
+  "Sandboxed": false,
+  "ScriptGuid": "{FF341190-B1AF-4D66-832A-A292E3F14992}",
+  "Source": "--Much efficient way to hide the backpack without causing lag\n\nlocal StarterGui = game:GetService(\"StarterGui\")\n\nStarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: LocalScript, instance: EnableBackpack)>"
+}

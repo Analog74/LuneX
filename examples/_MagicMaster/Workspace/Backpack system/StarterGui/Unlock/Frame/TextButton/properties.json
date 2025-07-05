@@ -1,0 +1,107 @@
+{
+  "Active": true,
+  "AnchorPoint": {
+    "x": 0.0,
+    "y": 0.0
+  },
+  "Attributes": {},
+  "AutoButtonColor": true,
+  "AutoLocalize": true,
+  "AutomaticSize": "Enum { value: 0 }",
+  "BackgroundColor3": {
+    "b": 1.0,
+    "g": 1.0,
+    "r": 1.0
+  },
+  "BackgroundTransparency": 1.0,
+  "BorderColor3": {
+    "b": 0.20784315466880798,
+    "g": 0.16470588743686676,
+    "r": 0.10588236153125763
+  },
+  "BorderMode": "Enum { value: 0 }",
+  "BorderSizePixel": 1,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: TextButton, instance: TextButton)>",
+  "ClipsDescendants": false,
+  "Draggable": false,
+  "FontFace": {
+    "family": "rbxasset://fonts/families/SourceSansPro.json",
+    "style": "Normal",
+    "weight": "Regular"
+  },
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: TextButton, instance: TextButton)>",
+  "HoverHapticEffect": "00000000000000000000000000000000",
+  "Interactable": true,
+  "LayoutOrder": 0,
+  "LineHeight": 1.0,
+  "LocalizationMatchIdentifier": "",
+  "LocalizationMatchedSourceText": "",
+  "MaxVisibleGraphemes": -1,
+  "Modal": true,
+  "NextSelectionDown": "00000000000000000000000000000000",
+  "NextSelectionLeft": "00000000000000000000000000000000",
+  "NextSelectionRight": "00000000000000000000000000000000",
+  "NextSelectionUp": "00000000000000000000000000000000",
+  "OpenTypeFeatures": "",
+  "Position": {
+    "x": {
+      "offset": 0,
+      "scale": 0.0
+    },
+    "y": {
+      "offset": 0,
+      "scale": 0.0
+    }
+  },
+  "PressHapticEffect": "00000000000000000000000000000000",
+  "RichText": false,
+  "RootLocalizationTable": "00000000000000000000000000000000",
+  "Rotation": 0.0,
+  "Sandboxed": false,
+  "Selectable": true,
+  "Selected": false,
+  "SelectionBehaviorDown": "Enum { value: 0 }",
+  "SelectionBehaviorLeft": "Enum { value: 0 }",
+  "SelectionBehaviorRight": "Enum { value: 0 }",
+  "SelectionBehaviorUp": "Enum { value: 0 }",
+  "SelectionGroup": false,
+  "SelectionImageObject": "00000000000000000000000000000000",
+  "SelectionOrder": 0,
+  "Size": {
+    "x": {
+      "offset": 200,
+      "scale": 0.0
+    },
+    "y": {
+      "offset": 50,
+      "scale": 0.0
+    }
+  },
+  "SizeConstraint": "Enum { value: 0 }",
+  "SourceAssetId": -1,
+  "Style": "Enum { value: 0 }",
+  "Tags": [],
+  "Text": "Button",
+  "TextColor3": {
+    "b": 0.0,
+    "g": 0.0,
+    "r": 0.0
+  },
+  "TextDirection": "Enum { value: 0 }",
+  "TextScaled": false,
+  "TextSize": 14.0,
+  "TextStrokeColor3": {
+    "b": 0.0,
+    "g": 0.0,
+    "r": 0.0
+  },
+  "TextStrokeTransparency": 1.0,
+  "TextTransparency": 1.0,
+  "TextTruncate": "Enum { value: 0 }",
+  "TextWrapped": false,
+  "TextXAlignment": "Enum { value: 2 }",
+  "TextYAlignment": "Enum { value: 1 }",
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: TextButton, instance: TextButton)>",
+  "Visible": true,
+  "ZIndex": 1
+}

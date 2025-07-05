@@ -1,0 +1,22 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Texture, instance: Texture)>",
+  "Color3": {
+    "b": 1.9607843160629272,
+    "g": 1.9607843160629272,
+    "r": 1.9607843160629272
+  },
+  "Face": "Enum { value: 1 }",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Texture, instance: Texture)>",
+  "OffsetStudsU": 0.0,
+  "OffsetStudsV": 0.0,
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "StudsPerTileU": 8.0,
+  "StudsPerTileV": 8.0,
+  "Tags": [],
+  "TextureContent": "Content(Uri(\"http://www.roblox.com/asset/?id=6568035904\"))",
+  "Transparency": 0.75,
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Texture, instance: Texture)>",
+  "ZIndex": 1
+}

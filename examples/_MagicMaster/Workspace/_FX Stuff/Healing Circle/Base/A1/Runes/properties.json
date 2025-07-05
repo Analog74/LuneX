@@ -1,0 +1,139 @@
+{
+  "Acceleration": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "Attributes": {
+    "EmitDelay": 0.0
+  },
+  "Brightness": 5.0,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ParticleEmitter, instance: Runes)>",
+  "Color": {
+    "keypoints": [
+      {
+        "color": {
+          "b": 0.3764705955982208,
+          "g": 1.0,
+          "r": 0.6784313917160034
+        },
+        "time": 0.0
+      },
+      {
+        "color": {
+          "b": 0.3764705955982208,
+          "g": 1.0,
+          "r": 0.6784313917160034
+        },
+        "time": 1.0
+      }
+    ]
+  },
+  "Drag": 0.0,
+  "EmissionDirection": "Enum { value: 1 }",
+  "Enabled": true,
+  "FlipbookFramerate": {
+    "max": 1.0,
+    "min": 1.0
+  },
+  "FlipbookIncompatible": "Particle texture must be 1024 by 1024 to use flipbooks.",
+  "FlipbookLayout": "Enum { value: 0 }",
+  "FlipbookMode": "Enum { value: 0 }",
+  "FlipbookStartRandom": false,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ParticleEmitter, instance: Runes)>",
+  "Lifetime": {
+    "max": 2.0,
+    "min": 2.0
+  },
+  "LightEmission": 1.0,
+  "LightInfluence": 0.0,
+  "LockedToPart": true,
+  "Orientation": "Enum { value: 3 }",
+  "Rate": 1.5,
+  "RotSpeed": {
+    "max": 125.0,
+    "min": 125.0
+  },
+  "Rotation": {
+    "max": 0.0,
+    "min": 0.0
+  },
+  "Sandboxed": false,
+  "Shape": "Enum { value: 0 }",
+  "ShapeInOut": "Enum { value: 0 }",
+  "ShapePartial": 1.0,
+  "ShapeStyle": "Enum { value: 0 }",
+  "Size": {
+    "keypoints": [
+      {
+        "envelope": 0.0,
+        "time": 0.0,
+        "value": 21.0
+      },
+      {
+        "envelope": 0.0,
+        "time": 1.0,
+        "value": 21.0
+      }
+    ]
+  },
+  "SourceAssetId": -1,
+  "Speed": {
+    "max": 0.003000000026077032,
+    "min": 0.003000000026077032
+  },
+  "SpreadAngle": {
+    "x": 0.0,
+    "y": 0.0
+  },
+  "Squash": {
+    "keypoints": [
+      {
+        "envelope": 0.0,
+        "time": 0.0,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.0,
+        "time": 1.0,
+        "value": 0.0
+      }
+    ]
+  },
+  "Tags": [],
+  "Texture": "<FAILED: Unsupported variant type: Discriminant(8) (property: Texture, class: ParticleEmitter, instance: Runes)>",
+  "TimeScale": 1.0,
+  "Transparency": {
+    "keypoints": [
+      {
+        "envelope": 0.0,
+        "time": 0.0,
+        "value": 1.0
+      },
+      {
+        "envelope": 0.0,
+        "time": 0.20097443461418152,
+        "value": 0.7437499761581421
+      },
+      {
+        "envelope": 0.0,
+        "time": 0.5018270611763,
+        "value": 0.0
+      },
+      {
+        "envelope": 0.0,
+        "time": 0.800243616104126,
+        "value": 0.7437499761581421
+      },
+      {
+        "envelope": 0.0,
+        "time": 1.0,
+        "value": 1.0
+      }
+    ]
+  },
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ParticleEmitter, instance: Runes)>",
+  "VelocityInheritance": 0.0,
+  "WindAffectsDrag": false,
+  "ZOffset": 0.0
+}

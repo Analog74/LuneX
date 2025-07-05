@@ -1,0 +1,10 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: StringValue, instance: InsertionHash)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: StringValue, instance: InsertionHash)>",
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: StringValue, instance: InsertionHash)>",
+  "Value": "{FFE51393-9E0F-449F-969D-B1B973222518}"
+}

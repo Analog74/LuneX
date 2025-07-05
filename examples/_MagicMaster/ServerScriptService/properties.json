@@ -1,0 +1,10 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ServerScriptService, instance: ServerScriptService)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ServerScriptService, instance: ServerScriptService)>",
+  "LoadStringEnabled": false,
+  "Sandboxed": false,
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ServerScriptService, instance: ServerScriptService)>"
+}

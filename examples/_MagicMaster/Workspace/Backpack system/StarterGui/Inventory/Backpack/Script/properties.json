@@ -1,0 +1,14 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Script, instance: Script)>",
+  "Disabled": false,
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Script, instance: Script)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: Script, instance: Script)>",
+  "RunContext": "Enum { value: 0 }",
+  "Sandboxed": false,
+  "ScriptGuid": "{7B09921A-A0FA-4D80-96CF-CBCE75F5CF76}",
+  "Source": "local frame = script.Parent.Parent:WaitForChild(\"Frame\")\nlocal open = script.Parent.Parent.Open\n\nscript.Parent.MouseButton1Click:Connect(function()\n\tif open.Value == false then\n\t\tframe.Visible = true -- Position of your frame when its opened\n\t\topen.Value = true\n\telseif open.Value == true then\n\t\tframe.Visible = false -- Position of your frame when its closed\n\t\topen.Value = false\n\tend\nend)\n\n",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Script, instance: Script)>"
+}

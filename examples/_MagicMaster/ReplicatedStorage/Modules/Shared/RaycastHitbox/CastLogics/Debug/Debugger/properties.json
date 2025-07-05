@@ -1,0 +1,12 @@
+{
+  "Attributes": {},
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ModuleScript, instance: Debugger)>",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ModuleScript, instance: Debugger)>",
+  "LinkedSource": "<FAILED: Unsupported variant type: Discriminant(8) (property: LinkedSource, class: ModuleScript, instance: Debugger)>",
+  "Sandboxed": false,
+  "ScriptGuid": "{150842FF-4B47-4CC5-B3EB-4C9048431925}",
+  "Source": "local Debris = game:GetService(\"Debris\")\n\nreturn function(distance, newCFrame)\n\tlocal beam = Instance.new(\"Part\")\n\tbeam.BrickColor = BrickColor.new(\"Bright red\")\n\tbeam.Material = Enum.Material.Neon\n\tbeam.Anchored = true\n\tbeam.CanCollide = false\n\tbeam.Name = \"RaycastHitboxDebugPart\"\n\t\n\tlocal Dist = (distance).Magnitude\n\tbeam.Size = Vector3.new(0.1, 0.1, Dist)\n\tbeam.CFrame = newCFrame * CFrame.new(0, 0, -Dist / 2)\n\t\n\tbeam.Parent = workspace.Terrain\n\tDebris:AddItem(beam, 1)\nend\n",
+  "SourceAssetId": -1,
+  "Tags": [],
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ModuleScript, instance: Debugger)>"
+}

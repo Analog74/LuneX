@@ -1,0 +1,43 @@
+{
+  "Attributes": {},
+  "BackgroundColor3": {
+    "b": 0.11372549086809158,
+    "g": 0.10588235408067703,
+    "r": 0.09803921729326248
+  },
+  "BackgroundTransparency": 0.0,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ChannelTabsConfiguration, instance: ChannelTabsConfiguration)>",
+  "Enabled": false,
+  "FontFace": {
+    "family": "rbxasset://fonts/families/BuilderSans.json",
+    "style": "Normal",
+    "weight": "Bold"
+  },
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ChannelTabsConfiguration, instance: ChannelTabsConfiguration)>",
+  "HoverBackgroundColor3": {
+    "b": 0.4901960790157318,
+    "g": 0.4901960790157318,
+    "r": 0.4901960790157318
+  },
+  "Sandboxed": false,
+  "SelectedTabTextColor3": {
+    "b": 1.0,
+    "g": 1.0,
+    "r": 1.0
+  },
+  "SourceAssetId": -1,
+  "Tags": [],
+  "TextColor3": {
+    "b": 0.686274528503418,
+    "g": 0.686274528503418,
+    "r": 0.686274528503418
+  },
+  "TextSize": 18,
+  "TextStrokeColor3": {
+    "b": 0.0,
+    "g": 0.0,
+    "r": 0.0
+  },
+  "TextStrokeTransparency": 1.0,
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ChannelTabsConfiguration, instance: ChannelTabsConfiguration)>"
+}

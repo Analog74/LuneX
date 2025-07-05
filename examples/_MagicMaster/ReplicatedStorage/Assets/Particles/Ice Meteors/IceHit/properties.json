@@ -1,0 +1,88 @@
+{
+  "Anchored": true,
+  "Attributes": {},
+  "AudioCanCollide": true,
+  "BackParamA": -0.5,
+  "BackParamB": 0.5,
+  "BackSurface": "Enum { value: 0 }",
+  "BackSurfaceInput": "Enum { value: 0 }",
+  "BottomParamA": -0.5,
+  "BottomParamB": 0.5,
+  "BottomSurface": "Enum { value: 0 }",
+  "BottomSurfaceInput": "Enum { value: 0 }",
+  "CFrame": {
+    "matrix": "CFrame { position: Vector3 { x: -71.479996, y: 0.500004, z: 161.92 }, orientation: Matrix3 { x: Vector3 { x: 1.0, y: 0.0, z: 0.0 }, y: Vector3 { x: 0.0, y: 1.0, z: 0.0 }, z: Vector3 { x: 0.0, y: 0.0, z: 1.0 } } }",
+    "position": {
+      "x": -71.47999572753906,
+      "y": 0.5000039935112,
+      "z": 161.9199981689453
+    }
+  },
+  "CanCollide": false,
+  "CanQuery": false,
+  "CanTouch": false,
+  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Part, instance: IceHit)>",
+  "CastShadow": false,
+  "CollisionGroup": "Default",
+  "CollisionGroupId": 0,
+  "Color": {
+    "b": 165,
+    "g": 162,
+    "r": 163
+  },
+  "CustomPhysicalProperties": "<FAILED: Unsupported variant type: Discriminant(17) (property: CustomPhysicalProperties, class: Part, instance: IceHit)>",
+  "EnableFluidForces": true,
+  "FormFactor": "Enum { value: 1 }",
+  "FrontParamA": -0.5,
+  "FrontParamB": 0.5,
+  "FrontSurface": "Enum { value: 0 }",
+  "FrontSurfaceInput": "Enum { value: 0 }",
+  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Part, instance: IceHit)>",
+  "LeftParamA": -0.5,
+  "LeftParamB": 0.5,
+  "LeftSurface": "Enum { value: 0 }",
+  "LeftSurfaceInput": "Enum { value: 0 }",
+  "Locked": false,
+  "Massless": false,
+  "Material": "Enum { value: 256 }",
+  "MaterialVariant": "",
+  "PivotOffset": {
+    "matrix": "CFrame { position: Vector3 { x: 0.0, y: 0.0, z: 0.0 }, orientation: Matrix3 { x: Vector3 { x: 1.0, y: 0.0, z: 0.0 }, y: Vector3 { x: 0.0, y: 1.0, z: 0.0 }, z: Vector3 { x: 0.0, y: 0.0, z: 1.0 } } }",
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    }
+  },
+  "Reflectance": 0.0,
+  "RightParamA": -0.5,
+  "RightParamB": 0.5,
+  "RightSurface": "Enum { value: 0 }",
+  "RightSurfaceInput": "Enum { value: 0 }",
+  "RootPriority": 0,
+  "RotVelocity": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "Sandboxed": false,
+  "Shape": "Enum { value: 1 }",
+  "Size": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+  },
+  "SourceAssetId": -1,
+  "Tags": [],
+  "TopParamA": -0.5,
+  "TopParamB": 0.5,
+  "TopSurface": "Enum { value: 0 }",
+  "TopSurfaceInput": "Enum { value: 0 }",
+  "Transparency": 1.0,
+  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Part, instance: IceHit)>",
+  "Velocity": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  }
+}
