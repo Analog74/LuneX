@@ -1,4 +1,43 @@
-# LuneX (formerly rbxdom_rust_exporter)
+# LuneX (rbxdom Rust Exporter)
+
+## Features
+- Export Roblox .rbxl files to Rojo-compatible folder structures
+- Interactive GUI file/folder picker (macOS/Windows/Linux)
+- CLI automation: `LuneX <input.rbxl> <output_dir> [--mode original|flat|rojo] [--projectjson]`
+- Handles duplicate instance names, generates `default.project.json` if desired
+- Two export modes: original folder structure or flat single folder
+
+## Usage
+### Interactive (recommended)
+Just run:
+```
+LuneX
+```
+- Choose export mode (1 or 2) in the terminal
+- Select your .rbxl file and output directory using Finder/Explorer dialogs
+- Optionally generate a Rojo `default.project.json`
+
+### CLI/Automation
+```
+LuneX <input.rbxl> <output_dir> [--mode original|flat|rojo] [--projectjson]
+```
+
+## Requirements
+- Rust toolchain (for building)
+- macOS, Windows, or Linux
+
+## Development
+- All code is in `src/main.rs`
+- See commit history for recent changes
+
+## License
+MIT
+
+---
+
+# (Legacy notes below)
+
+LuneX (formerly rbxdom_rust_exporter)
 
 A modern, robust Rust-based Roblox `.rbxl` place file exporter. Extracts all scripts and properties (including complex types) from `.rbxl` files. User-friendly, portable, and compatible with the latest crate APIs. Supports Rojo-compatible export mode and is installable as a console tool named `LuneX`.
 
@@ -44,6 +83,48 @@ chmod +x /your/desired/path/LuneX
 - Is portable, fast, and installable as a single binary (`LuneX`).
 
 **In summary:** LuneX is a more complete, future-proof, and user-friendly solution for extracting and converting Roblox place files compared to older tools like `rbxlx-to-rojo`.
+
+## Smart Launcher Script
+
+LuneX now supports both interactive (popup) and CLI automation modes with a single command:
+
+- **Interactive mode:** If you run `LuneX` (or `lunex`) with no arguments, it will open macOS file/folder pickers for you to select your `.rbxl` file and export destination. This is user-friendly and ideal for manual use.
+- **CLI automation mode:** If you run `LuneX <input.rbxl> <output_dir> [--rojo]`, it will run directly with those arguments, making it suitable for scripting and automation.
+
+### How it works
+- The `/usr/local/bin/LuneX` script checks if you provided arguments. If not, it shows popups and then calls the Rust binary (`/usr/local/bin/LuneX-bin`).
+- The Rust binary (`LuneX-bin`) is the actual exporter and can be used directly for advanced workflows.
+
+#### Example smart launcher script:
+```zsh
+#!/bin/zsh
+LUNEX_BIN="/usr/local/bin/LuneX-bin"
+if [ $# -ge 2 ]; then
+    exec "$LUNEX_BIN" "$@"
+else
+    SOURCE=$(osascript -e 'POSIX path of (choose file with prompt "Select your Roblox .rbxl file")')
+    echo "SOURCE: $SOURCE"
+    if [ -z "$SOURCE" ]; then
+      echo "No source file selected."
+      exit 1
+    fi
+    DEST=$(osascript -e 'POSIX path of (choose folder with prompt "Select export destination folder")')
+    echo "DEST: $DEST"
+    if [ -z "$DEST" ]; then
+      echo "No destination folder selected."
+      exit 1
+    fi
+    cd "$DEST"
+    # Get the base name of the .rbxl file, without extension
+    BASENAME=$(basename "$SOURCE" .rbxl)
+    OUTDIR="$(pwd)/$BASENAME"
+    echo "Running: $LUNEX_BIN \"$SOURCE\" \"$OUTDIR\""
+    "$LUNEX_BIN" "$SOURCE" "$OUTDIR" | tee luneX.log
+    echo "All scripts and properties exported to: $OUTDIR"
+fi
+```
+
+This makes LuneX easy for both beginners and power users.
 
 ## License
 
