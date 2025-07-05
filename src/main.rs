@@ -192,8 +192,12 @@ fn export_instance_rojo(dom: &WeakDom, id: Ref, path: &str, src_dir: &str) -> Re
 fn export_tree_original(dom: &WeakDom, output_dir: &str) -> Result<()> {
     fs::create_dir_all(output_dir)?;
     let root_id = dom.root_ref();
-    let mut name_counts = std::collections::HashMap::new();
-    export_instance_original(dom, root_id, output_dir, &mut name_counts)?;
+    // Instead of creating a DataModel folder, export all children of DataModel directly into output_dir
+    let root_inst = dom.get_by_ref(root_id).unwrap();
+    for child_id in root_inst.children() {
+        let mut name_counts = std::collections::HashMap::new();
+        export_instance_original(dom, *child_id, output_dir, &mut name_counts)?;
+    }
     Ok(())
 }
 
