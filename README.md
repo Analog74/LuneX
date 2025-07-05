@@ -15,12 +15,14 @@ LuneX
 ```
 - Choose export mode (1 or 2) in the terminal
 - Select your .rbxl file and output directory using Finder/Explorer dialogs
+- The export will be placed in a folder named after your .rbxl file (without extension) inside the output directory
 - Optionally generate a Rojo `default.project.json`
 
 ### CLI/Automation
 ```
 LuneX <input.rbxl> <output_dir> [--mode original|flat|rojo] [--projectjson]
 ```
+- The export will be placed in a folder named after your .rbxl file (without extension) inside the output directory
 
 ## Requirements
 - Rust toolchain (for building)
@@ -35,29 +37,14 @@ MIT
 
 ---
 
-# (Legacy notes below)
 
-LuneX (formerly rbxdom_rust_exporter)
+---
 
-A modern, robust Rust-based Roblox `.rbxl` place file exporter. Extracts all scripts and properties (including complex types) from `.rbxl` files. User-friendly, portable, and compatible with the latest crate APIs. Supports Rojo-compatible export mode and is installable as a console tool named `LuneX`.
+## Building from Source
 
-## Features
-- Extracts all scripts and properties from `.rbxl` files
-- Handles complex property types (Color3, Vector3, CFrame, etc)
-- Rojo-compatible export mode (`--rojo`)
-- Interactive prompt if `--rojo` not specified
-- Installs and runs as a single binary: `LuneX`
-- Ready for use with the LuneX launcher script
+See `SOURCE_BUILD.txt` in the repo root for up-to-date instructions on building from source and using the prebuilt binary.
 
-## Usage
-
-```sh
-cargo install --path . --force
-# or after install:
-LuneX <input.rbxl> <output_dir> [--rojo]
-```
-
-If you want the binary to be called `LuneX` and run as `LuneX` from the console, this is now the default (see Cargo.toml for `[[bin]]`).
+---
 
 ### Rojo Mode
 
