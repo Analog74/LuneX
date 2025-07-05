@@ -5,7 +5,7 @@
 - Interactive GUI file/folder picker (macOS/Windows/Linux)
 - CLI automation: `LuneX <input.rbxl> <output_dir> [--mode original|flat|rojo] [--projectjson]`
 - Handles duplicate instance names, generates `default.project.json` if desired
-- Two export modes: original folder structure or flat single folder
+- Two export modes: original folder structure (no DataModel folder; children exported at root) or flat single folder
 
 ## Usage
 ### Interactive (recommended)
@@ -16,6 +16,7 @@ LuneX
 - Choose export mode (1 or 2) in the terminal
 - Select your .rbxl file and output directory using Finder/Explorer dialogs
 - The export will be placed in a folder named after your .rbxl file (without extension) inside the output directory
+- In original mode, the top-level DataModel folder is omitted; children of DataModel are exported directly at the root of your export folder
 - Optionally generate a Rojo `default.project.json`
 
 ### CLI/Automation
@@ -23,6 +24,7 @@ LuneX
 LuneX <input.rbxl> <output_dir> [--mode original|flat|rojo] [--projectjson]
 ```
 - The export will be placed in a folder named after your .rbxl file (without extension) inside the output directory
+- In original mode, the top-level DataModel folder is omitted; children of DataModel are exported directly at the root of your export folder
 
 ## Requirements
 - Rust toolchain (for building)
