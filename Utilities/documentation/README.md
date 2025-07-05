@@ -3,7 +3,7 @@
 ## Features
 - Export Roblox .rbxl files to Rojo-compatible folder structures
 - Interactive GUI file/folder picker (macOS/Windows/Linux)
-- CLI automation: `LuneX <input.rbxl> <output_dir> [--mode original|fl### Rojo Mode] [--projectjson]`
+- CLI automation: `LuneX <input.rbxl> <output_dir> [--mode original|flat|rojo] [--projectjson]`
 - Handles duplicate instance names, generates `default.project.json` if desired
 - Two export modes: original folder structure (no DataModel folder; children exported at root) or flat single folder
 
@@ -146,11 +146,6 @@ shasum -a 256 LuneX-macos-v0.1.3.zip
 # Compare with value in CHECKSUMS.txt
 ```
 
-## Requirements
-- No external dependencies required for pre-built binaries
-- For building from source: Rust toolchain (see Installation section below)
-- Supported platforms: macOS, Windows, Linux
-
 ## Platform-Specific Notes
 
 ### Windows
@@ -206,8 +201,10 @@ shasum -a 256 LuneX-macos-v0.1.3.zip
 - The project is designed to work on macOS, Windows, and Linux
 - File dialogs are handled by the `rfd` crate which provides native dialogs on each platform
 - Path handling automatically adapts to each platform's conventions
-- All code is in `src/main.rs`
-- See commit history for recent changes
+
+## Building from Source
+
+See `Utilities/development/SOURCE_BUILD.txt` for up-to-date instructions on building from source and using the prebuilt binary.
 
 ## License
 
