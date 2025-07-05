@@ -14,14 +14,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Improved cross-platform installation guide
 
 ### Added
-- Pre-built macOS binary in releases directory
+- **Release Management**: Comprehensive release system with compressed archives
+  - Pre-built macOS binary in multiple formats (.zip, .gz)
+  - Complete source code archives (.tar.gz, .zip)
+  - SHA256 checksums for integrity verification
+  - Automated release creation script (`create_release.sh`)
+  - GitHub Actions workflow for automated releases
 - Platform-specific installation notes
 - Detailed dependency and build instructions
 - Cross-compilation target support setup
+- `releases/` directory with proper archive structure
 
 ### Fixed
 - Export folder naming now consistent with underscore prefix
 - Global installation process documented
+- Release distribution and download process
 
 ## [0.1.2] - Previous Release
 

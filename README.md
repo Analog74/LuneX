@@ -36,11 +36,18 @@ LuneX <input.rbxl> <output_dir> [--mode original|flat|rojo] [--projectjson]
 ### Option 1: Download Pre-built Binary (Recommended)
 
 #### macOS (Intel/Apple Silicon)
-1. Download the latest `LuneX-macos` binary from the [Releases](https://github.com/your-username/LuneProjects/releases) page
-2. Make it executable and install globally:
+1. Download the latest release from [GitHub Releases](https://github.com/your-username/LuneProjects/releases)
+   - **Recommended**: `LuneX-macos-v0.1.3.zip` (compressed)
+   - **Alternative**: `LuneX-macos-v0.1.3.gz` (smaller)
+2. Extract and install:
 ```bash
-chmod +x LuneX-macos
-sudo mv LuneX-macos /usr/local/bin/lunex
+# Download (replace URL with actual GitHub release URL)
+curl -L -o LuneX-macos.zip https://github.com/your-username/LuneProjects/releases/download/v0.1.3/LuneX-macos-v0.1.3.zip
+unzip LuneX-macos.zip
+
+# Install globally
+chmod +x LuneX-macos-v0.1.3
+sudo mv LuneX-macos-v0.1.3 /usr/local/bin/lunex
 ```
 
 #### Windows
@@ -51,11 +58,14 @@ For Windows users, we recommend:
 2. **Use WSL (Windows Subsystem for Linux)** and follow the Linux instructions
 
 #### Linux
-1. Download the latest `LuneX-linux` binary from the [Releases](https://github.com/your-username/LuneProjects/releases) page *(coming soon)*
-2. Make it executable and install globally:
+1. Build from source (see Option 2) - pre-built Linux binaries coming soon
+2. Or use the source archive for easier building:
 ```bash
-chmod +x LuneX-linux
-sudo mv LuneX-linux /usr/local/bin/lunex
+curl -L -o LuneX-source.tar.gz https://github.com/your-username/LuneProjects/releases/download/v0.1.3/LuneX-v0.1.3-source.tar.gz
+tar -xzf LuneX-source.tar.gz
+cd LuneX-v0.1.3
+cargo build --release
+sudo cp target/release/LuneX /usr/local/bin/lunex
 ```
 
 ### Option 2: Build from Source
@@ -112,6 +122,29 @@ lunex --help
 ```
 
 If installed correctly, running `lunex` should start the interactive mode.
+
+## Releases and Archives
+
+### Current Release: v0.1.3
+- **Binaries**: Compressed archives (.zip, .gz) for easy download and distribution
+- **Source Code**: Complete source archives (.tar.gz, .zip) for building from source
+- **Checksums**: SHA256 checksums provided for integrity verification
+
+### Available Formats
+- **macOS Binary**: `LuneX-macos-v0.1.3.zip` (recommended)
+- **Source Archive**: `LuneX-v0.1.3-source.tar.gz` or `LuneX-v0.1.3-source.zip`
+- **Checksums**: `CHECKSUMS.txt` for verification
+
+### Older Releases
+All previous releases remain available on GitHub with their respective binaries and source code archives. See the [Releases page](https://github.com/your-username/LuneProjects/releases) for the complete history.
+
+### Verification
+Download integrity can be verified using the provided checksums:
+```bash
+# Verify downloaded file
+shasum -a 256 LuneX-macos-v0.1.3.zip
+# Compare with value in CHECKSUMS.txt
+```
 
 ## Requirements
 ## Platform-Specific Notes
