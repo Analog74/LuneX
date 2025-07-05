@@ -1,4 +1,4 @@
-# LuneX (rbxdom Rust Exporter)
+# LuneX
 
 ## Features
 - Export Roblox .rbxl files to Rojo-compatible folder structures
