@@ -1,41 +1,41 @@
-# rbxdom-rust-exporter
 
-A robust, user-friendly, and portable Rust-based Roblox `.rbxl` place file exporter. This tool extracts all scripts and properties (including complex types) from `.rbxl` files, outputting them as JSON and Lua files for easy inspection, backup, or migration.
+# LuneX (formerly rbxdom_rust_exporter)
+
+A modern, robust Rust-based Roblox `.rbxl` place file exporter. Extracts all scripts and properties (including complex types) from `.rbxl` files. User-friendly, portable, and compatible with the latest crate APIs. Supports Rojo-compatible export mode and is installable as a console tool named `LuneX`.
 
 ## Features
-- Exports all properties of every instance in a Roblox place file
-- Extracts all scripts (Script, LocalScript, ModuleScript) as `.lua` files
-- Handles complex property types (Color3, Vector3, CFrame, etc.)
-- Outputs a directory tree mirroring the Roblox hierarchy
-- Ready for use with automation tools like `LuneX`
+- Extracts all scripts and properties from `.rbxl` files
+- Handles complex property types (Color3, Vector3, CFrame, etc)
+- Rojo-compatible export mode (`--rojo`)
+- Interactive prompt if `--rojo` not specified
+- Installs and runs as a single binary: `LuneX`
+- Ready for use with the LuneX launcher script
 
 ## Usage
 
 ```sh
-cargo run --release -- <input.rbxl> <output_dir>
+cargo install --path . --force
+# or after install:
+LuneX <input.rbxl> <output_dir> [--rojo]
 ```
 
-- `<input.rbxl>`: Path to your Roblox place file
-- `<output_dir>`: Directory to export the contents to
+If you want the binary to be called `LuneX` and run as `LuneX` from the console, this is now the default (see Cargo.toml for `[[bin]]`).
 
-Example:
+### Rojo Mode
+
+If you pass `--rojo` or answer `y` to the prompt, scripts are exported to a `src/` directory and a minimal `default.project.json` is generated for Rojo compatibility.
+
+## Installation as `LuneX`
+
+The binary is now installed as `LuneX` by default. If you need to copy it manually:
+
 ```sh
-cargo run --release -- ../MagicMaster.rbxl ./exported
-```
-
-## Requirements
-- Rust (https://rustup.rs)
-- Roblox `.rbxl` file
-
-## Installation
-Clone this repo and build with Cargo:
-```sh
-git clone https://github.com/Analog74/rbxdom-rust-exporter.git
-cd rbxdom-rust-exporter
-cargo build --release
+cp ~/.cargo/bin/LuneX /your/desired/path/LuneX
+chmod +x /your/desired/path/LuneX
 ```
 
 ## License
+
 MIT
 
 ---

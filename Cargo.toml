@@ -1,7 +1,12 @@
+
 [package]
-name = "rbxdom_rust_exporter"
-version = "0.1.0"
-edition = "2024"
+name = "LuneX"
+version = "0.1.1"
+edition = "2021"
+
+[[bin]]
+name = "LuneX"
+path = "src/main.rs"
 
 [dependencies]
 rbx_binary = "1.0.0"
