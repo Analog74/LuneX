@@ -48,3 +48,9 @@ Utilities/development/releases/CHECKSUMS.txt
 # Local development environment
 .env
 .env.local
+
+# Temporary files and scripts
+temp/*.tmp
+temp/*.temp
+temp/*.bak
+temp/*.backup

@@ -31,7 +31,7 @@ jobs:
           body: |
             ## What's Changed
             
-            See CHANGELOG.md for detailed changes.
+            See Documents/CHANGELOG.md for detailed changes.
             
             ## Downloads
             
