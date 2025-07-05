@@ -31,7 +31,7 @@ jobs:
           body: |
             ## What's Changed
             
-            See Documents/CHANGELOG.md for detailed changes.
+            See CHANGELOG.md for detailed changes.
             
             ## Downloads
             
@@ -69,15 +69,13 @@ jobs:
         uses: dtolnay/rust-toolchain@stable
 
       - name: Build release binary
-        run: |
-          cd Utilities/development
-          cargo build --release
+        run: cargo build --release
 
       - name: Create binary archive
         run: |
-          cd Utilities/development/target/release
-          zip ../../../../LuneX-macos-${{ needs.create-release.outputs.version }}.zip LuneX
-          gzip -c LuneX > ../../../../LuneX-macos-${{ needs.create-release.outputs.version }}.gz
+          cd target/release
+          zip ../../LuneX-macos-${{ needs.create-release.outputs.version }}.zip LuneX
+          gzip -c LuneX > ../../LuneX-macos-${{ needs.create-release.outputs.version }}.gz
 
       - name: Upload macOS ZIP
         uses: actions/upload-release-asset@v1
