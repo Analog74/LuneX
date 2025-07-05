@@ -1,7 +1,8 @@
 use anyhow::{Context, Result};
 use rbx_binary::from_reader;
 use rbx_dom_weak::{WeakDom, Ustr};
-
+use rfd::FileDialog;
+use std::io;
 use rbx_types::{Variant, Ref};
 use serde_json::json;
 use std::fs::{self, File};
@@ -9,36 +10,111 @@ use std::io::Write;
 
 fn main() -> Result<()> {
     let args: Vec<String> = std::env::args().collect();
-    if args.len() < 3 || args.len() > 4 {
-        eprintln!("Usage: {} <input.rbxl> <output_dir> [--rojo]", args[0]);
-        std::process::exit(1);
-    }
-    let input_path = &args[1];
-    let output_dir = &args[2];
-    let mut use_rojo = args.get(3).map(|s| s == "--rojo").unwrap_or(false);
-
-    // If not specified, prompt the user interactively
-    if args.len() == 3 {
-        use std::io::{self, Write};
-        print!("Do you want to export as a Rojo project? (y/n): ");
-        io::stdout().flush().unwrap();
-        let mut input = String::new();
-        io::stdin().read_line(&mut input).unwrap();
-        let input = input.trim().to_lowercase();
-        if input == "y" || input == "yes" {
-            use_rojo = true;
+    // CLI mode: <input.rbxl> <output_dir> [--mode original|flat|rojo] [--projectjson]
+    if args.len() >= 3 {
+        let input_path = &args[1];
+        let output_dir = &args[2];
+        let mut mode = "original".to_string();
+        let mut want_projectjson = false;
+        for arg in &args[3..] {
+            if arg.starts_with("--mode=") {
+                mode = arg[7..].to_string();
+            } else if arg == "--flat" {
+                mode = "flat".to_string();
+            } else if arg == "--rojo" {
+                mode = "rojo".to_string();
+            } else if arg == "--projectjson" {
+                want_projectjson = true;
+            }
         }
+        let file = File::open(input_path).context("Failed to open input file")?;
+        let dom: WeakDom = from_reader(file).context("Failed to decode rbxl file")?;
+        match mode.as_str() {
+            "original" => {
+                export_tree_original(&dom, output_dir)?;
+                if want_projectjson {
+                    generate_project_json_original(&dom, output_dir)?;
+                }
+                println!("Export complete (original structure mode).");
+            }
+            "flat" => {
+                export_flat(&dom, output_dir)?;
+                if want_projectjson {
+                    generate_project_json_flat(&dom, output_dir)?;
+                }
+                println!("Export complete (flat mode).");
+            }
+            "rojo" => {
+                export_rojo(&dom, output_dir)?;
+                println!("Export complete (Rojo project mode).");
+            }
+            _ => {
+                eprintln!("Unknown mode: {}", mode);
+                std::process::exit(1);
+            }
+        }
+        return Ok(());
     }
+
+
+
+    // --- rbxlx-to-rojo style workflow: prompt for mode, then use GUI for file/folder ---
+    println!("Choose export mode:\n1. Export to original folder structure\n2. Export all scripts to a single folder");
+    print!("Enter 1 or 2: ");
+    io::stdout().flush().unwrap();
+    let mut mode = String::new();
+    io::stdin().read_line(&mut mode).unwrap();
+    let mode = mode.trim();
+
+    if mode != "1" && mode != "2" {
+        println!("Invalid choice. Exiting.");
+        return Ok(());
+    }
+
+    // Pick .rbxl file
+    let input_path = FileDialog::new()
+        .add_filter("Roblox Place", &["rbxl"])
+        .set_title("Select .rbxl file")
+        .pick_file()
+        .expect("No file selected")
+        .to_string_lossy()
+        .to_string();
+
+    // Pick output directory
+    let output_dir = FileDialog::new()
+        .set_title("Select output directory")
+        .pick_folder()
+        .expect("No folder selected")
+        .to_string_lossy()
+        .to_string();
 
     let file = File::open(input_path).context("Failed to open input file")?;
     let dom: WeakDom = from_reader(file).context("Failed to decode rbxl file")?;
 
-    if use_rojo {
-        export_rojo(&dom, output_dir)?;
-        println!("Export complete (Rojo project mode).");
-    } else {
-        export_tree(&dom, output_dir)?;
-        println!("Export complete.");
+    let mut want_projectjson = false;
+    print!("Generate default.project.json to match this structure? (y/n): ");
+    io::stdout().flush().unwrap();
+    let mut pj = String::new();
+    io::stdin().read_line(&mut pj).unwrap();
+    let pj = pj.trim().to_lowercase();
+    want_projectjson = pj == "y" || pj == "yes";
+
+    match mode {
+        "1" => {
+            export_tree_original(&dom, output_dir.as_str())?;
+            if want_projectjson {
+                generate_project_json_original(&dom, output_dir.as_str())?;
+            }
+            println!("Export complete (original structure mode).");
+        }
+        "2" => {
+            export_flat(&dom, output_dir.as_str())?;
+            if want_projectjson {
+                generate_project_json_flat(&dom, output_dir.as_str())?;
+            }
+            println!("Export complete (flat mode).");
+        }
+        _ => {}
     }
     Ok(())
 }
@@ -95,10 +171,121 @@ fn export_instance_rojo(dom: &WeakDom, id: Ref, path: &str, src_dir: &str) -> Re
     Ok(())
 }
 
-fn export_tree(dom: &WeakDom, output_dir: &str) -> Result<()> {
+
+/// Exports the DOM to the original folder structure (using instance names, no hashes, with duplicate handling)
+fn export_tree_original(dom: &WeakDom, output_dir: &str) -> Result<()> {
     fs::create_dir_all(output_dir)?;
     let root_id = dom.root_ref();
-    export_instance(dom, root_id, output_dir)?;
+    let mut name_counts = std::collections::HashMap::new();
+    export_instance_original(dom, root_id, output_dir, &mut name_counts)?;
+    Ok(())
+}
+
+/// Helper for export_tree_original: recursively exports each instance, using instance names, handling duplicates
+fn export_instance_original(
+    dom: &WeakDom,
+    id: Ref,
+    path: &str,
+    name_counts: &mut std::collections::HashMap<String, usize>,
+) -> Result<()> {
+    let inst = dom.get_by_ref(id).unwrap();
+    let mut name = inst.name.to_string();
+    // Handle duplicate names in the same folder
+    let count = name_counts.entry(name.clone()).or_insert(0);
+    if *count > 0 {
+        name = format!("{} ({})", name, count);
+    }
+    *name_counts.get_mut(&inst.name.to_string()).unwrap() += 1;
+    let inst_dir = format!("{}/{}", path, name);
+    fs::create_dir_all(&inst_dir)?;
+
+    // Export properties
+    let mut prop_map = serde_json::Map::new();
+    for (prop, value) in &inst.properties {
+        prop_map.insert(prop.to_string(), rbx_value_to_json(value));
+    }
+    let prop_path = format!("{}/properties.json", inst_dir);
+    let mut prop_file = File::create(&prop_path)?;
+    prop_file.write_all(serde_json::to_string_pretty(&prop_map)?.as_bytes())?;
+
+    // Export scripts
+    let class = &inst.class;
+    if class == "Script" || class == "LocalScript" || class == "ModuleScript" {
+        if let Some(Variant::String(value)) = inst.properties.get(&Ustr::from("Source")) {
+            let script_path = format!("{}/{}.lua", inst_dir, class);
+            let mut script_file = File::create(&script_path)?;
+            script_file.write_all(value.as_bytes())?;
+        }
+    }
+
+    // Recurse into children, with new name_counts for each folder
+    for child_id in inst.children() {
+        let mut child_counts = std::collections::HashMap::new();
+        export_instance_original(dom, *child_id, &inst_dir, &mut child_counts)?;
+    }
+    Ok(())
+}
+
+/// Exports all scripts to a single flat folder (no subfolders)
+fn export_flat(dom: &WeakDom, output_dir: &str) -> Result<()> {
+    fs::create_dir_all(output_dir)?;
+    let mut script_index = 0;
+    export_flat_recurse(dom, dom.root_ref(), output_dir, &mut script_index)?;
+    Ok(())
+}
+
+fn export_flat_recurse(
+    dom: &WeakDom,
+    id: Ref,
+    output_dir: &str,
+    script_index: &mut usize,
+) -> Result<()> {
+    let inst = dom.get_by_ref(id).unwrap();
+    let class = &inst.class;
+    let name = &inst.name;
+    if class == "Script" || class == "LocalScript" || class == "ModuleScript" {
+        if let Some(Variant::String(value)) = inst.properties.get(&Ustr::from("Source")) {
+            // Use a unique name: <Class>_<Name>_<index>.lua
+            let script_path = format!("{}/{}_{}_{}.lua", output_dir, class, name, *script_index);
+            let mut script_file = File::create(&script_path)?;
+            script_file.write_all(value.as_bytes())?;
+            *script_index += 1;
+        }
+    }
+    for child_id in inst.children() {
+        export_flat_recurse(dom, *child_id, output_dir, script_index)?;
+    }
+    Ok(())
+}
+
+/// Generate default.project.json for original structure
+fn generate_project_json_original(_dom: &WeakDom, output_dir: &str) -> Result<()> {
+    // Just point to the output_dir as the root tree
+    let project_json = serde_json::json!({
+        "name": "rbxdom_export",
+        "tree": {
+            "$className": "DataModel",
+            "game": { "$path": "." }
+        }
+    });
+    let project_path = format!("{}/default.project.json", output_dir);
+    let mut f = File::create(&project_path)?;
+    f.write_all(serde_json::to_string_pretty(&project_json)?.as_bytes())?;
+    Ok(())
+}
+
+/// Generate default.project.json for flat export
+fn generate_project_json_flat(_dom: &WeakDom, output_dir: &str) -> Result<()> {
+    let project_json = serde_json::json!({
+        "name": "rbxdom_export",
+        "tree": {
+            "$className": "DataModel",
+            "flat": { "$path": "." }
+        }
+    });
+    let project_path = format!("{}/default.project.json", output_dir);
+    let mut f = File::create(&project_path)?;
+    f.write_all(serde_json::to_string_pretty(&project_json)?.as_bytes())?;
     Ok(())
 }
 
