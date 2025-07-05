@@ -17,8 +17,8 @@ fn main() -> Result<()> {
         // Get the base name of the input file (without extension)
         let input_file_name = std::path::Path::new(input_path)
             .file_stem()
-            .map(|s| s.to_string_lossy().to_string())
-            .unwrap_or_else(|| "ExportedPlace".to_string());
+            .map(|s| format!("_{}", s.to_string_lossy()))
+            .unwrap_or_else(|| "_ExportedPlace".to_string());
         // Create a subfolder in output_dir named after the input file
         let export_dir = std::path::Path::new(output_dir).join(&input_file_name);
         let export_dir_str = export_dir.to_string_lossy();
@@ -98,8 +98,8 @@ fn main() -> Result<()> {
     // Get the base name of the input file (without extension)
     let input_file_name = std::path::Path::new(&input_path)
         .file_stem()
-        .map(|s| s.to_string_lossy().to_string())
-        .unwrap_or_else(|| "ExportedPlace".to_string());
+        .map(|s| format!("_{}", s.to_string_lossy()))
+        .unwrap_or_else(|| "_ExportedPlace".to_string());
     // Create a subfolder in output_dir named after the input file
     let export_dir = std::path::Path::new(&output_dir).join(&input_file_name);
     let export_dir_str = export_dir.to_string_lossy();
