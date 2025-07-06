@@ -1,9 +1,0 @@
-{
-  "Attributes": {},
-  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: LodDataService, instance: Instance)>",
-  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: LodDataService, instance: Instance)>",
-  "Sandboxed": false,
-  "SourceAssetId": -1,
-  "Tags": [],
-  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: LodDataService, instance: Instance)>"
-}

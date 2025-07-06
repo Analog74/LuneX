@@ -1,0 +1,33 @@
+{
+  "name": "GameProject",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$path": "ReplicatedStorage"
+    },
+    "ServerScriptService": {
+      "$path": "ServerScriptService"
+    },
+    "ServerStorage": {
+      "$path": "ServerStorage"
+    },
+    "StarterGui": {
+      "$path": "StarterGui"
+    },
+    "StarterPack": {
+      "$path": "StarterPack"
+    },
+    "StarterPlayer": {
+      "$path": "StarterPlayer"
+    },
+    "Workspace": {
+      "$path": "Workspace"
+    },
+    "Lighting": {
+      "$path": "Lighting"
+    },
+    "SoundService": {
+      "$path": "SoundService"
+    }
+  }
+}

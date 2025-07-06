@@ -1,0 +1,14 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Disabled": false,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "RunContext": "<unsupported: Enum(Enum { value: 0 })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{7AB32C8D-3B54-4109-B8CE-28EE7886CC7B}",
+  "Source": "local player = game.Players.LocalPlayer\nlocal character = player.Character\nlocal items = {}\nlocal buttons = {}\ngame.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack,false)\n\nfunction search(location)\n\tfor i,v in pairs(location:GetChildren()) do \n\t\tif v:isA(\"Tool\") then \n\t\t\ttable.insert(items,v) \n\t\tend\n\tend\nend\n\nfunction refresh()\n\tfor i,v in pairs(buttons) do \n\t\tv:Destroy() \n\tend\n\tfor i,v in pairs(items) do \n\t\tlocal button = script.Sample:Clone() \n\t\tbutton.Name = v.Name\n\t\tbutton.LayoutOrder = i\n\t\tbutton.Parent = script.Parent.Handler\n\t\tbutton.Image = v.TextureId\n\t\ttable.insert(buttons,button)\n\t\tbutton.MouseButton1Click:connect(function()\n\t\t\tif script.Parent.Handler.Selected.Value == nil or script.Parent.Handler.Selected.Value ~= v then \n\t\t\t\tscript.Parent.Frame.ItemName.Text = v.Name\n\t\t\t\tscript.Parent.Frame.ImageLabel.Image = v.TextureId\n\t\t\t\tscript.Parent.Handler.Selected.Value = v\n\t\t\t\tif script.Parent.Handler.Selected.Value ~= script.Parent.Handler.Equipped.Value then\n\t\t\t\t\tscript.Parent.Handler.Location.Value = v.Parent\n\t\t\t\t\tscript.Parent.Frame.Equip.Text = \"Equip\" \n\t\t\t\telseif script.Parent.Handler.Selected.Value == script.Parent.Handler.Equipped.Value then \n\t\t\t\t\tscript.Parent.Handler.Location.Value = v.Parent\n\t\t\t\t\tscript.Parent.Frame.Equip.Text = \"Unequip\"\n\t\t\t\tend\n\t\t\tend\n\t\tend)\n\tend\nend\n\nfunction backpackRefresh()\n\titems = {}\n\tsearch(character)\n\tsearch(player.Backpack)\n\trefresh()\nend\n\nbackpackRefresh()\n\nplayer.Backpack.ChildAdded:connect(backpackRefresh)\nplayer.Backpack.ChildRemoved:connect(backpackRefresh)\n\ncharacter.ChildAdded:connect(backpackRefresh)\ncharacter.ChildRemoved:connect(backpackRefresh)",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 2254082, time: 32320501, random: 7308681896716043950 })>"
+}

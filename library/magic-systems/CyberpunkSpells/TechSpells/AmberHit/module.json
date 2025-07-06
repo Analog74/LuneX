@@ -1,0 +1,17 @@
+{
+    "name": "AmberHit",
+    "description": "A powerful Amber explosion spell that can be customized.",
+    "author": "LuneX",
+    "version": "1.0.0",
+    "tags": ["spell", "combat", "magic", "vfx", "cyberpunk"],
+    "dependencies": {
+        "modules": ["CameraShaker", "LightningBolt"],
+        "assets": {
+            "particles": ["Amber.AmberHit"]
+        }
+    },
+    "compatibility": {
+        "roblox_version": "500+",
+        "frameworks": ["SpellCombatSystem"]
+    }
+}

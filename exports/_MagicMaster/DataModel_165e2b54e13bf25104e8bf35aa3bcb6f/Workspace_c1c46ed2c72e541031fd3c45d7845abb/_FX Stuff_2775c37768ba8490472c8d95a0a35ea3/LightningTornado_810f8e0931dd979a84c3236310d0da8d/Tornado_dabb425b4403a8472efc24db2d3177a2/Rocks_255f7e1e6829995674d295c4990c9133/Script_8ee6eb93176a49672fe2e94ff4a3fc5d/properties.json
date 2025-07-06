@@ -1,0 +1,14 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Disabled": false,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "RunContext": "<unsupported: Enum(Enum { value: 0 })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{b35460b6-5554-4ba9-947a-f858eadac086}",
+  "Source": "game.TweenService:Create(script.Parent, TweenInfo.new(3.5, Enum.EasingStyle.Linear, Enum.EasingDirection.In, -1), {Orientation = script.Parent.Orientation + Vector3.new(0, 360, 0)}):Play()",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 18205086, time: 32320501, random: 7308681896716043950 })>"
+}

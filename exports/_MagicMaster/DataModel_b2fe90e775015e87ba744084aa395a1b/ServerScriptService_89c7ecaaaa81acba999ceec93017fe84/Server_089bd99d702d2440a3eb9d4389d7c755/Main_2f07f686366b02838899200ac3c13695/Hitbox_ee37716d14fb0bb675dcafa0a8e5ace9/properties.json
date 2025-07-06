@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{6E032AD8-D3A8-47B7-BD4F-EB3A96DDC1B6}",
+  "Source": "local Hitbox = {}\n\nfunction Hitbox:Start(Origin, Direction, Blacklist, Visualizer)\n\tlocal RayParams = RaycastParams.new()\n\tRayParams.FilterType = Enum.RaycastFilterType.Blacklist\n\tRayParams.FilterDescendantsInstances = Blacklist\n\t\n\treturn workspace:Raycast(Origin, Direction, RayParams)\nend\n\nreturn Hitbox\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 14499076, time: 32320501, random: 7308681896716043950 })>"
+}

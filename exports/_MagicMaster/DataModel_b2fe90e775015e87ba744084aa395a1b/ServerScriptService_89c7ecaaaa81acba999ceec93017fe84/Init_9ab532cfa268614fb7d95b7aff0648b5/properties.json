@@ -1,0 +1,14 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Disabled": false,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "RunContext": "<unsupported: Enum(Enum { value: 0 })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{A0CDFE5F-271E-4319-A2A8-0E2ACDFCD526}",
+  "Source": "\nlocal ReplicatedStorage = game:GetService('ReplicatedStorage')\nrequire(ReplicatedStorage:WaitForChild('Modules'):WaitForChild('ReplicatedData'))\n\nlocal ServerStorage = game:GetService('ServerStorage')\nlocal SystemsFolder = ServerStorage:WaitForChild('Systems')\n\nlocal DataService = require(SystemsFolder:WaitForChild('DataService'))\nDataService:Init()\nrequire(SystemsFolder:WaitForChild('QuestsService'))\nrequire(SystemsFolder:WaitForChild('CollectablesService'))\nrequire(SystemsFolder:WaitForChild('CraftingService'))\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 3273562, time: 32318743, random: 7712671185636030641 })>"
+}

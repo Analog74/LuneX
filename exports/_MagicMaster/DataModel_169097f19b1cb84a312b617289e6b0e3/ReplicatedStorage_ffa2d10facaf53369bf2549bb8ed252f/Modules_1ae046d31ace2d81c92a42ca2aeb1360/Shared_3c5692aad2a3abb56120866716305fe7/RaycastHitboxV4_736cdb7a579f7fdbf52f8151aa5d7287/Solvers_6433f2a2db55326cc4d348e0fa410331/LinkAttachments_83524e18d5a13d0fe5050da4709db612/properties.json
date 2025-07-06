@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{7A6EA1AC-94B2-4D6F-B589-FAAE555B9F81}",
+  "Source": "--!strict\r\n--- Calculates ray origin and directions for attachment-based raycast points\r\n-- @author Swordphin123\r\n\r\nlocal solver = {}\r\n\r\n--- Solve direction and length of the ray by comparing both attachment1 and attachment2's positions\r\n-- @param point type\r\nfunction solver:Solve(point: {[string]: any}): (Vector3, Vector3)\r\n\tlocal origin: Vector3 = point.Instances[1].WorldPosition\r\n\tlocal direction: Vector3 = point.Instances[2].WorldPosition - point.Instances[1].WorldPosition\r\n\r\n\treturn origin, direction\r\nend\r\n\r\nfunction solver:UpdateToNextPosition(point: {[string]: any}): Vector3\r\n\treturn point.Instances[1].WorldPosition\r\nend\r\n\r\nfunction solver:Visualize(point: {[string]: any}): CFrame\r\n\treturn CFrame.lookAt(point.Instances[1].WorldPosition, point.Instances[2].WorldPosition)\r\nend\r\n\r\nreturn solver",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 25855, time: 142155861, random: 1232354692393223026 })>"
+}

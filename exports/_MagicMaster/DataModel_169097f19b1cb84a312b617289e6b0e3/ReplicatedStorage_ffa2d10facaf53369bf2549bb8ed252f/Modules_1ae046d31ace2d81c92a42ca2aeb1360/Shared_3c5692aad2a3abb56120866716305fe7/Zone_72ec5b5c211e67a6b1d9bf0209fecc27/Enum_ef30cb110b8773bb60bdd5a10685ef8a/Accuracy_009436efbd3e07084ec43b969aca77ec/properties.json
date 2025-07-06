@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{FE526E91-AAD8-4EC0-A31E-E8B3BFFE0091}",
+  "Source": "-- enumName, enumValue, additionalProperty\n-- in this case, additionalProperty is the delay between each check\nreturn {\n\t{\"Low\", \t1,\t1.0},\n\t{\"Medium\",\t2,\t0.5},\n\t{\"High\",\t3,\t0.1},\n\t{\"Precise\",\t4,\t0.0},\n}",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 25884, time: 142155861, random: 1232354692393223026 })>"
+}

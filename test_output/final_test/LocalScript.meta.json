@@ -1,0 +1,19 @@
+{
+  "Name": "LocalScript",
+  "ClassName": "LocalScript",
+  "Properties": {
+    "Name": "LocalScript",
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "Disabled": false,
+    "HistoryId": "00000000000000000000000000000000",
+    "LinkedSource": "\n                ",
+    "RunContext": "0",
+    "DefinesCapabilities": false,
+    "ScriptGuid": "{292DDE7E-6DE7-4507-8F1B-E5913D0ED1F0}",
+    "Source": "local uis = game:GetService(\"UserInputService\")\nlocal Backpack = script.Parent:WaitForChild(\"Backpack\")\n\nif uis.TouchEnabled then\n\tBackpack.Visible = true\nend",
+    "SourceAssetId": "-1",
+    "Tags": "",
+    "UniqueId": "656da776461686ae01ed2bf500226505"
+  }
+}

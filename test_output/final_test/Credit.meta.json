@@ -1,0 +1,19 @@
+{
+  "Name": "Credit",
+  "ClassName": "Script",
+  "Properties": {
+    "Name": "Credit",
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "Disabled": true,
+    "HistoryId": "00000000000000000000000000000000",
+    "LinkedSource": "\n            ",
+    "RunContext": "0",
+    "DefinesCapabilities": false,
+    "ScriptGuid": "{EB8D41BA-7DB2-4910-BF06-520F0BCA2382}",
+    "Source": "-- credit to mathew for making some of the scripts\n-- credit to zenxo for making the unlocker\n-- enjoy ;)",
+    "SourceAssetId": "-1",
+    "Tags": "",
+    "UniqueId": "656da776461686ae01ed2bf500226515"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{887EFF0E-BADE-41A5-95A3-81E5A2BFD7C3}",
+  "Source": "local module = {}\n\n--[[\n\nThis module has nothing in it, it's just been set as a modulescript so i can upload it.\n\nPlease see the readme file\n\n--]]\n\nreturn module\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 25790, time: 142155861, random: 1232354692393223026 })>"
+}

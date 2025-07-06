@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{1CEB2918-81CB-406C-AE3A-7504F42E999C}",
+  "Source": "local Cast = {}\nlocal Debugger = require(script.Parent.Debug.Debugger)\n\nfunction Cast:solve(Point, bool)\t\n\tlocal RelativePartToWorldSpace = Point.IsAttachment and Point.RelativePart.WorldPosition + Point.RelativePart.WorldCFrame:VectorToWorldSpace(Point.Attachment) or Point.RelativePart.Position + Point.RelativePart.CFrame:VectorToWorldSpace(Point.Attachment)\n\t\n\tif not Point.LastPosition then\n\t\tPoint.LastPosition = RelativePartToWorldSpace\n\tend\n\t\n\tif bool then\n\t\tDebugger(RelativePartToWorldSpace - Point.LastPosition, CFrame.new(RelativePartToWorldSpace, Point.LastPosition))\n\tend\n\n\treturn Point.LastPosition, RelativePartToWorldSpace - (Point.LastPosition and Point.LastPosition or Vector3.new()), RelativePartToWorldSpace\nend\n\nfunction Cast:lastPosition(Point, RelativePartToWorldSpace)\n\tPoint.LastPosition = RelativePartToWorldSpace\nend\n\nreturn Cast\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 25847, time: 142155861, random: 1232354692393223026 })>"
+}

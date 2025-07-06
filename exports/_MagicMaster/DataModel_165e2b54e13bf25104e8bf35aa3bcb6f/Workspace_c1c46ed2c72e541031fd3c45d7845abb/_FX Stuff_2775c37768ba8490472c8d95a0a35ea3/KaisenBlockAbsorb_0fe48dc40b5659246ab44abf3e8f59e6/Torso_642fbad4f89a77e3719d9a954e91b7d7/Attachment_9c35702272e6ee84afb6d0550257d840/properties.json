@@ -1,0 +1,36 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "CFrame": {
+    "matrix": {
+      "orientation": [
+        [
+          2.384140884714725e-7,
+          1.0,
+          2.384186643666908e-7
+        ],
+        [
+          -2.1315729807321396e-14,
+          -2.384186643666908e-7,
+          1.0
+        ],
+        [
+          1.0,
+          -2.384140884714725e-7,
+          -3.5526638732632024e-14
+        ]
+      ],
+      "position": [
+        0.000030517578125,
+        0.0,
+        0.0000152587890625
+      ]
+    }
+  },
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "Sandboxed": false,
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 16087459, time: 32320501, random: 7308681896716043950 })>",
+  "Visible": false
+}

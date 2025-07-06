@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{6AD3E187-559F-4611-9992-B6390BBCC1EE}",
+  "Source": "--!strict\n--- Calculates ray origin and directions for attachment-based raycast points\n-- @author Swordphin123\n\nlocal solver = {}\n\n--- Solve direction and length of the ray by comparing current and last frame's positions\n-- @param point type\nfunction solver:Solve(point: {[string]: any}): (Vector3, Vector3)\n\t--- If LastPosition is nil (caused by if the hitbox was stopped previously), rewrite its value to the current point position\n\tif not point.LastPosition then\n\t\tpoint.LastPosition = point.Instances[1].WorldPosition\n\tend\n\n\tlocal origin: Vector3 = point.Instances[1].WorldPosition\n\tlocal direction: Vector3 = point.Instances[1].WorldPosition - point.LastPosition\n\n\treturn origin, direction\nend\n\nfunction solver:UpdateToNextPosition(point: {[string]: any}): Vector3\n\treturn point.Instances[1].WorldPosition\nend\n\nfunction solver:Visualize(point: {[string]: any}): CFrame\n\treturn CFrame.lookAt(point.Instances[1].WorldPosition, point.LastPosition)\nend\n\nreturn solver",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 25854, time: 142155861, random: 1232354692393223026 })>"
+}

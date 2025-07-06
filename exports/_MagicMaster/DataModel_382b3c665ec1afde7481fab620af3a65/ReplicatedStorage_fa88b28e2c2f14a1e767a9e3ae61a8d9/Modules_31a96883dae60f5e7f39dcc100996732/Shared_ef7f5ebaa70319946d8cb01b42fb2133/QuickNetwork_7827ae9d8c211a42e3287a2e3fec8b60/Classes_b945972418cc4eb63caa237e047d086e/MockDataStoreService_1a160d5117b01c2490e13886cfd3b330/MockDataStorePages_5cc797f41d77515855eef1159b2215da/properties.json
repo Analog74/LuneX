@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{3B7C48A9-5E59-4C40-97B2-05BADA421B3D}",
+  "Source": "--[[\n\tMockDataStorePages.lua\n\tThis module implements the API and functionality of Roblox's DataStorePages class.\n\n\tThis module is licensed under APLv2, refer to the LICENSE file or:\n\thttps://github.com/buildthomas/MockDataStoreService/blob/master/LICENSE\n]]\n\nlocal MockDataStorePages = {}\nMockDataStorePages.__index = MockDataStorePages\n\nlocal MockDataStoreManager = require(script.Parent.MockDataStoreManager)\nlocal Utils = require(script.Parent.MockDataStoreUtils)\n\nfunction MockDataStorePages:GetCurrentPage()\n\tlocal retValue = {}\n\n\tlocal minimumIndex = math.max(1, (self.__currentPage - 1) * self.__pageSize + 1)\n\tlocal maximumIndex = math.min(self.__currentPage * self.__pageSize, #self.__results)\n\tfor i = minimumIndex, maximumIndex do\n\t\ttable.insert(retValue, {key = self.__results[i].key, value = self.__results[i].value})\n\tend\n\n\treturn retValue\nend\n\nfunction MockDataStorePages:AdvanceToNextPageAsync()\n\tif self.IsFinished then\n\t\terror(\"AdvanceToNextPageAsync rejected with error (no pages to advance to)\", 2)\n\tend\n\n\tUtils.simulateErrorCheck(\"AdvanceToNextPageAsync\")\n\n\tlocal success = MockDataStoreManager.YieldForBudget(\n\t\tfunction()\n\t\t\twarn(\"AdvanceToNextPageAsync request was throttled due to lack of budget. Try sending fewer requests.\")\n\t\tend,\n\t\t{Enum.DataStoreRequestType.GetAsync}\n\t)\n\n\tif not success then\n\t\terror(\"AdvanceToNextPageAsync rejected with error (request was throttled, but throttled queue was full)\", 2)\n\tend\n\n\tUtils.simulateYield()\n\n\tif #self.__results > self.__currentPage * self.__pageSize then\n\t\tself.__currentPage = self.__currentPage + 1\n\tend\n\tself.IsFinished = #self.__results <= self.__currentPage * self.__pageSize\n\n\tUtils.logMethod(self.__datastore, \"AdvanceToNextPageAsync\")\n\nend\n\nreturn MockDataStorePages\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 25830, time: 142155861, random: 1232354692393223026 })>"
+}

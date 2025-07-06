@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{C77A685E-C48F-439B-8345-9D170D076033}",
+  "Source": "-- Decompiled with the Synapse X Luau decompiler.\n\nlocal l__TweenService__1 = game:GetService(\"TweenService\");\nlocal l__Debris__2 = game:GetService(\"Debris\");\nlocal l__Assets__3 = game:GetService(\"ReplicatedStorage\").Assets;\nlocal l__Meshes__4 = l__Assets__3.Meshes;\nlocal v5 = require(script.Parent.Parent.Parent.Auxiliary.CameraShaker);\nlocal v6 = require(script.Parent.Parent.Parent.Auxiliary.LightningBolt);\nlocal v7 = require(script.Parent.Parent.Parent.Auxiliary.LightningBolt.LightningSparks);\nlocal l__CurrentCamera__1 = workspace.CurrentCamera;\nlocal v8 = v5.new(Enum.RenderPriority.Camera.Value, function(p1)\n\tl__CurrentCamera__1.CFrame = l__CurrentCamera__1.CFrame * p1;\nend);\nv8:Start();\nlocal l__Particles__2 = l__Assets__3.Particles;\nreturn function(...)\n\tlocal v9 = l__Particles__2.Baal.Baal:Clone();\n\tv9.CFrame = ({ ... })[1].CFrame * CFrame.new(0, 4.5, -7.5) * CFrame.Angles(0, math.rad(90), 0);\n\tv9.Parent = workspace.Effects;\n\tl__TweenService__1:Create(v9.PointLight, TweenInfo.new(0.35, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {\n\t\tBrightness = 3.25\n\t}):Play();\n\tv9.Attachment.Shards3:Emit(3);\n\ttask.wait(0.25);\n\tv8:Shake(v5.Presets.Lightning1);\n\tv9.Attachment.Main:Emit(1);\n\tv9.Attachment.Center:Emit(1);\n\tv9.Attachment.Sparks:Emit(10);\n\tv9.Attachment.Gradient:Emit(1);\n\tv9.Attachment.Spark1:Emit(1);\n\tv9.Attachment.Shards1:Emit(20);\n\tv9.Attachment.Specs1:Emit(35);\n\tv9.Attachment.Smoke:Emit(30);\n\ttask.wait(0.8);\n\tv8:Shake(v5.Presets.Lightning1);\n\tv9.Attachment.Shards2:Emit(15);\n\tv9.Attachment.Shards:Emit(30);\n\tv9.Attachment.Gradient1:Emit(1);\n\tv9.Attachment.Specs:Emit(25);\n\tl__TweenService__1:Create(v9.PointLight, TweenInfo.new(1.35, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {\n\t\tBrightness = 0\n\t}):Play();\n\tl__Debris__2:AddItem(v9, 1);\nend;\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 19249576, time: 32320501, random: 7308681896716043950 })>"
+}

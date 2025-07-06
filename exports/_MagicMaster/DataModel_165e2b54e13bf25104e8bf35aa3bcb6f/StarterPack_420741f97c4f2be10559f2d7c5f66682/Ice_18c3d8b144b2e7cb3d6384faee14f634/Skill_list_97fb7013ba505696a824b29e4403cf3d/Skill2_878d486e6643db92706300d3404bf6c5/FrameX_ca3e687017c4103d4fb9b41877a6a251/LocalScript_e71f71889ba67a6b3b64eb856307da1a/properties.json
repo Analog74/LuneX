@@ -1,0 +1,14 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Disabled": false,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "RunContext": "<unsupported: Enum(Enum { value: 0 })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{93DB4464-6C00-4192-8A90-6F86156CDC1E}",
+  "Source": "local Debounce = false\nwhile wait() do\n\tif script.Parent.Visible == true and Debounce == false and script.Enable.Value == true then\n\t\tscript.Parent.Size = UDim2.new(1, 1,1, 1)\n\t\tscript.Parent:TweenSize(UDim2.new(0, 1,1, 1),\"Out\",\"Linear\",script.Cooldown.Value,true)\n\t\tDebounce = true\n\t\twait(script.Cooldown.Value)\n\t\tscript.Parent.Size = UDim2.new(1, 1,1, 1)\n\t\tscript.Parent.Visible = false\n\t\tDebounce = false\n\t\tscript.Enable.Value = false\n\tend\nend",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 26288, time: 142155861, random: 1232354692393223026 })>"
+}

@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{CBE652F1-03A1-4BE3-B355-3E8C7432AE9B}",
+  "Source": "--- @Swordphin123, wao such minimalism\n\nlocal connection = {}\nconnection.__index = connection\n\nfunction connection:Create()\n\treturn setmetatable({}, connection)\nend\n\nfunction connection:Connect(Listener)\n\tself[1] = Listener\nend\n\nfunction connection:Fire(...)\n\tif not self[1] then return end \n\t\n\tlocal newThread = coroutine.create(self[1])\n\tcoroutine.resume(newThread, ...)\nend\n\nfunction connection:Delete()\n\tself[1] = nil\nend\n\nreturn connection",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 25851, time: 142155861, random: 1232354692393223026 })>"
+}

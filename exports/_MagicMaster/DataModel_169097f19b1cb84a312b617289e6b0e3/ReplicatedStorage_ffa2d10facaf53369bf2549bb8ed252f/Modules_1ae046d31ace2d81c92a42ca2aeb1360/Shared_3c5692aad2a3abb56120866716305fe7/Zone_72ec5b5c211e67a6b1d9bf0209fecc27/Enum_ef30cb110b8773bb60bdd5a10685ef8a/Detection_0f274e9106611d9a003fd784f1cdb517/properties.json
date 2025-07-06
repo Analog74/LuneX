@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{6EE36AA6-1BB5-4CCF-B552-FBBBB52C6ACF}",
+  "Source": "-- Important note: Precision checks currently only for 'players' and the 'localplayer', not 'parts'.\n\n-- enumName, enumValue, additionalProperty\nreturn {\n\t{\"WholeBody\", 1}, -- Multiple checks will be casted over an entire players character\n\t{\"Centre\", 2}, -- A singular check will be performed on the players HumanoidRootPart\n\t--{\"Automatic\", 3}, -- REMOVED DUE TO UNECESSARY COMPLEXITY. ZonePlus will dynamically switch between 'WholeBody' and 'Centre' depending upon the number of players in a server (this typically only occurs for servers with 100+ players when volume checks begin to exceed 0.5% in script performance).\n}",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 25883, time: 142155861, random: 1232354692393223026 })>"
+}

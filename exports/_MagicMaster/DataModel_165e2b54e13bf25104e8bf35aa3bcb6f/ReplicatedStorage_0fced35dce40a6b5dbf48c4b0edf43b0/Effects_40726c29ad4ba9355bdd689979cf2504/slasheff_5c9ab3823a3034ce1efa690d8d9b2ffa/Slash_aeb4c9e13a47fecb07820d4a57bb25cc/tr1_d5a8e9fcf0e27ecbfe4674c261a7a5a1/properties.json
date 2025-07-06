@@ -1,0 +1,18 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Color3": {
+    "b": 0.0,
+    "g": 0.6666666865348816,
+    "r": 1.0
+  },
+  "Face": "<unsupported: Enum(Enum { value: 4 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "Sandboxed": false,
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "TextureContent": "<unsupported: Content(Content(Uri(\"rbxassetid://6398959303\")))>",
+  "Transparency": 0.5,
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 26407, time: 142155861, random: 1232354692393223026 })>",
+  "ZIndex": 1
+}

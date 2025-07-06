@@ -1,0 +1,120 @@
+{
+  "Anchored": true,
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "AudioCanCollide": true,
+  "BackParamA": -0.5,
+  "BackParamB": 0.5,
+  "BackSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "BackSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "BottomParamA": -0.5,
+  "BottomParamB": 0.5,
+  "BottomSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "BottomSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "CFrame": {
+    "matrix": {
+      "orientation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        89.18999481201172,
+        0.5000039935112,
+        213.07000732421875
+      ]
+    }
+  },
+  "CanCollide": false,
+  "CanQuery": true,
+  "CanTouch": false,
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "CastShadow": false,
+  "CollisionGroup": "Default",
+  "CollisionGroupId": 0,
+  "Color": "<unsupported: Color3uint8(Color3uint8 { r: 163, g: 162, b: 165 })>",
+  "CustomPhysicalProperties": "<unsupported: PhysicalProperties(Default)>",
+  "EnableFluidForces": true,
+  "FormFactor": "<unsupported: Enum(Enum { value: 1 })>",
+  "FrontParamA": -0.5,
+  "FrontParamB": 0.5,
+  "FrontSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "FrontSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LeftParamA": -0.5,
+  "LeftParamB": 0.5,
+  "LeftSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "LeftSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "Locked": false,
+  "Massless": false,
+  "Material": "<unsupported: Enum(Enum { value: 256 })>",
+  "MaterialVariant": "",
+  "PivotOffset": {
+    "matrix": {
+      "orientation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "Reflectance": 0.0,
+  "RightParamA": -0.5,
+  "RightParamB": 0.5,
+  "RightSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "RightSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "RootPriority": 0,
+  "RotVelocity": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "Sandboxed": false,
+  "Shape": "<unsupported: Enum(Enum { value: 1 })>",
+  "Size": {
+    "x": 50.0,
+    "y": 0.0010000000474974513,
+    "z": 50.0
+  },
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "TopParamA": -0.5,
+  "TopParamB": 0.5,
+  "TopSurface": "<unsupported: Enum(Enum { value: 0 })>",
+  "TopSurfaceInput": "<unsupported: Enum(Enum { value: 0 })>",
+  "Transparency": 1.0,
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 11934979, time: 32320501, random: 7308681896716043950 })>",
+  "Velocity": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  }
+}

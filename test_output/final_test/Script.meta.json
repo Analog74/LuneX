@@ -1,0 +1,19 @@
+{
+  "Name": "Script",
+  "ClassName": "Script",
+  "Properties": {
+    "Name": "Script",
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "Disabled": true,
+    "HistoryId": "00000000000000000000000000000000",
+    "LinkedSource": "\n                ",
+    "RunContext": "0",
+    "DefinesCapabilities": false,
+    "ScriptGuid": "{67833FF8-6521-4DEE-812C-EAACB00B4655}",
+    "Source": "-- Script failed to decompile or ignored",
+    "SourceAssetId": "-1",
+    "Tags": "",
+    "UniqueId": "656da776461686ae01ed2bf50125b599"
+  }
+}

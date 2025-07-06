@@ -1,0 +1,14 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Disabled": false,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "RunContext": "<unsupported: Enum(Enum { value: 0 })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{7B09921A-A0FA-4D80-96CF-CBCE75F5CF76}",
+  "Source": "local frame = script.Parent.Parent:WaitForChild(\"Frame\")\nlocal open = script.Parent.Parent.Open\n\nscript.Parent.MouseButton1Click:Connect(function()\n\tif open.Value == false then\n\t\tframe.Visible = true -- Position of your frame when its opened\n\t\topen.Value = true\n\telseif open.Value == true then\n\t\tframe.Visible = false -- Position of your frame when its closed\n\t\topen.Value = false\n\tend\nend)\n\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 2254099, time: 32320501, random: 7308681896716043950 })>"
+}

@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{f4991870-2dfa-440a-8dcd-812819ba0818}",
+  "Source": "-- Services\nlocal Camera = workspace.CurrentCamera\nlocal Replicated = game:GetService('ReplicatedStorage')\nlocal TweenService = game:GetService('TweenService')\nlocal Debris = game:GetService('Debris')\n\n-- Assets\nlocal Assets = Replicated.Assets\nlocal Particles = Assets.Particles\nlocal Meshes = Assets.Meshes\n\nlocal Modules = script.Parent.Parent.Parent\nlocal CameraShaker = require(Modules.Auxiliary.CameraShaker)\nlocal BoltModule = require(Modules.Auxiliary.LightningBolt)\nlocal SparksModule = require(Modules.Auxiliary.LightningBolt.LightningSparks)\nlocal RockModule = require(Modules.Auxiliary.RockModule)\n\n-- Functions\nlocal CamShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(CF)\n\tCamera.CFrame = Camera.CFrame * CF\nend)\n\nlocal function PlaySound(Id, Volume, Parent, Duration)\n\tlocal s = Instance.new('Sound')\n\ts.SoundId = Id\n\ts.Volume = Volume\n\ts.Parent = Parent\n\ts:Play()\n\tDebris:AddItem(s, Duration or 1)\n\treturn s\nend\n\nCamShake:Start()\n\nreturn \n\tfunction(...)\n\n\tlocal Parameters = {...}\nend\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 11934942, time: 32320501, random: 7308681896716043950 })>"
+}

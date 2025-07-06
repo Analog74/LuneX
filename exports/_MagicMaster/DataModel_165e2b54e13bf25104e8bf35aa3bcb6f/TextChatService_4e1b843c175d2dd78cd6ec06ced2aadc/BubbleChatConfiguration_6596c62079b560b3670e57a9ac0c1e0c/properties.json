@@ -1,0 +1,37 @@
+{
+  "AdorneeName": "HumanoidRootPart",
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "BackgroundColor3": {
+    "b": 0.9803921580314636,
+    "g": 0.9803921580314636,
+    "r": 0.9803921580314636
+  },
+  "BackgroundTransparency": 0.1,
+  "BubbleDuration": 15.0,
+  "BubblesSpacing": 6.0,
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Enabled": true,
+  "Font": "<unsupported: Enum(Enum { value: 18 })>",
+  "FontFace": "<unsupported: Font(Font { family: \"rbxasset://fonts/families/GothamSSm.json\", weight: Medium, style: Normal, cached_face_id: Some(\"rbxasset://fonts/Montserrat-Medium.ttf\") })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LocalPlayerStudsOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "MaxBubbles": 3.0,
+  "MaxDistance": 100.0,
+  "MinimizeDistance": 40.0,
+  "Sandboxed": false,
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "TailVisible": true,
+  "TextColor3": {
+    "b": 0.239215686917305,
+    "g": 0.23137255012989044,
+    "r": 0.2235294133424759
+  },
+  "TextSize": "<unsupported: Int64(16)>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 922, time: 142145355, random: 5418241880849265781 })>",
+  "VerticalStudsOffset": 0.0
+}

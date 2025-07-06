@@ -1,0 +1,9 @@
+{
+  "name": "SimpleProject",
+  "tree": {
+    "$className": "DataModel",
+    "src": {
+      "$path": "src"
+    }
+  }
+}

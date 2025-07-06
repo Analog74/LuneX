@@ -1,0 +1,16 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "ResetPlayerGuiOnSpawn": true,
+  "RtlTextSupport": "<unsupported: Enum(Enum { value: 0 })>",
+  "Sandboxed": false,
+  "ScreenOrientation": "<unsupported: Enum(Enum { value: 4 })>",
+  "ShowDevelopmentGui": true,
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "StudioDefaultStyleSheet": "00000000000000000000000000000000",
+  "StudioInsertWidgetLayerCollectorAutoLinkStyleSheet": "00000000000000000000000000000000",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 104226, time: 32318743, random: 7712671185636030641 })>",
+  "VirtualCursorMode": "<unsupported: Enum(Enum { value: 1 })>"
+}

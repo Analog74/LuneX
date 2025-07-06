@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{ef75dd7c-8cc1-4211-8093-24114b9dc19c}",
+  "Source": "-- Services\nlocal ReplicatedStorage = game:GetService('ReplicatedStorage')\n\nlocal Debris = game:GetService('Debris')\n\n-- Assets\nlocal Assets = ReplicatedStorage.Assets\nlocal Particles = Assets.Particles.Spritesheet\n\nreturn function( ... )\n\tlocal Parameters = { ... }\n\t\n\t-- Properties / Attributes\n\tlocal ParticlePreset = Parameters.ParticlePreset or Particles.Default\t-- Path to the premade particle with preset properties.\n\tlocal EmitCount = Parameters.EmitCount or 10 -- How many times will the particle emit?\n\tlocal SpritesheetTextures = Parameters.SpritesheetTextures or warn('No textures passed!')\t-- Spritesheet textures to loop.\n\tlocal SpritesheetFPS = Parameters.SpritesheetFPS or 0.03 -- Spritesheet frames per second.\n\tlocal Parent = Parameters.Parent or warn('No parent set!') -- Where will the particle be parented to?\n\t\n\t -- We will manually clone the particle for every time we are going to make a spritesheet so it looks more natural.\n\tfor _ = 1, EmitCount do -- We get rid of the index because we don't need it. It's nice to conserve memory.\n\t\tlocal Particle = ParticlePreset:Clone()\n\t\tParticle.Parent = Parent\n\t\tParticle:Emit(1)\n\t\t\n\t\ttask.spawn(function() -- We loop through all the textures and change the particle texture accordingly.\n\t\t\tfor _, v in ipairs(SpritesheetTextures) do -- We get rid of the index because we don't need it. It's nice to conserve memory.\n\t\t\t\tParticle.Texture = v\n\t\t\t\ttask.wait(SpritesheetFPS)\n\t\t\tend\n\t\t\tDebris:AddItem(Particle, 1) -- Destroy the particle after one second of finishing the loop.\n\t\tend)\n\tend\nend",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 24965, time: 142155861, random: 1232354692393223026 })>"
+}

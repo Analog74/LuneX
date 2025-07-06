@@ -1,0 +1,66 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "C0": {
+    "matrix": {
+      "orientation": [
+        [
+          1.0,
+          0.0,
+          -8.742277657347586e-8
+        ],
+        [
+          -8.742277657347586e-8,
+          -4.371138828673793e-8,
+          -1.0
+        ],
+        [
+          -3.82137093032941e-15,
+          1.0,
+          -4.371138828673793e-8
+        ]
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "C1": {
+    "matrix": {
+      "orientation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "DesiredAngle": 0.0,
+  "Enabled": true,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "MaxVelocity": 0.0,
+  "Part0": "bf0e7eedd7d20dd70b3693f5f1fe79c7",
+  "Part1": "f177db046f1af00b5deee762dfd9ad31",
+  "Sandboxed": false,
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 26106, time: 142155861, random: 1232354692393223026 })>"
+}

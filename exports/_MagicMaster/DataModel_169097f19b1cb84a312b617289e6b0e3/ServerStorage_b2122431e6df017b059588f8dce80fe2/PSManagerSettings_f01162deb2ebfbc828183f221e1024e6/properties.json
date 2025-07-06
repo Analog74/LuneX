@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{C5D9FE30-CC92-45E4-9C53-34F66F9BE9EE}",
+  "Source": "--[[\n\tConfused? Here's the documentation on how to setup: https://devforum.roblox.com/t/1435596\n]]\n\nlocal PROFILE_STORE_DEFAULTS = {\n\t[\"Data1\"] = {\n\t\t_playerProfileKey = \"Data-<userid>\",\n\t\tEXP = 0,\n\t\tMaxEXP = 100,\n\t\tMaxStamina = 100,\n\t\tLevel = 1,\n\t\tDefense = 0,\n\t\tStrength = 0,\n\t\tAgility = 0,\n\t\tMagic = 0,\n\t\tStatPoints = 3,\n\t\tGold = 10,\n\t\tGems = 0,\n\t\tInventory = {\"Iron Sword\"; },\n\t\tBanned = false,\n\t\t\n\t\t-- APPEARANCE --\n\t\t\n\t\tHair1 = 1,\n\t\tHair2 = 1,\n\t\tEyes = 1,\n\t\tEyebrows = 1,\n\t\tNose = 1,\n\t\tMouth = 1,\n\t\tShirt = 1,\n\t\tPants = 1,\n\t\t\n\t\t-- YES --\n\t\t\n\t\tParty = {}\n\t}\n}\n\nlocal DEFAULT_NRH = \"ForceLoad\"\n\nlocal function PROCESS_PROFILE_KEY_DICTIONARY(plr)\n\tlocal dictionary = {\n\t\t[\"<userid>\"] = plr.UserId,\n\t\t[\"<username>\"] = plr.Name,\n\t}\n\treturn dictionary\nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlocal data = {\n\tDEFAULT_NRH = DEFAULT_NRH,\n\tPROFILE_STORE_DEFAULTS = PROFILE_STORE_DEFAULTS,\n\tPROCESS_PROFILE_KEY_DICTIONARY = PROCESS_PROFILE_KEY_DICTIONARY,\n}\nreturn data",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [\"//__PSManagerSettings\"] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 26257, time: 142155861, random: 1232354692393223026 })>"
+}

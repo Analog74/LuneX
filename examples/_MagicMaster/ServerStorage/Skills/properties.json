@@ -1,9 +1,0 @@
-{
-  "Attributes": {},
-  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: Folder, instance: Skills)>",
-  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: Folder, instance: Skills)>",
-  "Sandboxed": false,
-  "SourceAssetId": -1,
-  "Tags": [],
-  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: Folder, instance: Skills)>"
-}

@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{3D4848BD-F30C-4118-A846-822EB8F7E749}",
+  "Source": "-- Decompiled with the Synapse X Luau decompiler.\r\n\r\nreturn {\n\tSolve = function(p1, p2)\n\t\treturn p2.Instances[1].WorldPosition, p2.Instances[2].WorldPosition - p2.Instances[1].WorldPosition;\n\tend, \n\tUpdateToNextPosition = function(p3, p4)\n\t\treturn p4.Instances[1].WorldPosition;\n\tend, \n\tVisualize = function(p5, p6)\n\t\treturn CFrame.lookAt(p6.Instances[1].WorldPosition, p6.Instances[2].WorldPosition);\n\tend\n};\r\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 16090586, time: 32320501, random: 7308681896716043950 })>"
+}

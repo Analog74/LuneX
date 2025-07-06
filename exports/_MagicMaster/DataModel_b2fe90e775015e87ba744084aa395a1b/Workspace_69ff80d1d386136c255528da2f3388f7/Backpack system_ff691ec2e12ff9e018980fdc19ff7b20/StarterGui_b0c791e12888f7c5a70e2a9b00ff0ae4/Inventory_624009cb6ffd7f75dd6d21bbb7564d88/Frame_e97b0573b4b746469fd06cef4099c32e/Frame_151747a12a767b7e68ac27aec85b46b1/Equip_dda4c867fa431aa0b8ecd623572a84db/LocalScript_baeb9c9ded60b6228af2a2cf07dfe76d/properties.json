@@ -1,0 +1,14 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Disabled": false,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "RunContext": "<unsupported: Enum(Enum { value: 0 })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{B696EEA7-16B9-40E3-9BA6-FED595A1B4BE}",
+  "Source": "local equipped = script.Parent.Parent.Parent.Handler.Equipped\nlocal selected = script.Parent.Parent.Parent.Handler.Selected\nlocal location = script.Parent.Parent.Parent.Handler.Location\nlocal player = game.Players.LocalPlayer\nlocal character = player.Character\n\nscript.Parent.MouseButton1Click:connect(function()\n\tif equipped.Value == nil or equipped.Value ~= selected.Value then \n\t\tcharacter.Humanoid:UnequipTools() \n\t\tif location.Value == player.Backpack then\n\t\t\tcharacter.Humanoid:EquipTool(selected.Value)\n\t\t\tequipped.Value = selected.Value\n\t\t\tscript.Parent.Text = \"Unequip\"\n\t\tend\n\telse\n\t\tcharacter.Humanoid:UnequipTools()\n\t\tequipped.Value = nil\n\t\tscript.Parent.Text = \"Equip\"\n\tend\nend)",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 2254083, time: 32320501, random: 7308681896716043950 })>"
+}

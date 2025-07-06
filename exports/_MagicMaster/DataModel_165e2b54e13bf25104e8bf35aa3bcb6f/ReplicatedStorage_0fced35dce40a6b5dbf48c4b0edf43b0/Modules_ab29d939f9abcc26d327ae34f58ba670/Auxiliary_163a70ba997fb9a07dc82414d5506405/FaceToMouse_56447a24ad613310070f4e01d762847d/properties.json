@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{4e8615fa-814e-45ec-b9ce-277412331cbc}",
+  "Source": "-- Services\nlocal RunService = game:GetService('RunService')\n\nlocal Module = { }\nModule.Connections = { }\n\nModule.Init = function( PrimaryPart, Mouse )\n\tif #Module.Connections >= 1 then return end\n\n\tlocal BodyGyro = Instance.new('BodyGyro')\n\tBodyGyro.Name = 'FaceMouse'\n\tBodyGyro.MaxTorque = Vector3.new(1e008, 1e008, 1e008)\n\tBodyGyro.P = 10000\n\tBodyGyro.D = 325\n\tBodyGyro.Parent = PrimaryPart\n\n\t-- We update the CFrame of the constraints every frame.\n\tModule.Connections[#Module.Connections + 1] = RunService.RenderStepped:Connect(function()\n\t\tBodyGyro.CFrame = CFrame.lookAt( PrimaryPart.CFrame.Position, Mouse.Hit.Position )\n\tend)\nend\n\nModule.Deinit = function(PrimaryPart)\n\tPrimaryPart:FindFirstChild('FaceMouse'):Destroy()\n\tfor _, v in ipairs( Module.Connections )  do\n\t\tv:Disconnect()\n\tend\n\tModule.Connections = { }\nend\n\nreturn Module",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 24787, time: 142155861, random: 1232354692393223026 })>"
+}

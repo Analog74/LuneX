@@ -1,9 +1,0 @@
-{
-  "Attributes": {},
-  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: ContextActionService, instance: ContextActionService)>",
-  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: ContextActionService, instance: ContextActionService)>",
-  "Sandboxed": false,
-  "SourceAssetId": -1,
-  "Tags": [],
-  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: ContextActionService, instance: ContextActionService)>"
-}

@@ -1,0 +1,14 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Disabled": true,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "RunContext": "<unsupported: Enum(Enum { value: 0 })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{FF341190-B1AF-4D66-832A-A292E3F14992}",
+  "Source": "--Much efficient way to hide the backpack without causing lag\n\nlocal StarterGui = game:GetService(\"StarterGui\")\n\nStarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 26599, time: 142155861, random: 1232354692393223026 })>"
+}

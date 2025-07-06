@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{675B8EBC-635E-4D8D-94B8-F656A6F96E0A}",
+  "Source": "local CollectiveWorldModel = {}\nlocal worldModel\nlocal runService = game:GetService(\"RunService\")\n\n\n\n-- FUNCTIONS\nfunction CollectiveWorldModel.setupWorldModel(zone)\n\tif worldModel then\n\t\treturn worldModel\n\tend\n\tlocal location = (runService:IsClient() and \"ReplicatedStorage\") or \"ServerStorage\"\n\tworldModel = Instance.new(\"WorldModel\")\n\tworldModel.Name = \"ZonePlusWorldModel\"\n\tworldModel.Parent = game:GetService(location)\n\treturn worldModel\nend\n\n\n\n-- METHODS\nfunction CollectiveWorldModel:_getCombinedResults(methodName, ...)\n\tlocal results = workspace[methodName](workspace, ...)\n\tif worldModel then\n\t\tlocal additionalResults = worldModel[methodName](worldModel, ...)\n\t\tfor _, result in pairs(additionalResults) do\n\t\t\ttable.insert(results, result)\n\t\tend\n\tend\n\treturn results\nend\n\nfunction CollectiveWorldModel:GetPartBoundsInBox(cframe, size, overlapParams)\n\treturn self:_getCombinedResults(\"GetPartBoundsInBox\", cframe, size, overlapParams)\nend\n\nfunction CollectiveWorldModel:GetPartBoundsInRadius(position, radius, overlapParams)\n\treturn self:_getCombinedResults(\"GetPartBoundsInRadius\", position, radius, overlapParams)\nend\n\nfunction CollectiveWorldModel:GetPartsInPart(part, overlapParams)\n\treturn self:_getCombinedResults(\"GetPartsInPart\", part, overlapParams)\nend\n\n\n\nreturn CollectiveWorldModel",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 25877, time: 142155861, random: 1232354692393223026 })>"
+}

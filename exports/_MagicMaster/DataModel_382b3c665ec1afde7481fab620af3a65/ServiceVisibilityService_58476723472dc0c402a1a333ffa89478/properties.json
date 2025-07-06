@@ -1,0 +1,11 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HiddenServices": "<unsupported: BinaryString(BinaryString { buffer: [0, 0, 0, 0] })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "Sandboxed": false,
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 887, time: 142145355, random: 5418241880849265781 })>",
+  "VisibleServices": "<unsupported: BinaryString(BinaryString { buffer: [0, 0, 0, 0] })>"
+}

@@ -1,0 +1,27 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "MeshId": "<unsupported: ContentId(ContentId { url: \"rbxassetid://6665452633\" })>",
+  "MeshType": "<unsupported: Enum(Enum { value: 5 })>",
+  "Offset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "Sandboxed": false,
+  "Scale": {
+    "x": 6.418228626251221,
+    "y": 0.05000362545251846,
+    "z": 7.679093360900879
+  },
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "TextureId": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 18209363, time: 32320501, random: 7308681896716043950 })>",
+  "VertexColor": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": 1.0
+  }
+}

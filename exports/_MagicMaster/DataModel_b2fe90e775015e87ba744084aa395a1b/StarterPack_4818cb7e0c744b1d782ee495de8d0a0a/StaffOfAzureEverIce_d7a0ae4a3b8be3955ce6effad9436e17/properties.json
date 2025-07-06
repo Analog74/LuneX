@@ -1,0 +1,79 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "CanBeDropped": true,
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Enabled": true,
+  "Grip": {
+    "matrix": {
+      "orientation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LevelOfDetail": "<unsupported: Enum(Enum { value: 0 })>",
+  "ManualActivationOnly": false,
+  "ModelMeshCFrame": {
+    "matrix": {
+      "orientation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "ModelMeshData": "<unsupported: SharedString(SharedString { data: Some([]), hash: Hash(\"af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262\") })>",
+  "ModelMeshSize": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ModelStreamingMode": "<unsupported: Enum(Enum { value: 0 })>",
+  "NeedsPivotMigration": false,
+  "PrimaryPart": "00000000000000000000000000000000",
+  "RequiresHandle": true,
+  "Sandboxed": false,
+  "Scale": 1.0,
+  "SourceAssetId": "<unsupported: Int64(7377176366)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "TextureId": "<unsupported: ContentId(ContentId { url: \"http://www.roblox.com/asset/?id=32628536\" })>",
+  "ToolTip": "",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 26584, time: 142155861, random: 1232354692393223026 })>",
+  "WorldPivotData": "<unsupported: OptionalCFrame(None)>"
+}

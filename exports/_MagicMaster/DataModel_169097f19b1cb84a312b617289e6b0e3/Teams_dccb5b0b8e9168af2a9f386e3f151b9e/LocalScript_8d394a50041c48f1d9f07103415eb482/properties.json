@@ -1,0 +1,14 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Disabled": false,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "RunContext": "<unsupported: Enum(Enum { value: 0 })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{46CBB907-7478-4964-A3B6-ACFE0A6D4C9B}",
+  "Source": "-- Open and Close Menu\n\nlocal UIS = game:GetService(\"UserInputService\")\nlocal frame = script.Parent\nlocal frame = script.Parent\nlocal Menu_Key = Enum.KeyCode.ButtonR2\n\nframe.Visible = false\n\n--While Key Pressed\nUIS.InputBegan:Connect(function(Key)\n\t\n\t\tif Key.KeyCode == Menu_Key then\n\t\tframe.Visible = true\n\t\telse frame.Visible = false\n\n\t\tend\n\tend)\n\n\n\n\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 3273850, time: 32318743, random: 7712671185636030641 })>"
+}

@@ -1,0 +1,19 @@
+{
+  "Name": "Rotation",
+  "ClassName": "Script",
+  "Properties": {
+    "Name": "Rotation",
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "Disabled": false,
+    "HistoryId": "00000000000000000000000000000000",
+    "LinkedSource": "\n                ",
+    "RunContext": "0",
+    "DefinesCapabilities": false,
+    "ScriptGuid": "{9B6029D6-7CA5-45CA-9A1F-AEA71FF7707F}",
+    "Source": "-- Script failed to decompile or ignored",
+    "SourceAssetId": "-1",
+    "Tags": "",
+    "UniqueId": "656da776461686ae01ed2bf50125bc23"
+  }
+}

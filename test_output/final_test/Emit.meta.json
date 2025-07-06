@@ -1,0 +1,19 @@
+{
+  "Name": "Emit",
+  "ClassName": "Script",
+  "Properties": {
+    "Name": "Emit",
+    "AttributesSerialize": "",
+    "Capabilities": "0",
+    "Disabled": false,
+    "HistoryId": "00000000000000000000000000000000",
+    "LinkedSource": "\n                    ",
+    "RunContext": "0",
+    "DefinesCapabilities": false,
+    "ScriptGuid": "{54EFF09C-B22D-4DA7-82D6-F430F1AD2946}",
+    "Source": "local emitter = script.Parent\nwhile true do\n\temitter:Clear()\n\temitter:Emit(1)\n\twait(1)\nend",
+    "SourceAssetId": "-1",
+    "Tags": "",
+    "UniqueId": "656da776461686ae01ed2bf500f57a2d"
+  }
+}

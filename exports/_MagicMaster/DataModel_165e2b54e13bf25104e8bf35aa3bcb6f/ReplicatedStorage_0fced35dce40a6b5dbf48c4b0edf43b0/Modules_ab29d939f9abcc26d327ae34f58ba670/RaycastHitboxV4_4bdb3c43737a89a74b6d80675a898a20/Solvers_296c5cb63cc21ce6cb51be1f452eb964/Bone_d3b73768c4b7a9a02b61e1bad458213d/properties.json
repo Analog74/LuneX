@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{32D9174E-3134-4E69-B772-D85E777F3A9B}",
+  "Source": "-- Decompiled with the Synapse X Luau decompiler.\r\n\r\nlocal v1 = {};\nlocal u1 = Vector3.new();\nfunction v1.Solve(p1, p2)\n\tlocal l__TransformedWorldCFrame__2 = p2.Instances[1].TransformedWorldCFrame;\n\tlocal v3 = l__TransformedWorldCFrame__2.Position + l__TransformedWorldCFrame__2:VectorToWorldSpace(p2.Instances[2]);\n\tif not p2.LastPosition then\n\t\tp2.LastPosition = v3;\n\tend;\n\tp2.WorldSpace = v3;\n\treturn p2.LastPosition, v3 - (p2.LastPosition or u1);\nend;\nfunction v1.UpdateToNextPosition(p3, p4)\n\treturn p4.WorldSpace;\nend;\nfunction v1.Visualize(p5, p6)\n\treturn CFrame.lookAt(p6.WorldSpace, p6.LastPosition);\nend;\nreturn v1;\r\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 16090588, time: 32320501, random: 7308681896716043950 })>"
+}

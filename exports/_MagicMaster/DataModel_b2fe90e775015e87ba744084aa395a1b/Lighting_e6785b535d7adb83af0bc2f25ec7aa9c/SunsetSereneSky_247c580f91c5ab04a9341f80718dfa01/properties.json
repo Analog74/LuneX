@@ -1,0 +1,26 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "CelestialBodiesShown": true,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "MoonAngularSize": 11.0,
+  "MoonTextureId": "<unsupported: ContentId(ContentId { url: \"rbxasset://sky/moon.jpg\" })>",
+  "Sandboxed": false,
+  "SkyboxBk": "<unsupported: ContentId(ContentId { url: \"rbxassetid://653719502\" })>",
+  "SkyboxDn": "<unsupported: ContentId(ContentId { url: \"rbxassetid://653718790\" })>",
+  "SkyboxFt": "<unsupported: ContentId(ContentId { url: \"rbxassetid://653719067\" })>",
+  "SkyboxLf": "<unsupported: ContentId(ContentId { url: \"rbxassetid://653719190\" })>",
+  "SkyboxOrientation": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "SkyboxRt": "<unsupported: ContentId(ContentId { url: \"rbxassetid://653718931\" })>",
+  "SkyboxUp": "<unsupported: ContentId(ContentId { url: \"rbxassetid://653719321\" })>",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "StarCount": 1336,
+  "SunAngularSize": 21.0,
+  "SunTextureId": "<unsupported: ContentId(ContentId { url: \"rbxasset://sky/sun.jpg\" })>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 2256038, time: 32318743, random: 7712671185636030641 })>"
+}

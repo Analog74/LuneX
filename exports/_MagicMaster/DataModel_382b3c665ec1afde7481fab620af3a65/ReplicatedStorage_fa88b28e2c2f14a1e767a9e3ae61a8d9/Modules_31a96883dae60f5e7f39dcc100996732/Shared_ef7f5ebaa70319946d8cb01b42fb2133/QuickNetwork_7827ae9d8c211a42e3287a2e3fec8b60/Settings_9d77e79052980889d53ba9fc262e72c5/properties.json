@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{38507E0C-367C-4BBA-9D8A-2FAFA5194693}",
+  "Source": "return {\n\tAssumeDeadSessionLock = 75, \n\tAutoSaveInterval = 30,\n\tSaveBackups = true, \n\tSaveInStudio = true,\n\tSaveOnShutDownInStudio = false,\n\tAutoSave = true,\n\tLogging = true, \n\tThrottlingProtection = true, \n\tUseMockDataStoreOffline = true,\t\n}",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 25838, time: 142155861, random: 1232354692393223026 })>"
+}

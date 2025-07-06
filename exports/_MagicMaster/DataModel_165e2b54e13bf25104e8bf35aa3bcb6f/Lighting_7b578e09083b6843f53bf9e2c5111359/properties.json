@@ -1,0 +1,48 @@
+{
+  "Ambient": {
+    "b": 1.0,
+    "g": 0.5921568870544434,
+    "r": 0.843137264251709
+  },
+  "Attributes": "<unsupported: Attributes(Attributes { data: {\"RBX_LightingTechnologyUnifiedMigration\": Bool(true), \"RBX_OriginalTechnologyOnFileLoad\": Int32(3)} })>",
+  "Brightness": 3.25,
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "ColorShift_Bottom": {
+    "b": 1.0,
+    "g": 1.0,
+    "r": 1.0
+  },
+  "ColorShift_Top": {
+    "b": 1.0,
+    "g": 1.0,
+    "r": 1.0
+  },
+  "EnvironmentDiffuseScale": 1.0,
+  "EnvironmentSpecularScale": 1.0,
+  "ExposureCompensation": 0.0,
+  "FogColor": {
+    "b": 0.7529412508010864,
+    "g": 0.7529412508010864,
+    "r": 0.7529412508010864
+  },
+  "FogEnd": 100000.0,
+  "FogStart": 0.0,
+  "GeographicLatitude": 0.0,
+  "GlobalShadows": true,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LightingStyle": "<unsupported: Enum(Enum { value: 1 })>",
+  "OutdoorAmbient": {
+    "b": 0.6352941393852234,
+    "g": 0.007843137718737125,
+    "r": 0.0
+  },
+  "Outlines": false,
+  "PrioritizeLightingQuality": true,
+  "Sandboxed": false,
+  "ShadowSoftness": 0.20000000298023224,
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "Technology": "<unsupported: Enum(Enum { value: 3 })>",
+  "TimeOfDay": "00:00:00",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 104319, time: 32318743, random: 7712671185636030641 })>"
+}

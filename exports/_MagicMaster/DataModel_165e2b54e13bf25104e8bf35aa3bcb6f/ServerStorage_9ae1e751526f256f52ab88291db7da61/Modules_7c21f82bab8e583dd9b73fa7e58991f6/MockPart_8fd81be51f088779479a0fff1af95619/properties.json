@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{889cc489-6a3a-4c1b-b89d-a0b9e44fce01}",
+  "Source": "-- Localization\nlocal workspace = workspace\n\nreturn function(CF)\n\tlocal P = Instance.new('Part')\n\tP.Name = 'MockPart'\n\tP.CFrame = CF\n\tP.Size = Vector3.new(1, 1, 1)\n\tP.Transparency = 1\n\tP.Anchored = true\n\tP.CanCollide = false\n\tP.CanTouch = false\n\tP.CastShadow = false\n\tP.Parent = workspace.Effects\n\treturn P\nend\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 24900, time: 142155861, random: 1232354692393223026 })>"
+}

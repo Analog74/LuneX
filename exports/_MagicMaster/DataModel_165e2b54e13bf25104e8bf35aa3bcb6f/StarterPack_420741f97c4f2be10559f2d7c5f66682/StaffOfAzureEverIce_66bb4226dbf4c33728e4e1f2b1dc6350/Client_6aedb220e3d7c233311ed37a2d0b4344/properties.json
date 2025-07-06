@@ -1,0 +1,14 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Disabled": false,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "RunContext": "<unsupported: Enum(Enum { value: 0 })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{38A287E6-276B-456D-ABBC-6357775C6807}",
+  "Source": "local Tool = script.Parent\n\nlocal MouseInput = Tool:WaitForChild(\"MousePos\",10)\n\nlocal Services = {\n\tPlayers = (game:FindService(\"Players\") or game:GetService(\"Players\")),\n\tTweenService = (game:FindService(\"TweenService\") or game:GetService(\"TweenService\")),\n\tRunService = (game:FindService(\"RunService\") or game:GetService(\"RunService\")),\n\tInput = (game:FindService(\"ContextActionService\") or game:GetService(\"ContextActionService\"))\n}\n\nlocal Player,Character,Humanoid\n\n\n\nfunction Equipped()\n\tPlayer = Services.Players.LocalPlayer\n\tCharacter = Player.Character\n\tHumanoid = Character:FindFirstChildOfClass(\"Humanoid\")\n\tif not Humanoid or not Humanoid.Parent or Humanoid.Health <= 0 then return end\n\nend\n\nfunction Unequipped()\n\t\nend\n\nTool.Equipped:Connect(Equipped)\nTool.Unequipped:Connect(Unequipped)\n\nfunction MouseInput.OnClientInvoke()\n\treturn (Humanoid and Humanoid.TargetPoint) or Vector3.new(0,0,0)--game.Players.LocalPlayer:GetMouse().Hit.p\nend",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 26609, time: 142155861, random: 1232354692393223026 })>"
+}

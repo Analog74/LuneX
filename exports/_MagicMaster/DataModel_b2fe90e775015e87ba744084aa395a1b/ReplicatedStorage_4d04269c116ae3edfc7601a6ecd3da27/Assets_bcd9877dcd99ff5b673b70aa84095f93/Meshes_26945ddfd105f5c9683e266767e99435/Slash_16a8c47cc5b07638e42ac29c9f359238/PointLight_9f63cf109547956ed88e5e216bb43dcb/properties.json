@@ -1,0 +1,18 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Brightness": 3.0,
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Color": {
+    "b": 0.9333333969116211,
+    "g": 1.0,
+    "r": 0.9215686917304993
+  },
+  "Enabled": true,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "Range": 20.0,
+  "Sandboxed": false,
+  "Shadows": true,
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 11935271, time: 32320501, random: 7308681896716043950 })>"
+}

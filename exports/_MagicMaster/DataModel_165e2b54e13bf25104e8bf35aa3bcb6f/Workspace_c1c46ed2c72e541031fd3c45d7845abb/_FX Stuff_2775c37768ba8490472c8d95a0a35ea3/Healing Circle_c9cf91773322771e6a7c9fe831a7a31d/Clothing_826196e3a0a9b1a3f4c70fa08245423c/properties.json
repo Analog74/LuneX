@@ -1,0 +1,15 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Color3": {
+    "b": 1.0,
+    "g": 1.0,
+    "r": 1.0
+  },
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "PantsTemplate": "<unsupported: ContentId(ContentId { url: \"http://www.roblox.com/asset/?id=3939495910\" })>",
+  "Sandboxed": false,
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 16087106, time: 32320501, random: 7308681896716043950 })>"
+}

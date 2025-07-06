@@ -1,0 +1,14 @@
+{
+    "name": "Ayaka",
+    "description": "A camera shake effect spell.",
+    "author": "LuneX",
+    "version": "1.0.0",
+    "tags": ["spell", "vfx", "camera", "cyberpunk"],
+    "dependencies": {
+        "modules": ["CameraShaker"]
+    },
+    "compatibility": {
+        "roblox_version": "500+",
+        "frameworks": ["SpellCombatSystem"]
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{D45C2D85-4817-4D72-B5BE-4E29391D8D05}",
+  "Source": "type self = self;\n\ntype KeyCode = Enum.KeyCode;\ntype GameProcessedEvent = boolean;\ntype UserInputType = Enum.UserInputType;\n\ntype Sequence = {\n\tHook: (KeyCode, GameProcessedEvent) -> nil,\n\n\tnew: (number?, ...KeyCode | UserInputType) -> {\n\t\tToggle: (self, boolean) -> nil,\n\t\tReset: () -> nil,\n\t\tCancel: () -> nil,\n\t\tDestroy: () -> nil,\n\n\t\tStart: {\n\t\t\tConnect: (() -> (KeyCode, GameProcessedEvent)) -> RBXScriptConnection\n\t\t},\n\t\tEnd: {\n\t\t\tConnect: (() -> ()) -> ()\n\t\t},\n\t\tPressed: {\n\t\t\tConnect: (() -> ()) -> ()\n\t\t},\n\t\tIndex: number\n\t}\n};\n\ntype Hold = {\n\tHookStart: (KeyCode, GameProcessedEvent) -> nil,\n\tHookEnd: (KeyCode) -> nil,\n\n\tnew: (...KeyCode | UserInputType) -> {\n\t\tCancel: () -> nil,\n\t\tDestroy: () -> nil,\n\n\t\tStart: {\n\t\t\tConnect: (() -> (KeyCode, GameProcessedEvent)) -> RBXScriptConnection\n\t\t},\n\t\tEnd: {\n\t\t\tConnect: (() -> ()) -> ()\n\t\t},\n\t\tHold: {\n\t\t\tConnect: (() -> ()) -> ()\n\t\t},\n\t\tIndex: number\n\t}\n}\n\nexport type Input = {\n\tSequence: Sequence,\n\tHold: Hold\n}\n\nreturn {}",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 25786, time: 142155861, random: 1232354692393223026 })>"
+}

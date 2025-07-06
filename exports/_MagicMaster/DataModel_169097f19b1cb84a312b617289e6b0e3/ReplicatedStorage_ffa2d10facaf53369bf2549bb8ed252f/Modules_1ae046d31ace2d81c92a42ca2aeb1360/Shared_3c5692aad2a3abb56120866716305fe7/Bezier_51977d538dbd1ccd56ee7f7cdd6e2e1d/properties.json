@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{54aa1bba-c899-4b2d-ab98-5c2adc3dfadc}",
+  "Source": "-- Functions\nlocal function lerp(a, b, c)\n\treturn a + (b - a) * c\nend\n\nreturn {\n\tQuadBezier = function(t, p0, p1, p2)\n\t\tlocal l1 = lerp(p0, p1, t)\n\t\tlocal l2 = lerp(p1, p2, t)\n\t\tlocal Quad = lerp(l1, l2, t)\n\t\treturn Quad\n\tend,\n}",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 11934956, time: 32320501, random: 7308681896716043950 })>"
+}

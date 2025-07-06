@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{DD767692-CE53-49BB-8DFC-22D70D65E39D}",
+  "Source": "-- Decompiled with the Synapse X Luau decompiler.\n\nlocal v1 = {};\nv1.__index = v1;\nfunction v1.Create(p1)\n\treturn setmetatable({}, v1);\nend;\nfunction v1.Connect(p2, p3)\n\tp2[1] = p3;\nend;\nfunction v1.Fire(p4, ...)\n\tif not p4[1] then\n\t\treturn;\n\tend;\n\tcoroutine.resume(coroutine.create(p4[1]), ...);\nend;\nfunction v1.Destroy(p5)\n\tp5[1] = nil;\nend;\nreturn v1;\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 16090582, time: 32320501, random: 7308681896716043950 })>"
+}

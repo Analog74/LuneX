@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{DC6060F2-D98C-4321-985E-79CEFFC056F9}",
+  "Source": "local module = {\n\tMuted = false; -- Set to true to mute all sounds\n\tAnimateIn = true; \n\tAnimationDirection = \"Left\"; -- Right or Left. Left for right side of screen, vice versa\n\n\tHeight = UDim.new(0.65, 0);\n\n\tInTime = 0.5; -- Defaults\n\tLifetime = 5; -- Defaults\n\tOutTime = 2; -- Defaults\n\n\tPadding = 25; -- Pixels\t\n};\n\nreturn module\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 25798, time: 142155861, random: 1232354692393223026 })>"
+}

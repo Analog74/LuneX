@@ -1,0 +1,17 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "CellPadding": "<unsupported: UDim2(UDim2 { x: UDim { scale: 0.0, offset: 9 }, y: UDim { scale: 0.0, offset: 7 } })>",
+  "CellSize": "<unsupported: UDim2(UDim2 { x: UDim { scale: 0.0, offset: 70 }, y: UDim { scale: 0.0, offset: 67 } })>",
+  "FillDirection": "<unsupported: Enum(Enum { value: 0 })>",
+  "FillDirectionMaxCells": 4,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "HorizontalAlignment": "<unsupported: Enum(Enum { value: 1 })>",
+  "Sandboxed": false,
+  "SortOrder": "<unsupported: Enum(Enum { value: 2 })>",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "StartCorner": "<unsupported: Enum(Enum { value: 0 })>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 2254115, time: 32320501, random: 7308681896716043950 })>",
+  "VerticalAlignment": "<unsupported: Enum(Enum { value: 1 })>"
+}

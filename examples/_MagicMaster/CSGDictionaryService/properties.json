@@ -1,9 +1,0 @@
-{
-  "Attributes": {},
-  "Capabilities": "<FAILED: Unsupported variant type: Discriminant(37) (property: Capabilities, class: CSGDictionaryService, instance: CSGDictionaryService)>",
-  "HistoryId": "<FAILED: Unsupported variant type: Discriminant(35) (property: HistoryId, class: CSGDictionaryService, instance: CSGDictionaryService)>",
-  "Sandboxed": false,
-  "SourceAssetId": -1,
-  "Tags": [],
-  "UniqueId": "<FAILED: Unsupported variant type: Discriminant(35) (property: UniqueId, class: CSGDictionaryService, instance: CSGDictionaryService)>"
-}

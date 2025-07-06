@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{C1BB43DB-677A-4A2F-B359-E0D2D4C84D54}",
+  "Source": "-- Decompiled with the Synapse X Luau decompiler.\r\n\r\nlocal v1 = {};\nv1.__index = v1;\nv1.__type = \"RaycastHitboxVisualizerCache\";\nv1._AdornmentInUse = {};\nv1._AdornmentInReserve = {};\nlocal u1 = Color3.fromRGB(255, 0, 0);\nlocal u2 = CFrame.new(0, math.huge, 0);\nfunction v1._CreateAdornment(p1)\n\tlocal v2 = Instance.new(\"LineHandleAdornment\");\n\tv2.Name = \"_RaycastHitboxDebugLine\";\n\tv2.Color3 = u1;\n\tv2.Thickness = 4;\n\tv2.Length = 0;\n\tv2.CFrame = u2;\n\tv2.Adornee = workspace.Terrain;\n\tv2.Parent = workspace.Terrain;\n\treturn {\n\t\tAdornment = v2, \n\t\tLastUse = 0\n\t};\nend;\nfunction v1.GetAdornment(p2)\n\tif #v1._AdornmentInReserve <= 0 then\n\t\ttable.insert(v1._AdornmentInReserve, (v1:_CreateAdornment()));\n\tend;\n\tlocal v3 = table.remove(v1._AdornmentInReserve, 1);\n\tif v3 then\n\t\tv3.Adornment.Visible = true;\n\t\tv3.LastUse = os.clock();\n\t\ttable.insert(v1._AdornmentInUse, v3);\n\tend;\n\treturn v3;\nend;\nfunction v1.ReturnAdornment(p3, p4)\n\tp4.Adornment.Length = 0;\n\tp4.Adornment.Visible = false;\n\tp4.Adornment.CFrame = u2;\n\ttable.insert(v1._AdornmentInReserve, p4);\nend;\nfunction v1.Clear(p5)\n\tfor v4 = #v1._AdornmentInReserve, 1, -1 do\n\t\tif v1._AdornmentInReserve[v4].Adornment then\n\t\t\tv1._AdornmentInReserve[v4].Adornment:Destroy();\n\t\tend;\n\t\ttable.remove(v1._AdornmentInReserve, v4);\n\tend;\nend;\nreturn v1;\r\n",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 16090584, time: 32320501, random: 7308681896716043950 })>"
+}

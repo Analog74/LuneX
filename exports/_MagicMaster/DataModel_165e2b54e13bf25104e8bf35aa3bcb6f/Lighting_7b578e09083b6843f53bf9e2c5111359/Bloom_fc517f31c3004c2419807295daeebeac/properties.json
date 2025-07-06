@@ -1,0 +1,13 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Enabled": true,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "Intensity": 3.5,
+  "Sandboxed": false,
+  "Size": 24.0,
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "Threshold": 2.0,
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 2256036, time: 32318743, random: 7712671185636030641 })>"
+}

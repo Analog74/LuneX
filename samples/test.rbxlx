@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<Item class="DataModel" referent="RBX0">
+		<Properties>
+			<string name="Name">DataModel</string>
+		</Properties>
+		<Item class="Workspace" referent="RBX1">
+			<Properties>
+				<string name="Name">Workspace</string>
+			</Properties>
+		</Item>
+		<Item class="ReplicatedStorage" referent="RBX2">
+			<Properties>
+				<string name="Name">ReplicatedStorage</string>
+			</Properties>
+			<Item class="ModuleScript" referent="RBX3">
+				<Properties>
+					<string name="Name">TestModule</string>
+					<Content name="Source"><![CDATA[-- Test Module Script
+local TestModule = {}
+
+function TestModule.test()
+    print("Hello from TestModule!")
+end
+
+return TestModule]]></Content>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="ServerScriptService" referent="RBX4">
+			<Properties>
+				<string name="Name">ServerScriptService</string>
+			</Properties>
+			<Item class="Script" referent="RBX5">
+				<Properties>
+					<string name="Name">MainScript</string>
+					<Content name="Source"><![CDATA[-- Main Server Script
+print("Server starting up!")
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local TestModule = require(ReplicatedStorage.TestModule)
+
+TestModule.test()]]></Content>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="StarterPlayer" referent="RBX6">
+			<Properties>
+				<string name="Name">StarterPlayer</string>
+			</Properties>
+			<Item class="StarterPlayerScripts" referent="RBX7">
+				<Properties>
+					<string name="Name">StarterPlayerScripts</string>
+				</Properties>
+				<Item class="LocalScript" referent="RBX8">
+					<Properties>
+						<string name="Name">ClientScript</string>
+						<Content name="Source"><![CDATA[-- Client Script
+print("Client script loaded!")
+
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+print("Welcome, " .. player.Name .. "!")]]></Content>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+	</Item>
+</roblox>

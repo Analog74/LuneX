@@ -1,0 +1,22 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Color3": {
+    "b": 1.9607843160629272,
+    "g": 1.9607843160629272,
+    "r": 1.9607843160629272
+  },
+  "Face": "<unsupported: Enum(Enum { value: 1 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "OffsetStudsU": 0.0,
+  "OffsetStudsV": 0.0,
+  "Sandboxed": false,
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "StudsPerTileU": 8.0,
+  "StudsPerTileV": 8.0,
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "TextureContent": "<unsupported: Content(Content(Uri(\"http://www.roblox.com/asset/?id=6568035904\")))>",
+  "Transparency": 0.75,
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 1744347, time: 32318743, random: 7712671185636030641 })>",
+  "ZIndex": 1
+}

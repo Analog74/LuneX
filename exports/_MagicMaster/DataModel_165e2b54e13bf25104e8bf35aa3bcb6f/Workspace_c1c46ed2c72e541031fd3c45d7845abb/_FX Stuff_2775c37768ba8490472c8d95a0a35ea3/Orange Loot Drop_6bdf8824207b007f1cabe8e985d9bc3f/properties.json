@@ -1,0 +1,47 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LevelOfDetail": "<unsupported: Enum(Enum { value: 0 })>",
+  "ModelMeshCFrame": {
+    "matrix": {
+      "orientation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "ModelMeshData": "<unsupported: SharedString(SharedString { data: Some([]), hash: Hash(\"af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262\") })>",
+  "ModelMeshSize": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "ModelStreamingMode": "<unsupported: Enum(Enum { value: 0 })>",
+  "NeedsPivotMigration": false,
+  "PrimaryPart": "00000000000000000000000000000000",
+  "Sandboxed": false,
+  "Scale": 1.0,
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 19250156, time: 32320501, random: 7308681896716043950 })>",
+  "WorldPivotData": "<unsupported: OptionalCFrame(Some(CFrame { position: Vector3 { x: 140.14403, y: 17.781513, z: -13.94464 }, orientation: Matrix3 { x: Vector3 { x: -0.58792657, y: -0.8089143, z: 0.0 }, y: Vector3 { x: 0.7005403, y: -0.5091593, z: -0.5 }, z: Vector3 { x: 0.40445715, y: -0.29396328, z: 0.8660254 } } }))>"
+}

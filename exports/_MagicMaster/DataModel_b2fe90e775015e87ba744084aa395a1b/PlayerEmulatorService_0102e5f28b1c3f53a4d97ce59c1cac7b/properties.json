@@ -1,0 +1,16 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "CustomPoliciesEnabled": false,
+  "EmulatedCountryCode": "",
+  "EmulatedGameLocale": "",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "PlayerEmulationEnabled": false,
+  "PseudolocalizationEnabled": false,
+  "Sandboxed": false,
+  "SerializedEmulatedPolicyInfo": "<unsupported: BinaryString(BinaryString { buffer: [] })>",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "TextElongationFactor": 0,
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 104221, time: 32318743, random: 7712671185636030641 })>"
+}

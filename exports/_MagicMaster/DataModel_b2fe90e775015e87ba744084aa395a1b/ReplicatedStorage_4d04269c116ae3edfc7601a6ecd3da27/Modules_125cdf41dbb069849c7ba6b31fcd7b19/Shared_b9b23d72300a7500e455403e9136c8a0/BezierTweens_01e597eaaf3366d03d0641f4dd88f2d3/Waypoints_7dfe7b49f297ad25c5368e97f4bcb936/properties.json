@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{2D8C1F72-9D7C-443E-86A5-85EB9A7738B6}",
+  "Source": "--!strict\n-- Laserluzer \n-- September 17, 2021\n\nlocal RunService = game:GetService(\"RunService\")\n\nexport type Waypoints = {\n\t[number] : Vector3\n}\n\n-- Waypoints\n\nlocal Waypoints = {}\n\n\n-- Value specific waypoint methods\n\ndo\n\tfunction Waypoints.fromVector3(... : Vector3) : Waypoints\n\t\tlocal args = {...}\n\t\tlocal waypoints = {}\n\t\tfor i = 1, #args do\n\t\t\tassert(typeof(args[i]) == \"Vector3\", tostring(args[i]) .. \"is not a Vector3 value.\")\n\t\t\ttable.insert(waypoints, args[i])\n\t\tend\n\t\treturn waypoints\n\tend\n\n\tfunction Waypoints.fromCFrame(...) : Waypoints\n\t\tlocal args = {...}\n\t\tlocal waypoints = {}\n\t\tfor i = 1, #args do\n\t\t\tassert(typeof(args[i]) == \"CFrame\", args[i] .. \"is not a CFrame value.\")\n\t\t\ttable.insert(waypoints, args[i].Position)\n\t\tend\n\t\treturn waypoints\n\tend\n\n\tfunction Waypoints.fromInstance(...) : Waypoints\n\t\tlocal args = {...}\n\t\tlocal waypoints = {}\n\t\tfor i = 1, #args do\n\t\t\tassert(typeof(args[i]) == \"Instance\", args[i].Name .. \"is not an Instance.\")\n\t\t\tassert(args[i]:IsA(\"BasePart\"), args[i].Name .. \"is not a BasePart.\")\n\t\t\ttable.insert(waypoints, args[i].Position)\n\t\tend\n\t\treturn waypoints\n\tend\nend\n\n\nlocal waypointTypes = {\n\tVector3 = Waypoints.fromVector3,\n\tCFrame = Waypoints.fromCFrame,\n\tInstance = Waypoints.fromInstance\n}\n\nfunction Waypoints.new(... : Vector3 | CFrame | Instance) : Waypoints -- Creates waypoints\n\tassert(waypointTypes[typeof(...)], \n\t\t\"Parameters are not correct value types, try using value specific functions.\")\n\treturn waypointTypes[typeof(...)](...)\nend\n\n\n\nreturn Waypoints",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 25730, time: 142155861, random: 1232354692393223026 })>"
+}

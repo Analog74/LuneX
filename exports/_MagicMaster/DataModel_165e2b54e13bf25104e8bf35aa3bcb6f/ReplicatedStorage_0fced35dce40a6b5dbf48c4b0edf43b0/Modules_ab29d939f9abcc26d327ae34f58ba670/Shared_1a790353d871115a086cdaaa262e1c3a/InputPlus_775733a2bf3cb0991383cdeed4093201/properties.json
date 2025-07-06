@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{A07C608F-BF5A-4231-8550-9181B2A3187E}",
+  "Source": "local TypeDefinitions = require(script:WaitForChild(\"TypeDefinitions\"));\ntype InputType = TypeDefinitions.Input;\n\nlocal Input : InputType = {}\nlocal Ignore = {'Settings','Utils', 'TypeDefinitions'}\n\nlocal Folder = Instance.new('Folder')\nFolder.Name = 'EventStorage'\nFolder.Parent = game.ReplicatedStorage\n\nlocal UIS = game:GetService('UserInputService')\n\nfor _ , v in ipairs(script:GetChildren()) do\n\tif v:IsA('ModuleScript') and not table.find(Ignore,v.Name) then\n\t\tInput[v.Name] = require(v)\n\tend\nend\n\nUIS.InputBegan:Connect(function(...)\n\tInput.Sequence.Hook(...)\n\tInput.Hold.HookStart(...)\nend)\n\nUIS.InputEnded:Connect(function(...)\n\tInput.Hold.HookEnd(...)\nend)\n\nreturn Input",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 25782, time: 142155861, random: 1232354692393223026 })>"
+}

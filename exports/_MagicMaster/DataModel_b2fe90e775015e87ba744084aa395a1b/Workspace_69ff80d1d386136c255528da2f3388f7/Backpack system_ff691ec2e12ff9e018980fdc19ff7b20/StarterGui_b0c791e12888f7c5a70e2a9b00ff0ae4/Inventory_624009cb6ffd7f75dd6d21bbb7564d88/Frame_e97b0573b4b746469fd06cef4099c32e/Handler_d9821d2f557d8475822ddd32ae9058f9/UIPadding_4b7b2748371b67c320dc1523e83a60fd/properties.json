@@ -1,0 +1,13 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "PaddingBottom": "<unsupported: UDim(UDim { scale: 0.02, offset: 0 })>",
+  "PaddingLeft": "<unsupported: UDim(UDim { scale: 0.02, offset: 0 })>",
+  "PaddingRight": "<unsupported: UDim(UDim { scale: 0.02, offset: 0 })>",
+  "PaddingTop": "<unsupported: UDim(UDim { scale: 0.02, offset: 0 })>",
+  "Sandboxed": false,
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 2254119, time: 32320501, random: 7308681896716043950 })>"
+}

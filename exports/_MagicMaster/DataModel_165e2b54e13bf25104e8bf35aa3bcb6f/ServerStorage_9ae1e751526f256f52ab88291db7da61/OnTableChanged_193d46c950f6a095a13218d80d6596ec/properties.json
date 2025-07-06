@@ -1,0 +1,12 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LinkedSource": "<unsupported: ContentId(ContentId { url: \"\" })>",
+  "Sandboxed": false,
+  "ScriptGuid": "{79BC2C06-0458-4036-9E9C-6FA653494935}",
+  "Source": "-- Confused? Here's the documentation: https://devforum.roblox.com/t/ontablechanged-know-when-your-table-key-value-has-been-re-assigned/1435614\n\nlocal OnTableChanged = {}\nlocal dummies = {} \n\nfunction OnTableChanged:ActivateTable(t)\n\tlocal tableID = tostring(t)\n\tlocal dummy = dummies[tableID] or {}\n\n\tif (not getmetatable(dummy)) then\n\t\tdummy.callbacks = {}\n\t\tdummy.TID = tableID\n\n\t\tdummy.__index = function(_,i)\n\t\t\treturn t[i]\n\t\tend\n\n\t\tdummy.__newindex = function(_,i,v)\n\t\t\tt[i] = v\n\n\t\t\tif (not dummy.callbacks[i]) or (dummy.callbacks[i] and #dummy.callbacks[i] < 1) then return end\n\n\t\t\tfor _ , callback in ipairs(dummy.callbacks[i]) do\n\t\t\t\ttask.spawn(function()\n\t\t\t\t\tcallback(v)\n\t\t\t\tend)\n\t\t\tend\n\n\t\tend\n\n\t\tsetmetatable(dummy,dummy)\n\t\tdummies[tableID] = dummy\n\tend\n\n\treturn dummy\nend\n\nfunction OnTableChanged.__call(_,t,i,callback)\n\tlocal dummy = dummies[t.TID]\n\tif (not dummy) then\n\t\twarn(\"[OnTableChanged] Table needs to be activated with :ActivateTable first\")\n\t\treturn\n\tend\n\t\n\tif (not dummy.callbacks[i]) then\n\t\tdummy.callbacks[i] = {}\n\tend\n\t\n\ttable.insert(dummy.callbacks[i],callback)\n\n\tlocal Connection = {}\n\t\n\tfunction Connection:Disconnect()\n\t\ttable.remove(dummy.callbacks[i],table.find(dummy.callbacks[i],callback))\n\tend\n\t\t\n\treturn Connection\nend\n\n\nreturn setmetatable(OnTableChanged , OnTableChanged)",
+  "SourceAssetId": "<unsupported: Int64(7323374139)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 26252, time: 142155861, random: 1232354692393223026 })>"
+}

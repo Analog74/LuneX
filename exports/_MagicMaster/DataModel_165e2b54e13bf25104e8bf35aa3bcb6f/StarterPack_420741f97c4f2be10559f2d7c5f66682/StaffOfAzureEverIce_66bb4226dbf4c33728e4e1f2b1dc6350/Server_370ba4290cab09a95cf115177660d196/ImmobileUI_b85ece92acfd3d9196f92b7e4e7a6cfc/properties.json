@@ -1,0 +1,52 @@
+{
+  "Active": true,
+  "Adornee": "00000000000000000000000000000000",
+  "AlwaysOnTop": false,
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "AutoLocalize": true,
+  "Brightness": 1.0,
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "ClipsDescendants": true,
+  "DistanceLowerLimit": 0.0,
+  "DistanceStep": 0.0,
+  "DistanceUpperLimit": -1.0,
+  "Enabled": false,
+  "ExtentsOffset": {
+    "x": 0.0,
+    "y": 5.0,
+    "z": 0.0
+  },
+  "ExtentsOffsetWorldSpace": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "LightInfluence": 0.0,
+  "MaxDistance": null,
+  "PlayerToHideFrom": "00000000000000000000000000000000",
+  "ResetOnSpawn": true,
+  "RootLocalizationTable": "00000000000000000000000000000000",
+  "Sandboxed": false,
+  "SelectionBehaviorDown": "<unsupported: Enum(Enum { value: 0 })>",
+  "SelectionBehaviorLeft": "<unsupported: Enum(Enum { value: 0 })>",
+  "SelectionBehaviorRight": "<unsupported: Enum(Enum { value: 0 })>",
+  "SelectionBehaviorUp": "<unsupported: Enum(Enum { value: 0 })>",
+  "SelectionGroup": false,
+  "Size": "<unsupported: UDim2(UDim2 { x: UDim { scale: 5.0, offset: 0 }, y: UDim { scale: 2.5, offset: 0 } })>",
+  "SizeOffset": "<unsupported: Vector2(Vector2 { x: 0.0, y: 0.0 })>",
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "StudsOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "StudsOffsetWorldSpace": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 26606, time: 142155861, random: 1232354692393223026 })>",
+  "ZIndexBehavior": "<unsupported: Enum(Enum { value: 1 })>"
+}

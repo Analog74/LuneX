@@ -1,0 +1,33 @@
+{
+  "Attributes": "<unsupported: Attributes(Attributes { data: {} })>",
+  "BackgroundColor3": {
+    "b": 0.11372549086809158,
+    "g": 0.10588235408067703,
+    "r": 0.09803921729326248
+  },
+  "BackgroundTransparency": 0.3,
+  "Capabilities": "<unsupported: SecurityCapabilities(SecurityCapabilities { value: 0 })>",
+  "Enabled": true,
+  "FontFace": "<unsupported: Font(Font { family: \"rbxasset://fonts/families/GothamSSm.json\", weight: Medium, style: Normal, cached_face_id: Some(\"rbxasset://fonts/Montserrat-Medium.ttf\") })>",
+  "HeightScale": 1.0,
+  "HistoryId": "<unsupported: UniqueId(UniqueId { index: 0, time: 0, random: 0 })>",
+  "HorizontalAlignment": "<unsupported: Enum(Enum { value: 1 })>",
+  "Sandboxed": false,
+  "SourceAssetId": "<unsupported: Int64(-1)>",
+  "Tags": "<unsupported: Tags(Tags { members: [] })>",
+  "TextColor3": {
+    "b": 1.0,
+    "g": 1.0,
+    "r": 1.0
+  },
+  "TextSize": "<unsupported: Int64(14)>",
+  "TextStrokeColor3": {
+    "b": 0.0,
+    "g": 0.0,
+    "r": 0.0
+  },
+  "TextStrokeTransparency": 0.5,
+  "UniqueId": "<unsupported: UniqueId(UniqueId { index: 920, time: 142145355, random: 5418241880849265781 })>",
+  "VerticalAlignment": "<unsupported: Enum(Enum { value: 1 })>",
+  "WidthScale": 1.0
+}
