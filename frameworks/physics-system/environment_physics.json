@@ -1,0 +1,11 @@
+{
+  "global_gravity": -196.2,
+  "zones": [
+    {"name": "LowGravityZone", "gravity": -50},
+    {"name": "WindTunnel", "force": [100,0,0]}
+  ],
+  "surface_properties": {
+    "ice": {"friction": 0.05, "bounciness": 0.2},
+    "sand": {"friction": 0.8, "bounciness": 0.1}
+  }
+}

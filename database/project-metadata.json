@@ -1,0 +1,15 @@
+{
+  "assets": [],
+  "scripts": [
+    {
+      "path": "/tags/open-source/sample_open_script.py",
+      "tag": "open-source",
+      "notes": ""
+    },
+    {
+      "path": "/tags/restricted/sample_restricted_script.py",
+      "tag": "restricted",
+      "notes": ""
+    }
+  ]
+}

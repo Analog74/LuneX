@@ -1,0 +1,6 @@
+{
+  "assets": [
+    {"id": "example_asset_1", "type": "3d", "path": "assets/3d/example_model.fbx"},
+    {"id": "example_asset_2", "type": "gui", "path": "assets/gui/example_ui.png"}
+  ]
+}

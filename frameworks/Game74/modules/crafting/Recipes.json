@@ -1,0 +1,6 @@
+{
+  "recipes": [
+    {"id": "health_potion", "ingredients": [{"item": "herb", "amount": 2}, {"item": "water", "amount": 1}], "result": {"item": "health_potion", "amount": 1}},
+    {"id": "nano_blade", "ingredients": [{"item": "metal", "amount": 3}, {"item": "nano_core", "amount": 1}], "result": {"item": "nano_blade", "amount": 1}}
+  ]
+}

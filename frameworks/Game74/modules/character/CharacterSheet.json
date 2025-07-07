@@ -1,0 +1,11 @@
+{
+  "Name": "ExampleCharacter",
+  "Level": 1,
+  "Health": 100,
+  "Mana": 50,
+  "Attributes": {
+    "Strength": 10,
+    "Agility": 8,
+    "Intelligence": 12
+  }
+}

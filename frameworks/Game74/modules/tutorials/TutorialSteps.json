@@ -1,0 +1,7 @@
+{
+  "steps": [
+    {"id": "move", "description": "Use WASD to move."},
+    {"id": "jump", "description": "Press Space to jump."},
+    {"id": "cast", "description": "Press E to cast your spell."}
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "zones": [
+    {"id": "toxic_waste", "effects": ["radiation", "slow"]},
+    {"id": "cyber_city", "effects": ["speed_boost", "low_gravity"]}
+  ]
+}

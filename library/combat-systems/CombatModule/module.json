@@ -1,0 +1,26 @@
+{
+  "name": "CombatModule",
+  "version": "2.1.0",
+  "description": "Core combat mechanics system providing knockback, ragdoll, and damage utilities",
+  "author": "Analog74",
+  "category": "combat-systems",
+  "tags": ["combat", "knockback", "ragdoll", "physics", "pvp"],
+  "dependencies": ["CollectionService"],
+  "optional_dependencies": [],
+  "roblox_services": ["CollectionService", "Debris"],
+  "entry_points": ["CombatModule.lua"],
+  "documentation": "README.md",
+  "examples": ["examples/basic-combat.lua", "examples/advanced-knockback.lua"],
+  "license": "MIT",
+  "repository": "https://github.com/Analog74/LuneX",
+  "last_updated": "2025-01-05",
+  "compatibility": {
+    "roblox_studio": ">=2023.1",
+    "luau": ">=0.5"
+  },
+  "performance": {
+    "memory_usage": "Low",
+    "cpu_usage": "Low",
+    "network_usage": "None"
+  }
+}

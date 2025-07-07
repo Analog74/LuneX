@@ -1,0 +1,5 @@
+{
+  "gui": ["/assets/gui/sample_ui.png"],
+  "media": ["/assets/media/sample_sound.mp3"],
+  "3d": ["/assets/3d/sample_model.obj"]
+}

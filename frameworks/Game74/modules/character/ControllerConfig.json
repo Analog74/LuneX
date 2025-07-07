@@ -1,0 +1,5 @@
+{
+  "jumpKey": "Space",
+  "spellKey": "E",
+  "moveKeys": ["W", "A", "S", "D"]
+}

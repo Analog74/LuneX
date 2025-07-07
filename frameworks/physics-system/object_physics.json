@@ -1,0 +1,14 @@
+{
+  "collision_rules": {
+    "default": "bounce",
+    "ghost": "pass_through",
+    "sticky": "stick"
+  },
+  "joints": [
+    {"type": "hinge", "objects": ["door", "frame"]},
+    {"type": "spring", "objects": ["platform", "anchor"]}
+  ],
+  "custom_forces": [
+    {"type": "wind", "direction": [1,0,0], "strength": 50}
+  ]
+}

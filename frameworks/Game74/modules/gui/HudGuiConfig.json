@@ -1,0 +1,7 @@
+{
+  "elements": [
+    {"id": "healthBar", "type": "bar", "position": "top_left"},
+    {"id": "manaBar", "type": "bar", "position": "top_left"},
+    {"id": "expBar", "type": "bar", "position": "bottom"}
+  ]
+}

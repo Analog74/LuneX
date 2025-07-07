@@ -7,15 +7,29 @@ import zipfile
 import tempfile
 import shutil
 from pathlib import Path
+try:
+    import template_engine
+    from template_engine import render_template
+    TEMPLATE_ENGINE_AVAILABLE = True
+except ImportError:
+    TEMPLATE_ENGINE_AVAILABLE = False
+
+def _report_progress(percentage, message):
+    """Prints progress in a structured format for the GUI to parse."""
+    # Format: PROGRESS:percentage:message
+    print(f"PROGRESS:{int(percentage)}:{message}")
+    sys.stdout.flush() # Ensure the GUI gets the message immediately
 
 # --- ROBLOX FILE PARSING ---
 
+import converters
 def convert_rbxl_to_xml(rbxl_path):
     """
     Convert .rbxl (binary) to .rbxlx (XML) format.
     Uses external tools or provides conversion guidance.
     """
     print(f"Processing {rbxl_path}...")
+    _report_progress(1, "Analyzing file format...")
     
     # Check if it's already XML
     try:
@@ -24,6 +38,7 @@ def convert_rbxl_to_xml(rbxl_path):
             # Check for XML markers
             if b'<?xml' in header[:50]:
                 print("✅ File is already in XML format (.rbxlx)")
+                _report_progress(15, "File is already XML.")
                 return rbxl_path
             # Check for binary signatures - Roblox binary files start with "<roblox!"
             elif header[:8] == b'<roblox!' or b'RBLX' in header[:16]:
@@ -36,6 +51,7 @@ def convert_rbxl_to_xml(rbxl_path):
                         first_line = f.readline(100)
                         if '<?xml' in first_line or '<roblox' in first_line:
                             print("✅ File is XML format (UTF-8 encoded)")
+                            _report_progress(15, "File is already XML.")
                             return rbxl_path
                 except:
                     pass
@@ -45,9 +61,10 @@ def convert_rbxl_to_xml(rbxl_path):
         return None
     
     print("🔄 Detected binary .rbxl file - attempting conversion...")
+    _report_progress(5, "Binary format detected. Starting conversion...")
     
     # Try external conversion tools
-    converted_path = _try_external_converters(rbxl_path)
+    converted_path = converters._try_external_converters(rbxl_path)
     if converted_path:
         return converted_path
     
@@ -57,7 +74,8 @@ def convert_rbxl_to_xml(rbxl_path):
         return converted_path
     
     # If all conversion attempts fail, provide helpful guidance
-    _show_conversion_help(rbxl_path)
+    converters._show_conversion_help(rbxl_path)
+    _report_progress(-1, "Automatic conversion failed. See console for help.")
     return None
 
 def _try_external_converters(rbxl_path):
@@ -76,6 +94,7 @@ def _try_external_converters(rbxl_path):
         xml_path = rbxl_path.replace('.rbxl', '_converted.rbxlx')
         
         try:
+            _report_progress(10, "Running rbx-util converter...")
             print(f"🔄 Converting {os.path.basename(rbxl_path)} to XML...")
             result = subprocess.run([
                 rbx_util_path, 'convert', rbxl_path, xml_path
@@ -84,6 +103,7 @@ def _try_external_converters(rbxl_path):
             if result.returncode == 0 and os.path.exists(xml_path):
                 print(f"✅ Successfully converted using rbx-util")
                 print(f"📄 Created: {os.path.basename(xml_path)}")
+                _report_progress(15, "Conversion successful with rbx-util.")
                 return xml_path
             else:
                 print(f"❌ rbx-util conversion failed")
@@ -349,7 +369,7 @@ def parse_instance(element):
     for prop in element.findall('./Properties/*'):
         prop_name = prop.get('name', '')
         prop_type = prop.tag
-        
+
         if prop_type == 'string':
             instance['Properties'][prop_name] = prop.text or ''
         elif prop_type == 'bool':
@@ -359,10 +379,61 @@ def parse_instance(element):
         elif prop_type == 'float':
             instance['Properties'][prop_name] = float(prop.text or '0.0')
         elif prop_type == 'Content':
-            # Handle script content
+            instance['Properties'][prop_name] = prop.text or ''
+        elif prop_type in ('Vector3', 'Vector2'):
+            try:
+                vals = [float(x) for x in prop.text.split(',')]
+            except Exception:
+                vals = []
+            instance['Properties'][prop_name] = vals
+        elif prop_type == 'Color3':
+            try:
+                vals = [float(x) for x in prop.text.split(',')]
+            except Exception:
+                vals = []
+            instance['Properties'][prop_name] = vals
+        elif prop_type == 'CFrame':
+            try:
+                vals = [float(x) for x in prop.text.split(',')]
+            except Exception:
+                vals = []
+            instance['Properties'][prop_name] = vals
+        elif prop_type == 'UDim':
+            try:
+                s, o = prop.text.split(',')
+                ud = {'scale': float(s), 'offset': int(o)}
+            except Exception:
+                ud = {}
+            instance['Properties'][prop_name] = ud
+        elif prop_type == 'UDim2':
+            dims = {}
+            for child in prop.findall('./UDim'):
+                name = child.get('name')
+                try:
+                    s, o = child.text.split(',')
+                    dims[name] = {'scale': float(s), 'offset': int(o)}
+                except Exception:
+                    dims[name] = {}
+            instance['Properties'][prop_name] = dims
+        elif prop_type == 'Enum':
+            try:
+                instance['Properties'][prop_name] = int(prop.text)
+            except Exception:
+                instance['Properties'][prop_name] = prop.text or ''
+        elif prop_type == 'BrickColor':
+            instance['Properties'][prop_name] = prop.text or ''
+        elif prop_type == 'BinaryString':
+            instance['Properties'][prop_name] = prop.text or ''
+        elif prop_type == 'Tags':
+            instance['Properties'][prop_name] = [tag.text for tag in prop.findall('./tag')]
+        elif prop_type == 'ContentId':
+            instance['Properties'][prop_name] = prop.text or ''
+        elif prop_type == 'ProtectedString':
+            instance['Properties'][prop_name] = prop.text or ''
+        elif prop_type == 'SharedString':
             instance['Properties'][prop_name] = prop.text or ''
         else:
-            # Generic property handling
+            print(f"Warning: Unknown property type '{prop_type}' for property '{prop_name}'")
             instance['Properties'][prop_name] = prop.text or ''
     
     # Get name from properties or attribute
@@ -407,10 +478,15 @@ def sanitize_filename(name):
 
 # --- CORE EXPORT LOGIC ---
 
-def export_rojo_ready(input_file, output_dir):
+def export_rojo_ready(input_file, output_dir, template_dir=None):
     """
     Exports the .rbxl file to a Rojo-compatible project structure.
     """
+    # If a custom template directory is provided, update template_engine loader
+    if template_dir:
+        template_engine.env.loader.searchpath = [template_dir]
+
+    _report_progress(0, "Starting Rojo-Ready export...")
     print(f"--- Starting Rojo-Ready Export ---")
     print(f"Input file: {input_file}")
     print(f"Output directory: {output_dir}")
@@ -419,14 +495,18 @@ def export_rojo_ready(input_file, output_dir):
     xml_file = convert_rbxl_to_xml(input_file)
     if xml_file is None:
         print("Error: Could not convert .rbxl to .rbxlx (XML) format")
+        # The error is already reported by the conversion function
         return
 
     # Parse the XML and extract the instance tree
     try:
+        _report_progress(20, "Parsing XML file...")
         root_instance = parse_roblox_xml(xml_file)
         print(f"Successfully parsed Roblox file: {root_instance['Name']}")
+        _report_progress(35, f"Successfully parsed {root_instance['Name']}")
     except Exception as e:
         print(f"Error parsing file: {e}")
+        _report_progress(-1, f"XML Parsing failed: {e}")
         return
     
     # Create the project structure based on the instance tree
@@ -448,7 +528,11 @@ def export_rojo_ready(input_file, output_dir):
     project_tree = {"$className": "DataModel"}
     
     # Process each service in the DataModel
-    for child in root_instance['Children']:
+    services_to_process = [child for child in root_instance['Children'] if child['Name'] in rojo_services]
+    total_services = len(services_to_process)
+    services_processed = 0
+
+    for child in services_to_process:
         service_name = child['Name']
         
         if service_name in rojo_services:
@@ -464,6 +548,10 @@ def export_rojo_ready(input_file, output_dir):
             # Process service contents
             process_instance_rojo(child, service_dir)
             print(f"Exported {service_name}")
+
+        services_processed += 1
+        progress = 35 + int(60 * (services_processed / total_services))
+        _report_progress(progress, f"Exporting service: {service_name}...")
     
     # Create default.project.json
     project_json_path = Path(output_dir) / "default.project.json"
@@ -471,11 +559,24 @@ def export_rojo_ready(input_file, output_dir):
         "name": Path(output_dir).name,
         "tree": project_tree
     }
-    
-    with open(project_json_path, "w") as f:
-        json.dump(project_data, f, indent=2)
-        
+    # Try rendering with template
+    if TEMPLATE_ENGINE_AVAILABLE:
+        try:
+            content = template_engine.render_template('default_project.json.j2', project_data)
+            with open(project_json_path, 'w', encoding='utf-8') as f:
+                f.write(content)
+            print(f"📄 Created (templated): {project_json_path.name}")
+        except Exception:
+            with open(project_json_path, 'w', encoding='utf-8') as f:
+                json.dump(project_data, f, indent=2)
+            print(f"📄 Created: {project_json_path.name}")
+    else:
+        with open(project_json_path, 'w', encoding='utf-8') as f:
+            json.dump(project_data, f, indent=2)
+        print(f"📄 Created: {project_json_path.name}")
+
     print(f"Successfully created a Rojo-ready project at: {output_dir}")
+    _report_progress(100, "Export complete!")
     print("--- Export Complete ---")
 
 def process_instance_rojo(instance, parent_path):
@@ -537,10 +638,15 @@ def get_script_extension(class_name):
     return extensions.get(class_name, 'lua')
 
 
-def export_scripts_only(input_file, output_dir, create_project_json):
+def export_scripts_only(input_file, output_dir, create_project_json, template_dir=None):
     """
     Exports only the scripts from the .rbxl file to a single directory.
     """
+    # If a custom template directory is provided, update template_engine loader
+    if template_dir:
+        template_engine.env.loader.searchpath = [template_dir]
+
+    _report_progress(0, "Starting Scripts-Only export...")
     print(f"--- Starting Scripts-Only Export ---")
     print(f"Input file: {input_file}")
     print(f"Output directory: {output_dir}")
@@ -553,7 +659,9 @@ def export_scripts_only(input_file, output_dir, create_project_json):
         return
 
     # Parse the XML and extract the instance tree
+    _report_progress(20, "Parsing XML file...")
     root_instance = parse_roblox_xml(xml_file)
+    _report_progress(35, "XML Parsed. Extracting scripts...")
     
     # For debugging: print the entire instance tree
     # import pprint
@@ -562,32 +670,40 @@ def export_scripts_only(input_file, output_dir, create_project_json):
     os.makedirs(output_dir, exist_ok=True)
     
     # Recursively process instances and extract scripts
-    def process_instance(instance, output_dir):
+    scripts_found = []
+    def find_scripts(instance):
         if is_script_instance(instance):
-            # For scripts, create a .lua file with the script content
-            script_content = get_script_content(instance)
-            script_name = f"{sanitize_filename(instance['Name'])}.lua"
-            with open(os.path.join(output_dir, script_name), "w") as lua_file:
-                lua_file.write(script_content)
-            
-            # Create a metadata file for the script
-            metadata_name = f"{sanitize_filename(instance['Name'])}.meta.json"
-            metadata_path = os.path.join(output_dir, metadata_name)
-            metadata = {
-                "Name": instance['Name'],
-                "ClassName": instance['ClassName'],
-                "Properties": instance['Properties']
-            }
-            with open(metadata_path, "w") as meta_file:
-                json.dump(metadata, meta_file, indent=2)
-        
-        # Process children
+            scripts_found.append(instance)
         for child in instance['Children']:
-            process_instance(child, output_dir)
+            find_scripts(child)
     
-    # Start processing from the root instance
-    process_instance(root_instance, output_dir)
+    find_scripts(root_instance)
     
+    total_scripts = len(scripts_found)
+    scripts_processed = 0
+
+    for instance in scripts_found:
+        # For scripts, create a .lua file with the script content
+        script_content = get_script_content(instance)
+        script_name = f"{sanitize_filename(instance['Name'])}.lua"
+        with open(os.path.join(output_dir, script_name), "w") as lua_file:
+            lua_file.write(script_content)
+        
+        # Create a metadata file for the script
+        metadata_name = f"{sanitize_filename(instance['Name'])}.meta.json"
+        metadata_path = os.path.join(output_dir, metadata_name)
+        metadata = {
+            "Name": instance['Name'],
+            "ClassName": instance['ClassName'],
+            "Properties": instance['Properties']
+        }
+        with open(metadata_path, "w") as meta_file:
+            json.dump(metadata, meta_file, indent=2)
+        
+        scripts_processed += 1
+        progress = 35 + int(60 * (scripts_processed / total_scripts))
+        _report_progress(progress, f"Exporting script: {instance['Name']}...")
+
     if create_project_json:
         project_json_path = os.path.join(output_dir, "default.project.json")
         project_data = {
@@ -599,12 +715,47 @@ def export_scripts_only(input_file, output_dir, create_project_json):
                 }
             }
         }
-        with open(project_json_path, "w") as f:
-            json.dump(project_data, f, indent=2)
+        # Render using template if available
+        if TEMPLATE_ENGINE_AVAILABLE:
+            try:
+                content = template_engine.render_template('default_project.json.j2', project_data)
+                with open(project_json_path, 'w', encoding='utf-8') as f:
+                    f.write(content)
+                print("📄 Created (templated): default.project.json")
+            except Exception:
+                with open(project_json_path, "w", encoding='utf-8') as f:
+                    json.dump(project_data, f, indent=2)
+                print("📄 Created: default.project.json")
+        else:
+            with open(project_json_path, "w", encoding='utf-8') as f:
+                json.dump(project_data, f, indent=2)
+            print("📄 Created: default.project.json")
+
         print("Successfully created default.project.json.")
 
     print(f"Successfully exported scripts to: {output_dir}")
+    _report_progress(100, "Export complete!")
     print("--- Export Complete ---")
+
+def process_batch(input_dir, output_dir, mode, create_project_json=False):
+    """
+    Process a batch of .rbxl/.rbxlx files in a directory.
+    Each file is exported into a subdirectory named after the file.
+    """
+    print(f"--- Starting batch export from directory: {input_dir} ---")
+    for filename in os.listdir(input_dir):
+        if not filename.lower().endswith(('.rbxl', '.rbxlx')):
+            continue
+        src_path = os.path.join(input_dir, filename)
+        name_no_ext = os.path.splitext(filename)[0]
+        dest_subdir = os.path.join(output_dir, name_no_ext)
+        os.makedirs(dest_subdir, exist_ok=True)
+        print(f"\nProcessing file: {filename}")
+        if mode == "rojo":
+            export_rojo_ready(src_path, dest_subdir)
+        else:
+            export_scripts_only(src_path, dest_subdir, create_project_json)
+    print(f"--- Batch export complete. Results in: {output_dir} ---")
 
 
 def main():
@@ -634,22 +785,33 @@ def main():
         action="store_true",
         help="Generate a default.project.json file (used with --mode=scripts-only)."
     )
+    parser.add_argument(
+        "--templates",
+        help="Path to custom Jinja2 templates directory",
+        default=None
+    )
 
     if len(sys.argv) == 1:
         parser.print_help(sys.stderr)
         sys.exit(1)
         
     args = parser.parse_args()
+    template_dir = args.templates
 
     # Basic validation
     if not os.path.exists(args.input):
-        print(f"Error: Input file not found at '{args.input}'")
+        print(f"Error: Input path not found at '{args.input}'")
         sys.exit(1)
 
+    # Batch processing if input is a directory
+    if os.path.isdir(args.input):
+        process_batch(args.input, args.output, args.mode, args.project_json)
+        return
+
     if args.mode == "rojo":
-        export_rojo_ready(args.input, args.output)
+        export_rojo_ready(args.input, args.output, template_dir)
     elif args.mode == "scripts-only":
-        export_scripts_only(args.input, args.output, args.project_json)
+        export_scripts_only(args.input, args.output, args.project_json, template_dir)
 
 if __name__ == "__main__":
     main()

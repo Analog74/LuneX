@@ -1,0 +1,5 @@
+{
+  "projectileSpeed": 60,
+  "areaOfEffectRadius": 10,
+  "knockbackForce": 30
+}

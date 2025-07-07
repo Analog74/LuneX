@@ -2,7 +2,7 @@
 
 > **Professional .rbxl export utility within the Roblox Projects repository ecosystem**
 
-A comprehensive tool for exporting Roblox `.rbxl` files to organized project structures, with both GUI and CLI interfaces. Perfect for modern development workflows with Rojo integration.
+A comprehensive tool for exporting Roblox `.rbxl` and `.rbxlx` files to organized project structures, with a modern GUI and powerful CLI. Perfect for modern development workflows with Rojo integration.
 
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://python.org)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)]()
@@ -22,6 +22,9 @@ LuneX is a core utility within the **Roblox Projects Repository** (`/Users/analo
 
 ## ✨ Features
 
+- **📊 Real-Time Progress** - Watch the export happen with a live progress bar.
+- **📂 Recent Files Menu** - Quickly access your recently opened files.
+- **🖱️ Drag & Drop & Multi-Select** - Drag files directly or select multiple files for batch export.
 - **🖥️ Graphical Interface** - Intuitive GUI for file selection and export options
 - **⌨️ Command-line Interface** - Powerful CLI for automation and scripting  
 - **📁 Multiple Export Modes** - Rojo-ready projects or scripts-only extraction
@@ -31,19 +34,42 @@ LuneX is a core utility within the **Roblox Projects Repository** (`/Users/analo
 
 ## 🚀 Quick Start
 
-### Using the GUI (Recommended)
+### 1. Setup
+
+LuneX uses a virtual environment to manage dependencies. First, set it up:
+
+```bash
+# 1. Create the virtual environment
+python3 -m venv venv
+
+# 2. Activate it
+# On macOS/Linux
+source venv/bin/activate
+# On Windows
+.\venv\Scripts\activate
+
+# 3. Install required packages
+pip install -r requirements.txt
+```
+
+### 2. Running the GUI (Recommended)
+
+Once the setup is complete, run the application:
 
 ```bash
 python3 LuneX.py
 ```
 
 The GUI provides:
-- File browser for .rbxl selection
+- Drag & Drop or File browser for `.rbxl`/`.rbxlx` selection (supports multi-select)
+- Batch export of multiple files in one operation
 - Export mode selection (Rojo-ready or Scripts-only)
 - Directory management with memory
 - One-click export with automatic folder opening
 
-### Using the Command Line
+### 3. Using the Command Line
+
+Ensure the virtual environment is active (`source venv/bin/activate`) before running CLI commands.
 
 ```bash
 # Rojo-ready export (full project structure)
@@ -83,27 +109,9 @@ python3 Lune.py MagicMaster.rbxlx output/ --mode rojo
 
 **See [docs/BINARY_RBXL_SUPPORT.md](docs/BINARY_RBXL_SUPPORT.md) for detailed documentation.**
 
-## 📁 Export Modes
-
-### 🏗️ Rojo-Ready Export (`--mode rojo`)
-Perfect for modern Roblox development:
-- Complete project structure with `src/` directory
-- Generated `default.project.json` matching original hierarchy  
-- Preserves all folder structures, scripts, objects, properties, and attributes
-- Ready for `rojo serve` and Studio syncing
-- Maintains original naming without modifications
-
-### 📜 Scripts-Only Export (`--mode scripts-only`)
-Focused script extraction:
-- All scripts in a single directory
-- Metadata files (`.meta.json`) with original location and properties
-- Optional `default.project.json` generation
-- Perfect for script analysis or quick extraction
-- Maintains script relationships and hierarchy data
-
 ## ⚙️ Configuration
 
-LuneX automatically manages preferences in `lunex_config.json`:
+LuneX automatically manages preferences in `config/lunex_config.json`:
 
 ```json
 {
@@ -111,7 +119,11 @@ LuneX automatically manages preferences in `lunex_config.json`:
   "last_dest_dir": "/path/to/last/destination", 
   "default_source_dir": "/path/to/default/source",
   "default_dest_dir": "/path/to/default/destination",
-  "last_export_mode": "rojo"
+  "last_export_mode": "rojo",
+  "recent_files": [
+    "/path/to/your/file.rbxl",
+    "/path/to/another/file.rbxlx"
+  ]
 }
 ```
 
@@ -125,25 +137,31 @@ LuneX automatically manages preferences in `lunex_config.json`:
 
 ```
 LuneProjects/
-├── LuneX.py              # 🖥️ GUI Application (Main Entry)
-├── Lune.py               # ⚙️ Core Export Engine (CLI)
-├── test_lunex.py         # 🧪 Validation & Testing
-├── lunex_config.json     # 📋 User Configuration (Auto-generated)
-├── README.md             # 📖 User Documentation (This file)
-├── CHANGELOG.md          # 📝 Version History
-├── DEVELOPMENT.md        # 🔨 Development Tracking
-└── INTEGRATION.md        # 🔗 Repository Integration Guide
+├── venv/                   # 🐍 Python Virtual Environment
+├── config/
+│   └── lunex_config.json   # 📋 User Configuration (Auto-generated)
+├── LuneX.py                # 🖥️ GUI Application (Main Entry)
+├── Lune.py                 # ⚙️ Core Export Engine (CLI)
+├── test_lunex.py           # 🧪 Validation & Testing
+├── requirements.txt        # 📦 Python Dependencies
+├── README.md               # 📖 User Documentation (This file)
+├── CHANGELOG.md            # 📝 Version History
+├── DEVELOPMENT.md          # 🔨 Development Tracking
+└── INTEGRATION.md          # 🔗 Repository Integration Guide
 ```
 
 ## 📋 Requirements
 
 - **Python 3.7+** (Cross-platform compatibility)
 - **tkinter** (GUI framework - usually included with Python)
-- **No external dependencies** for core functionality
+- **tkinterdnd2** (For GUI drag-and-drop functionality)
+
+All Python dependencies are listed in `requirements.txt` and can be installed using the setup instructions.
 
 ## 🧪 Testing
 
-Verify your setup:
+Activate the virtual environment first (`source venv/bin/activate`).
+
 ```bash
 python3 test_lunex.py
 ```
@@ -156,26 +174,28 @@ This validates:
 
 ## 📈 Development Status
 
-**Current Version**: v1.0.0 (Framework Complete)
+**Current Version**: v1.2.0 (GUI Polish & UX)
 
 **✅ Completed:**
+- Real-time progress indicators
+- Recent files menu
+- Enhanced error recovery and user guidance
+- Drag & Drop file interface
 - GUI and CLI interfaces
-- Configuration management
+- Robust binary `.rbxl` to `.rbxlx` conversion
+- Core file parsing and XML processing pipeline
+- Configuration management in a dedicated `config/` directory
+- Virtual environment setup with `requirements.txt`
 - Export mode selection
 - Directory persistence
 - Cross-platform support
 - Repository integration
 
-**🔄 In Progress:**
-- .rbxl file parsing implementation
-- XML processing pipeline
-- Instance type recognition
-
 **📅 Planned:**
-- Full export functionality
 - Advanced metadata preservation
 - Custom template system
 - Batch processing
+- Further modularization and code cleanup
 
 ## 🔗 Repository Context
 
@@ -196,6 +216,29 @@ This validates:
 - **[DEVELOPMENT.md](DEVELOPMENT.md)** - Development tracking and roadmap
 - **[INTEGRATION.md](INTEGRATION.md)** - Repository integration details
 
+## Roblox API Dump Integration
+
+See [docs/ROBLOX_API_DUMP_INTEGRATION.md](docs/ROBLOX_API_DUMP_INTEGRATION.md) for details on how to use the new Roblox API dump integration for querying, documentation, and tooling.
+
+---
+
+## Quick Start
+
+- Python module: `library/roblox_api_dump.py`
+- Example usage and extension ideas included in the docs.
+
+---
+
+This enables advanced Roblox API introspection and automation for your development workflow.
+
+## Roblox API Automation
+
+- Run `make docs` to generate Markdown documentation from the API dump.
+- Run `make test` to test API dump integration and see sample queries.
+- You can also run the VS Code task "Generate Roblox API Docs" for doc generation.
+
+See `docs/ROBLOX_API_DUMP_INTEGRATION.md` for full details.
+
 ## 🏷️ Project Tags
 
 `utility` `development-tool` `roblox` `export` `rojo` `gui` `cli` `python` `cross-platform` `repository-utility`
@@ -204,4 +247,4 @@ This validates:
 
 **🎯 Repository Integration**: LuneX serves as a core utility for the entire Roblox Projects repository, enabling consistent .rbxl export workflows across all game projects, frameworks, and components.
 
-*Last Updated: July 5, 2025 | Version: 1.0.0 | Status: Active Development*
+*Last Updated: July 6, 2025 | Version: 1.2.0 | Status: Active Development*

@@ -1,0 +1,12 @@
+{
+  "fireball": {
+    "speed": 40,
+    "gravity": 0,
+    "knockback": 20,
+    "explosion_radius": 6
+  },
+  "barrier": {
+    "type": "static",
+    "duration": 5
+  }
+}

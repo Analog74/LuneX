@@ -1,0 +1,7 @@
+{
+  "walk_speed": 16,
+  "run_speed": 24,
+  "jump_height": 7,
+  "double_jump": true,
+  "special_moves": ["wall_jump", "glide"]
+}

@@ -1,0 +1,7 @@
+{
+  "NanoSphere": {
+    "cooldown": 10,
+    "manaCost": 40,
+    "effect": "physics_sphere"
+  }
+}
